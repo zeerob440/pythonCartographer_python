@@ -1,7 +1,7 @@
-print ("This program helps navigate notes and simple structures in the Python language. Zachary Roberts 11 AUG 2.")
-
-# Proudly engineered by Zachary Roberts August, 2025. 
+# Proudly engineered by Zachary Roberts 11 August, 2025. 
 # "We should now have access to the main facility. Let’s find the map room."-Cortana
+
+print ("This program helps navigate notes and simple structures in the Python language. Zachary Roberts 11 AUG 2025.")
 
 # Main menu of program. Prints valid input selection, runs through indefinate loop.     
 def main():# it serves as the main menu of Python Cartographer, one may call it the "index"
