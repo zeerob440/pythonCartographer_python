@@ -194,36 +194,33 @@ def selection(): # This function highlights selection basics.
         print ("Geth say 3 is greater than 1 and 2.\n")
     if legion_says >3:
         print("You do not follow directions Shepard Commander, you must be indoctrinated.\n")
-    print ()
-    print ("In this example, if you picked 1 or 2 the program would have returned:")
-    print ("1 Heritics say 2 is greater than 1\n2 Heretics say 2 is greater than 1")
-    print ('It would have skipped "Geth say 3 is greater than 1 and 2"')
-    print ()
-    print ("If 3 was chosen, it would have printed Legion's line from Mass Effect 2.")
-    print ("If > 3 it would have admonished you for not following directions.")
-    print ()
-    print ("IF ELIF ELSE SELECTIONS")
-    print ("IF ELIF ELSE SELECTIONS are a structure that will ONLY EXECUTE THE FIRST CONDITION THAT IS TRUE.")
-    print ("If greater than 3 conditions are needed to complete this sort of structure, ONLY ADDITIONAL ELIF Conditions are created.")
-    print ()
-    print ("Next we'll explore a IF ELIF ELSE SELECTION using the Sorting Hat from Harry Potter.")
-    print ()
+
+    print ('''In this example, if you picked 1 or 2 the program would have returned\n
+           1 Heritics say 2 is greater than 1\n2 Heretics say 2 is greater than\n
+           it would have skipped "Geth say 3 is greater than 1 and 2"\n
+           If 3 was chosen, it would have printed Legion's line from Mass Effect 2.\n
+           If > 3 it would have admonished you for not following directions.\n''')
+    
+    print ('''IF ELIF ELSE SELECTIONS
+           IF ELIF ELSE SELECTIONS are a structure that will ONLY EXECUTE THE FIRST CONDITION THAT IS TRUE.\n
+           If greater than 3 conditions are needed to complete this sort of structure, ONLY ADDITIONAL ELIF Conditions are created.\n
+           Next we'll explore a IF ELIF ELSE SELECTION using the Sorting Hat from Harry Potter.\n''')
+    
     # if elif else example
-    sorting_hat_selection = (input("What virtue do you value most? bravery, intelligence, or friendship: "))
+    sorting_hat_selection = (input("What virtue do you value most? bravery, intelligence, or friendship: \n"))
     if sorting_hat_selection == ("bravery"):
-        print ("You are in House Gryffindor")
+        print ("You are in House Gryffindor\n")
     elif sorting_hat_selection == ("intelligence"):
-        print ("You are in House Ravenclaw.")
+        print ("You are in House Ravenclaw.\n")
     elif sorting_hat_selection == "friendship":
-        print ("You are in House Hufflepuff.")
-    else: print ("Your are in House Slytherin.")
-    print ()
-    print ("Since this is an IF ELIF ELIF ELIF ELSE structure it will only return the true statement.")
-    print ('''IF "bravery was selected, the user is Gryffindor; intelligence Ravenclaw
-           friendship Hufflepuff.And if you don't follow rules, the else statement captures
-           all other values, Slytherin.''')
-    print ()
-    print ("This concludes the selection module. ")
+        print ("You are in House Hufflepuff.\n")
+    else: print ("Your are in House Slytherin.\n")
+
+    print ('''Since this is an IF ELIF... ELSE structure it will only return the true statement.\n
+           IF "bravery was selected, the user is Gryffindor; intelligence Ravenclaw\n
+           friendship Hufflepuff.And if you don't follow rules, the else statement captures\n
+           all other values, Slytherin.\n
+           This concludes the selection module.''')
 
     returnsToMAin()
 
