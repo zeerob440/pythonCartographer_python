@@ -43,49 +43,49 @@ def basics():# This module provides an overview of the basic structures and data
            dog = ("Rico") or number = 1\n''')
 
     print ('''FUNCTIONS\n
-           Functions are subroutines within programs that do something. A single program may have several functions.\n
-           Name functions after what part of the program they access in camelCase, OR\n
-           Name them a verb for what the function does...\n
-           itAddsThings() or main()\n
+           Functions are subroutines within programs that do something. A single program may have several functions.
+           Name functions after what part of the program they access in camelCase, OR
+           Name them a verb for what the function does...
+           itAddsThings() or main()
            To declare a function... def itAddsThings(): or def main():\n
            1def itAddsThings 2  (2+2)\n''')
    
     print ('''INVOKING FUNCTIONS\n
-           Once a function is declared, it needs to be invoked in a subsequent line of the program.\n
+           Once a function is declared, it needs to be invoked in a subsequent line of the program.
            Invoke the function by: itAddsThings()\n
            RULES FOR FUNCTIONS:\n
-           Fucntions must be FULLY DECLARED before calling them.\n
+           Fucntions must be FULLY DECLARED before calling them.
            1 def itAddsThings:()\n
            2  (2 + 2)\n
            3itAddsThings()\n''')
     
     print ('''DATA TYPES\n
            INTEGER\n
-           Integers are numbers 1, 2, -1, 0 -3\n
-           Integer are declared like\n
+           Integers are numbers 1, 2, -1, 0 -3
+           Integer are declared like
            number = 4\n''')
            
     print('''STRINGS\n
-          Strings are words, or numbers. If a string is a number, it is the name of the number not the value of the number\n
-          Strings are declared such that:\n
-          dog =("Rico") OR\n
+          Strings are words, or numbers. If a string is a number, it is the name of the number not the value of the number
+          Strings are declared such that:
+          dog =("Rico") OR
           my_number = "3"\n''')
 
     print ('''FLOATS\n
         Floats are decimals such as 7.2, 8.1, -.4\n
-        Anytime division is done '/' it returns a float.\n
+        Anytime division is done '/' it returns a float.
         Floats are declared the same as integers.\n''')
 
     print ('''DICTONARIES DICT\n
-           Dictionaries consist of two constructs, KEYS and VALUES\n
-           KEYS are the UNIQUE IDENTIFIER, or a searchable keyword to access the dictionary.\n
-           VALUES are attributes or properties of the key.\n
-           in other words if it was like an actual dictionary he KEY is the Word, the VALUE is the definition.\n
-           DECLARING A DICTIONARY\n
-           Dictionaries are declared like\n
+           Dictionaries consist of two constructs, KEYS and VALUES
+           KEYS are the UNIQUE IDENTIFIER, or a searchable keyword to access the dictionary.
+           VALUES are attributes or properties of the key.
+           in other words if it was like an actual dictionary he KEY is the Word, the VALUE is the definition.
+           DECLARING A DICTIONARY
+           Dictionaries are declared like:\n
            marine = {}\n
            This is an example of an EMPTY DICTIONARY.\n
-           The following 4 outputs are pulling VALUES from the KEY unsc_marine using .get\n
+           The following 4 outputs are pulling VALUES from the KEY unsc_marine using .get
            VALUES of unsc_marine include name, rank, weapon, and ship.\n''')
     #Example of populated dictionary
     unsc_marine = {
@@ -101,7 +101,7 @@ def basics():# This module provides an overview of the basic structures and data
     
     print('''TUPLE\n
         TUPLE is similar to list except TUPLE is immutable, or it cannot be altered once declared.
-        To decalre a TUPLE...\n''')
+        To decalre a TUPLE...''')
     print('''Example of empty TUPLE\n
         snake_stuff = ()\n
         TUPLE populated
@@ -114,25 +114,25 @@ def basics():# This module provides an overview of the basic structures and data
 
 def inputs(): # This function provides overview of inputs.
 
-    print ('''Inputs are foundational structure in any programming language.\n
+    print ('''Inputs are foundational structure in any programming language.
            They allow the user to provide data into a program.\n
            BUILDING A USER INPUT\n
-           To build a user input an INPUT VARIABLE must be declared. Like this:\n
+           To build a user input an INPUT VARIABLE must be declared. Like this:
            ("")\n
-           1 one_or_two = (input("For selection 1 input 1 for selection 2 input 2: "))\n'
+           1 one_or_two = (input("For selection 1 input 1 for selection 2 input 2: "))
            Always leave a null space between the last letter and closing parenthesis to allow user input.\n
            INPUT TRANSLATION\n
-           Sometimes a certain data type must be used for an INPUT VARIABLE.\n
-           int is integer\n
-           float is a decimal\n
-           string is string\n
-           bool is boolean\n
+           Sometimes a certain data type must be used for an INPUT VARIABLE.
+           int is integer
+           float is a decimal
+           string is string
+           bool is boolean
            An INPUT VARAIBLE with a forced data type is written as:\n
-           1 my_thing = datatype(input("input message here: "))\n
-           Therefore a variable needing an integer datatype is:\n
+           1 my_thing = datatype(input("input message here: "))
+           Therefore a variable needing an integer datatype is:
            1 my_number = int(input("pick a number :"))\n
            Example...
-           This varible has been created a float INPUT VARIABLE.\n
+           This varible has been created a float INPUT VARIABLE.
            my_number = float(input('Input a number: '\n''')
 
     my_number = float(input("Input a number: "))
@@ -144,7 +144,7 @@ def inputs(): # This function provides overview of inputs.
 def selection(): # This function highlights selection basics.
     print ('''SELECTIONS\n
            Selections are an integral software structure used in almost all programs.
-           Selections include:\n
+           Selections include:
            IF, ELSE SELECTIONS\n
            IF, ELIF, ELSE SELECTIONS\n
            IF,IF,ELSE SELECTIONS\n
