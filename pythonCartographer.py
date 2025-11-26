@@ -13,7 +13,7 @@ def main():# it serves as the main menu of Python Cartographer, one may call it 
         Infinite Loops: 6\n
         Indefinate Loops: 7\n
         Arrays: 8\n
-         Populating Arrays: 9\n
+        Populating Arrays: 9\n
         On/Off Switch Loop: 10\n''')
     select_structure = (input("Input structure you would like to review: "))
     if select_structure == "1":
