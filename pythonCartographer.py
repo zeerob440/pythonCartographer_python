@@ -5,15 +5,15 @@ print ("This program helps navigate notes and simple structures in the Python la
 
 # Main menu of program. Prints valid input selection, runs through indefinate loop.     
 def main():# it serves as the main menu of Python Cartographer, one may call it the "index"
-    print ('''Basics, variable declarations, data types that sort: 1\n
-        Input: 2\n
-        IF Else selections, IF IF IF..Else selections IF ELIF ElSE Selections: 3\n
-        Input Validation: 4\n
-        For Loops: 5\n
-        Infinite Loops: 6\n
-        Indefinate Loops: 7\n
-        Arrays: 8\n
-        Populating Arrays: 9\n
+    print ('''Basics, variable declarations, data types that sort: 1
+        Input: 2
+        IF Else selections, IF IF IF..Else selections IF ELIF ElSE Selections: 3
+        Input Validation: 4
+        For Loops: 5
+        Infinite Loops: 6
+        Indefinate Loops: 7
+        Arrays: 8
+        Populating Arrays: 9
         On/Off Switch Loop: 10\n''')
     select_structure = (input("Input structure you would like to review: "))
     if select_structure == "1":
