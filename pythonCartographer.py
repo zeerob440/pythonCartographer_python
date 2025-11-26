@@ -143,18 +143,21 @@ def inputs(): # This function provides overview of inputs.
     returnsToMAin()  
 def selection(): # This function highlights selection basics.
     print ('''SELECTIONS\n
-           Selections are an integral software structure used in almost all programs.\n
+           Selections are an integral software structure used in almost all programs.
            Selections include:\n
            IF, ELSE SELECTIONS\n
            IF, ELIF, ELSE SELECTIONS\n
            IF,IF,ELSE SELECTIONS\n
            IF IF IF ... SELECTIONS.\n
            IF, ELSE SELETIONS\n
-           IF, ELSE SELECTIONS, create a condition test that executes once branch of the selection if true.\n
-           It executes the oppisite branch if the condition is not true.\n IT IS IMPORTANT THAT ELSE DOES NOT REQUIRE A CONDITION\n
+           IF, ELSE SELECTIONS, create a condition test that executes once branch of the selection if true.
+           It executes the oppisite branch if the condition is not true.
+           IT IS IMPORTANT THAT ELSE DOES NOT REQUIRE A CONDITION\n
            IF, ELSE SELECTION EXAMPLE\n
-           '1 branch_a_b = (input("Input a for branch a OR any other key for branch b: "))\n
-           2 if branch_a_b == "a":\n3    print("You have selected branch a.")\n4 else: print ("You have selected branch b.")\n''')
+           1 branch_a_b = (input("Input a for branch a OR any other key for branch b: "))
+           2 if branch_a_b == "a":
+           3    print("You have selected branch a.")
+           4 else: print ("You have selected branch b.")\n''')
    
     branch_a_b = (input("Input a for branch a OR any other key for branch b: "))
     # if-else example.
@@ -164,11 +167,11 @@ def selection(): # This function highlights selection basics.
    
     print ('''The if else selection will print which selction was chosen by the user.\n
            IF IF IF... ELSE SELECTIONS\n
-           IF IF IF ...ELSE SELECTIONS are evaluated as 3 seperate distinct selections by Python.\n
-           However, in this structure, THE ELSE STATEMENT DOES NOT NEED A CONDITION, IT TRIGGERS WHEN THE PREVIOUS\n
+           IF IF IF ...ELSE SELECTIONS are evaluated as 3 seperate distinct selections by Python.
+           However, in this structure, THE ELSE STATEMENT DOES NOT NEED A CONDITION, IT TRIGGERS WHEN THE PREVIOUS
            IF AND ONLY IF THE PREVIOUS IF CONDITION TEST IS FALSE.\n
-           The IF IF IF ELSE STRUCTURE has a very narrow use case.It is best to think of it as\n
-           2 seperate if selections with no else statement and one if else selection.\n
+           The IF IF IF ELSE STRUCTURE has a very narrow use case.It is best to think of it as
+           2 seperate if selections with no else statement and one if else selection.
            IF IF IF ELSE SELECTION EXAMPLE\n''')
     
     # if if...else example.
@@ -182,8 +185,8 @@ def selection(): # This function highlights selection basics.
     else: print("Quantity is greater than or equal to 3, OR equal to 2, OR less than or equal to 1.\n")
    
     print ('''IF IF ... SELECTIONS\n
-           In an IF IF Selection...\n
-           Python will search the entire structure for true condition tests and return all true condition tests.\n
+           In an IF IF Selection...
+           Python will search the entire structure for true condition tests and return all true condition tests.
            Therefore, it will continue to search the structure even after it has found the first true condition test.\n''')
 
     # if if ... example.
@@ -198,14 +201,14 @@ def selection(): # This function highlights selection basics.
         print("You do not follow directions Shepard Commander, you must be indoctrinated.\n")
 
     print ('''In this example, if you picked 1 or 2 the program would have returned\n
-           1 Heritics say 2 is greater than 1\n2 Heretics say 2 is greater than\n
-           it would have skipped "Geth say 3 is greater than 1 and 2"\n
-           If 3 was chosen, it would have printed Legion's line from Mass Effect 2.\n
+           1 Heritics say 2 is greater than 1\n2 Heretics say 2 is greater than
+           it would have skipped "Geth say 3 is greater than 1 and 2"
+           If 3 was chosen, it would have printed Legion's line from Mass Effect 2.
            If > 3 it would have admonished you for not following directions.\n''')
     
-    print ('''IF ELIF ELSE SELECTIONS
+    print ('''IF ELIF ELSE SELECTIONS\n
            IF ELIF ELSE SELECTIONS are a structure that will ONLY EXECUTE THE FIRST CONDITION THAT IS TRUE.\n
-           If greater than 3 conditions are needed to complete this sort of structure, ONLY ADDITIONAL ELIF Conditions are created.\n
+           If greater than 3 conditions are needed to complete this sort of structure, ONLY ADDITIONAL ELIF Conditions are created.
            Next we'll explore a IF ELIF ELSE SELECTION using the Sorting Hat from Harry Potter.\n''')
     
     # if elif else example
@@ -218,30 +221,30 @@ def selection(): # This function highlights selection basics.
         print ("You are in House Hufflepuff.\n")
     else: print ("Your are in House Slytherin.\n")
 
-    print ('''Since this is an IF ELIF... ELSE structure it will only return the true statement.\n
-           IF "bravery was selected, the user is Gryffindor; intelligence Ravenclaw\n
-           friendship Hufflepuff.And if you don't follow rules, the else statement captures\n
+    print ('''Since this is an IF ELIF... ELSE structure it will only return the true statement.
+           IF "bravery was selected, the user is Gryffindor; intelligence Ravenclaw
+           friendship Hufflepuff.And if you don't follow rules, the else statement captures
            all other values, Slytherin.\n
-           This concludes the selection module.''')
+           This concludes the selection module.\n''')
 
     returnsToMAin()
 
 def inputValidation(): # input validation function.
-    print ('''Input validation is the process of forcing user input to adhear to specific data types. It is similar to the feeding ramp\n
-        between the magazine of a firearm and the chamber.Input validation forces intent into the correct postion, thereby allowing the\n
+    print ('''Input validation is the process of forcing user input to adhear to specific data types. It is similar to the feeding ramp
+        between the magazine of a firearm and the chamber.Input validation forces intent into the correct postion, thereby allowing the
         program to execute as designed.\n
         TRY EXCEPT SELECTIONS\n 
-        TRY EXCEPT SELECTIONS are usually contained in a WHILE lOOP. This structure indefinately prompts the user to input info until\n
-        the correct data type is used.\n
+        TRY EXCEPT SELECTIONS are usually contained in a WHILE lOOP. This structure indefinately prompts the user to input info until
+        the correct data type is used.
         EXAMPLE\n''')
-    print ('''In this example the user is prompted to enter an integer.\n
-           The TRY EXCEPT structure is nested within a WHILE LOOP.\n
-           If the user does not enter a integer, the EXCEPT BRANCH continues the loop.\n
-           In order for the EXCEPT BRANCH to work, THE ERROR THAT WILL OCCUR MUST BE DEFINED, such that instead of crashing at ValueError,\n
-           it simply continues\n
+    print ('''In this example the user is prompted to enter an integer.
+           The TRY EXCEPT structure is nested within a WHILE LOOP.
+           If the user does not enter a integer, the EXCEPT BRANCH continues the loop.
+           In order for the EXCEPT BRANCH to work, THE ERROR THAT WILL OCCUR MUST BE DEFINED, such that instead of crashing at ValueError,
+           it simply continues.
            the loop when ValueError is returned by the EXCEPT BRANCH.\n
-           In other words, the EXCEPT BRANCH directs instead of chashing continue the loop\n
-           If the user enters an integer the TRY BRANCH executes, and the loop breaks with the BREAK commannd.\n
+           In other words, the EXCEPT BRANCH directs instead of chashing continue the loop
+           If the user enters an integer the TRY BRANCH executes, and the loop breaks with the BREAK commannd.
            Do not enter an integer first to experiment with the TRY EXCEPT structure.\n''')
     # Try Except example.
     while True:
@@ -253,13 +256,13 @@ def inputValidation(): # input validation function.
             print ("Invalid input, please enter an integer.\n")
 
     print ('''TRY EXCEPT ElSE FINALLY Structures\n
-           In these sort of structures:\n
-           Try is try this operation that may include an error, such as entering a string into an integer input.\n
-           Except must be a defined error such as ValueError, It instructs the program what to do when the error is trigged\n
+           In these sort of structures:
+           Try is try this operation that may include an error, such as entering a string into an integer input.
+           Except must be a defined error such as ValueError, It instructs the program what to do when the error is trigged
            INSTEAD OF CRASHING.\n
-           Else is this case only runs if the try attempt succedes, it is an optional branch.Otherwise,\n
-           one can just run a print command with the try branch.\n
-           Finally run no matter what happens, it is also an optional branch.\n
+           Else in this case only runs if the try attempt succedes, it is an optional branch.
+           Otherwise, one can just run a print command with the try branch.\n
+           Finally run no matter what happens, it is also an optional branch.
            IF EXCEPT ELSE FINALLY Structure Example\n''')
 
     # Try Except Else Finally Structure
@@ -284,9 +287,9 @@ def inputValidation(): # input validation function.
 
 def for_loops():
     print('''FOR LOOPS\n
-        FOR LOOPS are a type of indefinate loop. They are used to do various tasks such as populating LISTS,\n
-        completing a task in a set amount of iterations.\n
-        FOR LOOPS require a PRIMING VALUE,and a Counter(INCRMENTOR OR DECREMENTOR)\n
+        FOR LOOPS are a type of indefinate loop. They are used to do various tasks such as populating LISTS,
+        completing a task in a set amount of iterations.
+        FOR LOOPS require a PRIMING VALUE,and a Counter(INCRMENTOR OR DECREMENTOR)
         FOR LOOPS are often described as "for i in range of.." in classroom settings.\n''')
     
     #Create simple "for i in range of" FOR LOOP
@@ -303,7 +306,7 @@ def for_loops():
         To control range in a for loop, it can be declared as\nfor i in range (1, 4):\n''')
     for i in range (1,4):
         print(i)
-    print("The RANGE CONTROL the above example starts at 1, and ALWAYS END AT THE HIGHEST DECLARED NUMBER - 1.")
+    print("The RANGE CONTROL the above example starts at 1, and ALWAYS END AT THE HIGHEST DECLARED NUMBER - 1.\n")
     
     returnsToMAin()
 
