@@ -249,29 +249,31 @@ def inputValidation(): # input validation function.
             break
         except ValueError:
             print ("Invalid input, please enter an integer.\n")
-    print ()
-    print ("TRY EXCEPT ElSE FINALLY Structures")
-    print ()
-    print ("In these sort of structures:")
-    print ("Try is try this operation that may include an error, such as entering a string into an integer input.")
-    print ("Except must be a defined error such as ValueError, It instructs the program what to do when the error is trigged INSTEAD OF CRASHING.")
-    print ("Else is this case only runs if the try attempt succedes, it is an optional branch.Otherwise, one can just run a print command with the try branch.")
-    print ("Finally run no matter what happens, it is also an optional branch. ")
-    print ()
-    print ("IF EXCEPT ELSE FINALLY Structure Example")
-    print ()
+
+    print ('''TRY EXCEPT ElSE FINALLY Structures\n
+           In these sort of structures:\n
+           Try is try this operation that may include an error, such as entering a string into an integer input.\n
+           Except must be a defined error such as ValueError, It instructs the program what to do when the error is trigged\n
+           INSTEAD OF CRASHING.\n
+           Else is this case only runs if the try attempt succedes, it is an optional branch.Otherwise,\n
+           one can just run a print command with the try branch.\n
+           Finally run no matter what happens, it is also an optional branch.\n
+           IF EXCEPT ELSE FINALLY Structure Example\n''')
+
     # Try Except Else Finally Structure
-    print ("Try this TRY EXCEPT ELSE FINALLY Structure.\nEnter a string first.")
+    print ('''Try this TRY EXCEPT ELSE FINALLY Structure.\n
+           Enter a string first.\n''')
     while True:
         try: 
             integer_two = int(input("Enter another integer: "))
             print (f'You entered {integer_two}.')
         except ValueError:
-            print("You did not enter an integer. ")
+            print("You did not enter an integer.")
         else: 
-            print ("The else branch says, you have entered an integer.ELSE is optional. If structure is nested in WHILE Loop, break loop here.")
+            print ("The else branch says, you have entered an integer.ELSE is optional. If structure is nested in WHILE Loop, break loop here.\n")
             break
-        finally: print("The finally branch don't care what the user does, it will always print. EVEN IF A LOOP BREAKS BEFOREHAND.")
+        finally: print('''The finally branch doesn't care what the user does, it will always print. EVEN IF A LOOP BREAKS BEFOREHAND.\n
+                       This originates from the finally structure.\n''')
     print ()
     print ("This structure enters a WHILE LOOP until a integer is entered\nif an integer is entered the try, else and finally branches activate.")
     print ("If a non-integer value is entered the loop will execute the EXCEPT branch and reprompt the user")
@@ -279,30 +281,27 @@ def inputValidation(): # input validation function.
     print ("TRY EXCEPT EXCEPT...STRUCTURE")
 
 def for_loops():
-    print("FOR LOOPS")
-    print()
-    print("FOR LOOPS are a type of indefinate loop. They are used to do various tasks such as populating LISTS, completing a task in a set amount of iterations.")
-    print("FOR LOOPS require a PRIMING VALUE,and a Counter(INCRMENTOR OR DECREMENTOR).")
-    print('FOR LOOPS are often described as "for i in range of.." in class room settings.')
+    print('''FOR LOOPS\n
+        FOR LOOPS are a type of indefinate loop. They are used to do various tasks such as populating LISTS,\n
+        completing a task in a set amount of iterations.\n
+        FOR LOOPS require a PRIMING VALUE,and a Counter(INCRMENTOR OR DECREMENTOR)\n
+        FOR LOOPS are often described as "for i in range of.." in classroom settings.\n''')
+    
     #Create simple "for i in range of" FOR LOOP
-    print()
-    print("The following is a hardcoded simple FOR LOOP that prints number of iterations.")
-    print()
+    print("The following is a hardcoded simple FOR LOOP that prints number of iterations.\n")
     for i in range (3):
         print (i)
-    print("In the above example the you will see...")
-    print("0")
-    print("1")
-    print("2")
-    print("That is because all iterations start with 0 by defult in Python. Unless specified otherwise.")
-    print()
-    print("RANGE CONTROL EXAMPLE")
-    print()
-    print('To control range in a for loop, it can be declared as\nfor i in range (1, 4):')
+    print('''In the above example the you will see...\n
+        0\n
+        1\n
+        2\n
+        That is because all iterations start with 0 by defult in Python. Unless specified otherwise\n''')
+    
+    print('''RANGE CONTROL EXAMPLE/n
+        To control range in a for loop, it can be declared as\nfor i in range (1, 4):\n''')
     for i in range (1,4):
         print(i)
-    print()
-    print("The RANGE CONTROL in this example starts at 1, and ALWAYS END AT THE HIGHEST DECLARED NUMBER - 1.")
+    print("The RANGE CONTROL the above example starts at 1, and ALWAYS END AT THE HIGHEST DECLARED NUMBER - 1.")
     
     returnsToMAin()
 
