@@ -140,65 +140,60 @@ def inputs(): # This function provides overview of inputs.
     
     returnsToMAin()  
 def selection(): # This function highlights selection basics.
-    print ()
-    print ("SELECTIONS")
-    print ()  
-    print ('''Selections are an integral software structure used in almost all programs.\nSelections include:''')
-    print ()
-    print ("IF, ELSE SELECTIONS\nIF, ELIF, ELSE SELECTIONS\nIF,IF,ELSE SELECTIONS\nIF IF IF ... SELECTIONS.")
-    print ()
-    print ("IF, ELSE SELETIONS")
-    print ("IF, ELSE SELECTIONS, create a condition test that executes once branch of the selection if true.")
-    print ("It executes the oppisite branch if the condition is not true.\n IT IS IMPORTANT THAT ELSE DOES NOT REQUIRE A CONDITION.")
-    print ()
-    print ("IF, ELSE SELECTION EXAMPLE")
-    print ()
-    print ('1 branch_a_b = (input("Input a for branch a OR any other key for branch b: "))')
-    print ('''2 if branch_a_b == "a":\n3    print("You have selected branch a.")\n4 else: print ("You have selected branch b.")''')
-    print ()
+    print ('''SELECTIONS\n
+           Selections are an integral software structure used in almost all programs.\n
+           Selections include:\n
+           IF, ELSE SELECTIONS\n
+           IF, ELIF, ELSE SELECTIONS\n
+           IF,IF,ELSE SELECTIONS\n
+           IF IF IF ... SELECTIONS.\n
+           IF, ELSE SELETIONS\n
+           IF, ELSE SELECTIONS, create a condition test that executes once branch of the selection if true.\n
+           It executes the oppisite branch if the condition is not true.\n IT IS IMPORTANT THAT ELSE DOES NOT REQUIRE A CONDITION\n
+           IF, ELSE SELECTION EXAMPLE\n
+           '1 branch_a_b = (input("Input a for branch a OR any other key for branch b: "))\n
+           2 if branch_a_b == "a":\n3    print("You have selected branch a.")\n4 else: print ("You have selected branch b.")\n''')
+   
     branch_a_b = (input("Input a for branch a OR any other key for branch b: "))
     # if-else example.
     if branch_a_b == "a":
         print ("You have selected branch a.")
     else: print ("You have selected branch b.")
-    print ()
-    print ("The if else selection will print which selction was chosen by the user.")
-    print ()
-    print ("IF IF IF... ELSE SELECTIONS")
-    print ()
-    print ("IF IF IF ...ELSE SELECTIONS are evaluated as 3 seperate distinct selections by Python.")
-    print ("However, in this structure, THE ELSE STATEMENT DOES NOT NEED A CONDITION, IT TRIGGERS WHEN THE PREVIOUS")
-    print ("IF AND ONLY IF THE PREVIOUS IF CONDITION TEST IS FALSE.")
-    print ('''The IF IF IF ELSE STRUCTURE has a very narrow use case.It is best to think of it as
-           2 seperate if selections with no else statement and one if else selection.''')
-    print ()
-    print ("IF IF IF ELSE SELECTION EXAMPLE")
-    print ()
+   
+    print ('''The if else selection will print which selction was chosen by the user.\n
+           IF IF IF... ELSE SELECTIONS\n
+           IF IF IF ...ELSE SELECTIONS are evaluated as 3 seperate distinct selections by Python.\n
+           However, in this structure, THE ELSE STATEMENT DOES NOT NEED A CONDITION, IT TRIGGERS WHEN THE PREVIOUS\n
+           IF AND ONLY IF THE PREVIOUS IF CONDITION TEST IS FALSE.\n
+           The IF IF IF ELSE STRUCTURE has a very narrow use case.It is best to think of it as\n
+           2 seperate if selections with no else statement and one if else selection.\n
+           IF IF IF ELSE SELECTION EXAMPLE\n''')
+    
     # if if...else example.
-    quantity = int(input("Select a number between 1-3: "))
+    quantity = int(input("Select a number between 1-3: \n"))
     if quantity >= 1:
-        print ("Quantity is greater than or equal to 1.")
+        print ("Quantity is greater than or equal to 1.\n")
     if quantity >= 2:
-        print ("Quantity is greater than or eqaul to 2.")
+        print ("Quantity is greater than or eqaul to 2.\n")
     if quantity >= 3:
         print ("Three is greater than 1 and 2.")
-    else: print("Quantity is greater than or equal to 3, OR equal to 2, OR less than or equal to 1.")
-    print ()
-    print ("IF IF ... SELECTIONS")
-    print ("In an IF IF Selection... ")
-    print ("Python will search the entire structure for true condition tests and return all true condition tests.")
-    print ("Therefore, it will continue to search the structure even after it has found the first true condition test.")
-    print ()
+    else: print("Quantity is greater than or equal to 3, OR equal to 2, OR less than or equal to 1.\n")
+   
+    print ('''IF IF ... SELECTIONS\n
+           In an IF IF Selection...\n
+           Python will search the entire structure for true condition tests and return all true condition tests.\n
+           Therefore, it will continue to search the structure even after it has found the first true condition test.\n''')
+
     # if if ... example.
     legion_says = int(input("Enter a number between 1-3: "))
     if legion_says <= 1:
-        print ("Heretics say 1 is less than 2.")
+        print ("Heretics say 1 is less than 2.\n")
     if legion_says <=2:
-        print ("Heretics say 2 is greater than 1.")
+        print ("Heretics say 2 is greater than 1.\n")
     if legion_says == 3:
-        print ("Geth say 3 is greater than 1 and 2.")
+        print ("Geth say 3 is greater than 1 and 2.\n")
     if legion_says >3:
-        print("You do not follow directions Shepard Commander, you must be indoctrinated.")
+        print("You do not follow directions Shepard Commander, you must be indoctrinated.\n")
     print ()
     print ("In this example, if you picked 1 or 2 the program would have returned:")
     print ("1 Heritics say 2 is greater than 1\n2 Heretics say 2 is greater than 1")
