@@ -11,25 +11,23 @@ def main():# it serves as the main menu of Python Cartographer, one may call it 
         IF Else selections, IF IF IF..Else selections IF ELIF ElSE Selections: 3
         Input Validation: 4
         For Loops: 5
-        Infinite Loops: 6
-        Indefinate Loops: 7
-        Arrays: 8
-        Populating Arrays: 9
-        On/Off Switch Loop: 10\n''')
-    select_structure = (input("Input structure you would like to review: "))
-    if select_structure == "1":
+        Indefinate Loops: 6
+        Switch Loop: 7
+        Lists: 8\n''')
+    select_structure = int(input("Input structure you would like to review: "))
+    if select_structure == 1:
         print ("Accessing Basics...")
         basics()
-    elif select_structure == "2":
+    elif select_structure == 2:
         print ("Accessing Inputs...")
         inputs()
-    elif select_structure == "3":
+    elif select_structure == 3:
         print ("Accessing Selections")
         selection()
-    elif select_structure == "4":
+    elif select_structure == 4:
         print ("Accessing Input Validation...")
         inputValidation()
-    elif select_structure == "5":
+    elif select_structure == 5:
         print("Accessing For Loops...")
         for_loops()
 
@@ -45,7 +43,7 @@ def basics():# This module provides an overview of the basic structures and data
            dog = ("Rico") or number = 1\n''')
 
     print ('''FUNCTIONS\n
-           Functions are subroutines with in programs that do something. A single program may have several functions.\n
+           Functions are subroutines within programs that do something. A single program may have several functions.\n
            Name functions after what part of the program they access in camelCase, OR\n
            Name them a verb for what the function does...\n
            itAddsThings() or main()\n
@@ -56,7 +54,10 @@ def basics():# This module provides an overview of the basic structures and data
            Once a function is declared, it needs to be invoked in a subsequent line of the program.\n
            Invoke the function by: itAddsThings()\n
            RULES FOR FUNCTIONS:\n
-           Fucntions must be FULLY DECLARED before calling them.\n1 def itAddsThings:()\n2  (2 + 2)\n3itAddsThings()\n''')
+           Fucntions must be FULLY DECLARED before calling them.\n
+           1 def itAddsThings:()\n
+           2  (2 + 2)\n
+           3itAddsThings()\n''')
     
     print ('''DATA TYPES\n
            INTEGER\n
