@@ -112,29 +112,27 @@ def basics():# This module provides an overview of the basic structures and data
 
 def inputs(): # This function provides overview of inputs.
 
-    print ("Inputs are foundational structure in any programming language.\nThey allow the user to provide data into a program.")
-    print ()
-    print ("BUILDING A USER INPUT")
-    print ("To build a user input an INPUT VARIABLE must be declared. Like this:")
-    print ("")
-    print ('1 one_or_two = (input("For selection 1 input 1 for selection 2 input 2: "))\n')
-    print ("")
-    print ("Always leave a null space between the last letter and closing parenthesis to allow user input.")
-    print ()
-    print ("INPUT TRANSLATION")
-    print ()
-    print ("Sometimes a certain data type must be used for an INPUT VARIABLE.\nint is integer\nfloat is a decimal\nstring is string\nbool is boolean")
-    print ("An INPUT VARAIBLE with a forced data type is written as:")
-    print ()
-    print ('1 my_thing = datatype(input("input message here: "))')
-    print ()
-    print ("Therefore a variable needing an integer datatype is:")
-    print ('1 my_number = int(input("pick a number :"))')
-    print ()
-    print ("Example...")
-    print ()
-    print ("This varible has been created a float INPUT VARIABLE.\nmy_number = float(input('Input a number: '")
-    print ()
+    print ('''Inputs are foundational structure in any programming language.\n
+           They allow the user to provide data into a program.\n
+           BUILDING A USER INPUT\n
+           To build a user input an INPUT VARIABLE must be declared. Like this:\n
+           ("")\n
+           1 one_or_two = (input("For selection 1 input 1 for selection 2 input 2: "))\n'
+           Always leave a null space between the last letter and closing parenthesis to allow user input.\n
+           INPUT TRANSLATION\n
+           Sometimes a certain data type must be used for an INPUT VARIABLE.\n
+           int is integer\n
+           float is a decimal\n
+           string is string\n
+           bool is boolean\n
+           An INPUT VARAIBLE with a forced data type is written as:\n
+           1 my_thing = datatype(input("input message here: "))\n
+           Therefore a variable needing an integer datatype is:\n
+           1 my_number = int(input("pick a number :"))\n
+           Example...
+           This varible has been created a float INPUT VARIABLE.\n
+           my_number = float(input('Input a number: '\n''')
+
     my_number = float(input("Input a number: "))
     print ("This has prompted the user to input a number, my_number is converted to a float.")
     print (my_number)
