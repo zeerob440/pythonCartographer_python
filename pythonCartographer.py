@@ -38,81 +38,80 @@ def returnsToMAin():# It returns user to main menu at the end of a function.
         main() 
 
 def basics():# This module provides an overview of the basic structures and data types used in Python.
-    print ('This is and overview of basic declerations of Python structures.\n'
-           'VARIABLES\n'
-           'To declare a variable use singular verbs or nouns in snake_case.'
-           'dog = ("Rico") or number = 1\n')
+    print ('''This is and overview of basic declerations of Python structures.\n
+           VARIABLES\n
+           To declare a variable use singular verbs or nouns in snake_case.
+           dog = ("Rico") or number = 1\n''')
 
-    print ('FUNCTIONS\n'
-           'Functions are subroutines with in programs that do something. A single program may have several functions.\n'
-           'Name functions after what part of the program they access in camelCase, OR\n'
-           'Name them a verb for what the function does...\n'
-           'itAddsThings() or main()\n'
-           'To declare a function... def itAddsThings(): or def main():\n'
-           '1def itAddsThings 2  (2+2)\n')
+    print ('''FUNCTIONS\n
+           Functions are subroutines with in programs that do something. A single program may have several functions.\n
+           Name functions after what part of the program they access in camelCase, OR\n
+           Name them a verb for what the function does...\n
+           itAddsThings() or main()\n
+           To declare a function... def itAddsThings(): or def main():\n
+           1def itAddsThings 2  (2+2)\n''')
    
-    print ('INVOKING FUNCTIONS\n'
-           'Once a function is declared, it needs to be invoked in a subsequent line of the program.\n'
-           'Invoke the function by: itAddsThings()\n'
-           'RULES FOR FUNCTIONS:\n')
-   
-    print ("Fucntions must be FULLY DECLARED before calling them.\n1 def itAddsThings:()\n2  (2 + 2)\n3itAddsThings()")
+    print ('''INVOKING FUNCTIONS\n
+           Once a function is declared, it needs to be invoked in a subsequent line of the program.\n
+           Invoke the function by: itAddsThings()\n
+           RULES FOR FUNCTIONS:\n
+           Fucntions must be FULLY DECLARED before calling them.\n1 def itAddsThings:()\n2  (2 + 2)\n3itAddsThings()\n''')
     
-    print ("DATA TYPES")
-   
-    print ("INTEGER")
-    print ("Integers are numbers 1, 2, -1, 0 -3\nInteger are declared like\nnumber = 4")
-   
-    print ("STRINGS")
-    print ('''Strings are words, or numbers. If a string is a number, it is the name of the number not the value of the number'''
-           )
-    print ('Strings are declared such that:\ndog =("Rico") OR\n my_number = "3"')
-    print ()
-    print ("FLOATS")
-    print ("Floats are decimals such as 7.2, 8.1, -.4")
-    print ("Anytime division is done '/' it returns a float.")
-    print ("Floats are declared the same as integers.")
-    print ("DICTONARIES DICT")
-    print ("Dictionaries consist of two constructs, KEYS and VALUES")
-    print ("KEYS are the UNIQUE IDENTIFIER, or a searchable keyword to access the dictionary.")
-    print ('VALUES are attributes or properties of the key.' \
-    'in other words if it was like an actual dictionary he KEY is the Word, the VALUE is the definition ')
-    print()
-    print("DECLARING A DICTIONARY")
-    print()
-    print("Dictionaries are declared like:")
-    print("marine = {}")
-    print("This is an example of an EMPTY DICTIONARY.")
-    print()
-    print("The following 4 outputs are pulling VALUES from the KEY unsc_marine using .get" \
-    "VALUES of unsc_marine include name, rank, weapon, and ship.")
-    print()
+    print ('''DATA TYPES\n
+           INTEGER\n
+           Integers are numbers 1, 2, -1, 0 -3\n
+           Integer are declared like\n
+           number = 4\n''')
+           
+    print('''STRINGS\n
+          Strings are words, or numbers. If a string is a number, it is the name of the number not the value of the number\n
+          Strings are declared such that:\n
+          dog =("Rico") OR\n
+          my_number = "3"\n''')
+
+    print ('''FLOATS\n
+        Floats are decimals such as 7.2, 8.1, -.4\n
+        Anytime division is done '/' it returns a float.\n
+        Floats are declared the same as integers.\n''')
+
+    print ('''DICTONARIES DICT\n
+           Dictionaries consist of two constructs, KEYS and VALUES\n
+           KEYS are the UNIQUE IDENTIFIER, or a searchable keyword to access the dictionary.\n
+           VALUES are attributes or properties of the key.\n
+           in other words if it was like an actual dictionary he KEY is the Word, the VALUE is the definition.\n
+           DECLARING A DICTIONARY\n
+           Dictionaries are declared like\n
+           marine = {}\n
+           This is an example of an EMPTY DICTIONARY.\n
+           The following 4 outputs are pulling VALUES from the KEY unsc_marine using .get\n
+           VALUES of unsc_marine include name, rank, weapon, and ship.\n''')
     #Example of populated dictionary
     unsc_marine = {
         "name" : "Johnson",
         "rank" : "Sergeant",
         "weapon" : "MA5B",
         "ship" : "Pillar of Autumn"
-    }
+        }
     print(unsc_marine.get('rank'))
     print(unsc_marine.get('name'))
     print(unsc_marine.get('weapon'))
     print(unsc_marine.get("ship"))
-    print()
-    print("TUPLE")
-    print()
-    print("TUPLE is similar to list except TUPLE is immutable, or it cannot be altered once declared." \
-    "To decalre a TUPLE...")
-    #Example of empty TUPLE
-    print ("snake_stuff = ()")
-    #populate tuple
+    
+    print('''TUPLE\n
+        TUPLE is similar to list except TUPLE is immutable, or it cannot be altered once declared.
+        To decalre a TUPLE...\n''')
+    print('''Example of empty TUPLE\n
+        snake_stuff = ()\n
+        TUPLE populated
+        snake_stuff = ("nm7267719","bandana")''')
+    
+    #populated tuple
     snake_stuff = ("nm7267719","bandana")
     print (snake_stuff)
-
     returnsToMAin()  
 
 def inputs(): # This function provides overview of inputs.
-    print ()
+
     print ("Inputs are foundational structure in any programming language.\nThey allow the user to provide data into a program.")
     print ()
     print ("BUILDING A USER INPUT")
