@@ -225,21 +225,22 @@ def selection(): # This function highlights selection basics.
     returnsToMAin()
 
 def inputValidation(): # input validation function.
-    print ('''Input validation is the process of forcing user input to adhear to specific data types. It is similar to the feeding ramp between the magazine 
-           of a firearm and the chamber. Input validation forces intent into the correct postion, thereby allowing the program to execute as designed.''')
-    print ()
-    print ("TRY EXCEPT SELECTIONS ")
-    print ("TRY EXCEPT SELECTIONS are usually contained in a WHILE lOOP. This structure indefinately prompts the user to input info until the correct data type is used.")
-    print ("EXAMPLE")
-    print ()
-    print ("In this example the user is prompted to enter an integer.")
-    print ("The TRY EXCEPT structure is nested within a WHILE LOOP. If the user does not enter a integer, the EXCEPT BRANCH continues the loop.")
-    print ("In order for the EXCEPT BRANCH to work, THE ERROR THAT WILL OCCUR MUST BE DEFINED, such that instead of crashing at ValueError, it simply continues")
-    print ("the loop when ValueError is returned by the EXCEPT BRANCH.")
-    print ("In other words, the EXCEPT BRANCH directs instead of chashing continue the loop.")
-    print ("If the user enters an integer the TRY BRANCH executes, and the loop breaks with the BREAK commannd.")
-    print ()
-    print ("Do not enter an integer first to experiment with the TRY EXCEPT structure.")
+    print ('''Input validation is the process of forcing user input to adhear to specific data types. It is similar to the feeding ramp\n
+        between the magazine of a firearm and the chamber.Input validation forces intent into the correct postion, thereby allowing the\n
+        program to execute as designed.\n
+        TRY EXCEPT SELECTIONS\n 
+        TRY EXCEPT SELECTIONS are usually contained in a WHILE lOOP. This structure indefinately prompts the user to input info until\n
+        the correct data type is used.\n
+        EXAMPLE\n''')
+    print ('''In this example the user is prompted to enter an integer.\n
+           The TRY EXCEPT structure is nested within a WHILE LOOP.\n
+           If the user does not enter a integer, the EXCEPT BRANCH continues the loop.\n
+           In order for the EXCEPT BRANCH to work, THE ERROR THAT WILL OCCUR MUST BE DEFINED, such that instead of crashing at ValueError,\n
+           it simply continues\n
+           the loop when ValueError is returned by the EXCEPT BRANCH.\n
+           In other words, the EXCEPT BRANCH directs instead of chashing continue the loop\n
+           If the user enters an integer the TRY BRANCH executes, and the loop breaks with the BREAK commannd.\n
+           Do not enter an integer first to experiment with the TRY EXCEPT structure.\n''')
     # Try Except example.
     while True:
         try:
@@ -247,7 +248,7 @@ def inputValidation(): # input validation function.
             print(f'You enter entered {user_integer}.')
             break
         except ValueError:
-            print ("Invalid input, please enter an integer.")
+            print ("Invalid input, please enter an integer.\n")
     print ()
     print ("TRY EXCEPT ElSE FINALLY Structures")
     print ()
