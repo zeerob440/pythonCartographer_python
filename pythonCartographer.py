@@ -38,33 +38,31 @@ def returnsToMAin():# It returns user to main menu at the end of a function.
         main() 
 
 def basics():# This module provides an overview of the basic structures and data types used in Python.
-    print () 
-    print ("This is and overview of basic declerations of Python structures.")
-    print ()
-    print ("VARIABLES")
-    print ("To declare a variable use singular verbs or nouns in snake_case.")
-    print ('dog = ("Rico") or number = 1')
-    print ()
-    print ("FUNCTIONS")
-    print ("Functions are subroutines with in programs that do something. A single program may have several functions.")
-    print ("Name functions after what part of the program they access in camelCase, OR")
-    print ("Name them a verb for what the function does...")
-    print (" itAddsThings() or main()")
-    print ("To declare a function... def itAddsThings(): or def main(): ")
-    print ("1def itAddsThings\n2  (2+2)")
-    print ("INVOKING FUNCTIONS")
-    print ("Once a function is declared, it needs to be invoked in a subsequent line of the program.")
-    print ("Invoke the function by: itAddsThings()")
-    print ()
-    print ("RULES FOR FUNCTIONS:")
-    print ()
+    print ('This is and overview of basic declerations of Python structures.\n'
+           'VARIABLES\n'
+           'To declare a variable use singular verbs or nouns in snake_case.'
+           'dog = ("Rico") or number = 1\n')
+
+    print ('FUNCTIONS\n'
+           'Functions are subroutines with in programs that do something. A single program may have several functions.\n'
+           'Name functions after what part of the program they access in camelCase, OR\n'
+           'Name them a verb for what the function does...\n'
+           'itAddsThings() or main()\n'
+           'To declare a function... def itAddsThings(): or def main():\n'
+           '1def itAddsThings 2  (2+2)\n')
+   
+    print ('INVOKING FUNCTIONS\n'
+           'Once a function is declared, it needs to be invoked in a subsequent line of the program.\n'
+           'Invoke the function by: itAddsThings()\n'
+           'RULES FOR FUNCTIONS:\n')
+   
     print ("Fucntions must be FULLY DECLARED before calling them.\n1 def itAddsThings:()\n2  (2 + 2)\n3itAddsThings()")
-    print ("")
+    
     print ("DATA TYPES")
-    print ()
+   
     print ("INTEGER")
     print ("Integers are numbers 1, 2, -1, 0 -3\nInteger are declared like\nnumber = 4")
-    print ()
+   
     print ("STRINGS")
     print ('''Strings are words, or numbers. If a string is a number, it is the name of the number not the value of the number'''
            )
