@@ -30,6 +30,9 @@ def main():# it serves as the main menu of Python Cartographer, one may call it 
     elif select_structure == 5:
         print("Accessing For Loops...")
         for_loops()
+    elif select_structure == 6:
+        print('Accessing indefinite loops...')
+        indefiniteLoops()
 
 def returnsToMAin():# It returns user to main menu at the end of a function. 
     return_key = (input("Press any key when ready to return to Main Menu. "))
@@ -310,7 +313,30 @@ def for_loops():
     
     returnsToMAin()
 
+def indefiniteLoops():
+    print('''INDIFINITE LOOPS\n
+          Indifinite loops are useful structures. They have a combo of a few components:\n
+          1. Sentinel Value: A value that ends the loop.\n
+          2. Flag: A bool that determines if an event has happened, I also call these switches.
+          3. Counter: A structure that keeps counts of iterations, until it reaches the sentinel 
+          3. Loop Body: the part of the loop that does the work\n
+          4. Graceful exit: A way to exit the loop without breaking the program.\n
+          The first example will be a an indefinite loop that relies of a sentinel value to exit\n
+          sentinel_value = 4
+          iteration_counter 0
+          while sentinel_value > iteration_counter:
+            print("Prints 4 times, because iterations in Python start with 0)
+            iteration_counter += iteration counter
+          print("Loop exited)\n''')
+    # sentinel value exited indifinite loop. 
+    sentinel_value = 4 # declare sentinel value
+    iteration_counter = 0 # declare counter
+    while sentinel_value > iteration_counter:
+        print('This will print 4 times.')
+        iteration_counter += 1 # increment counter at end of loop workflow
+    print('Loop exited.') # stick the landing. 
+    
 main()     
 
-
+ 
 
