@@ -270,7 +270,8 @@ def inputValidation(): # input validation function.
            Otherwise, one can just run a print command with the try branch.\n
            Finally run no matter what happens, it is also an optional branch.
            IF EXCEPT ELSE FINALLY Structure Example\n''')
-
+    proceed()
+    
     # Try Except Else Finally Structure
     print ('''Try this TRY EXCEPT ELSE FINALLY Structure.\n
            Enter a string first.\n''')
