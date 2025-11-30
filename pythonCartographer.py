@@ -37,7 +37,10 @@ def main():# it serves as the main menu of Python Cartographer, one may call it 
 def returnsToMAin():# It returns user to main menu at the end of a function. 
     return_key = (input("Press any key when ready to return to Main Menu. "))
     while True: 
-        main() 
+        main()
+
+def proceed(): # It askes the user to continue after each example within a module
+    any_key_to_continue = input('Press any key to advance to the next example:\n')
 
 def basics():# This module provides an overview of the basic structures and data types used in Python.
     print ('''This is and overview of basic declerations of Python structures.\n
@@ -328,14 +331,40 @@ def indefiniteLoops():
             print("Prints 4 times, because iterations in Python start with 0)
             iteration_counter += iteration counter
           print("Loop exited)\n''')
+    
     # sentinel value exited indifinite loop. 
     sentinel_value = 4 # declare sentinel value
     iteration_counter = 0 # declare counter
     while sentinel_value > iteration_counter:
         print('This will print 4 times.')
         iteration_counter += 1 # increment counter at end of loop workflow
-    print('Loop exited.') # stick the landing. 
-#testing git synch   
+    print('Loop exited.\n') # stick the landing.
+
+    proceed()
+    
+    print('''Next indefinite loop structure is what I call a flag loop.\n
+          A flag loop uses a bool as a sentinel such that:
+          counter = 0
+          sentinel = False
+          while sentinel == False:
+            print(counter)
+            if counter == 10:
+                sentinel = True:
+            else:
+                sentinel = False
+        print("Loop Exited")''')
+    
+    counter = 0 # set counter
+    sentinel = False # set flag, True or False depending on what the use case is
+    while sentinel == False:
+        print(counter)
+        counter += 1
+        if counter == 10: # when counter hits the prescribed value, sentinel evaluates as True
+            sentinel = True
+        else:
+            sentinel = False # serves as a redundant switch
+    print('Loop Exited.')
+
 main()     
 
  
