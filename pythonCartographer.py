@@ -6,7 +6,8 @@ print ("This program helps navigate notes and simple structures in the Python la
 
 # Main menu of program. Prints valid input selection, runs through indefinate loop.     
 def main():# it serves as the main menu of Python Cartographer, one may call it the "index"
-    print ('''Basics, variable declarations, data types that sort: 1
+    print ('''
+        Basics, variable declarations, data types that sort: 1
         Input: 2
         IF Else selections, IF IF IF..Else selections IF ELIF ElSE Selections: 3
         Input Validation: 4
@@ -47,6 +48,8 @@ def basics():# This module provides an overview of the basic structures and data
            VARIABLES\n
            To declare a variable use singular verbs or nouns in snake_case.
            dog = ("Rico") or number = 1\n''')
+    
+    proceed()
 
     print ('''FUNCTIONS\n
            Functions are subroutines within programs that do something. A single program may have several functions.
@@ -55,6 +58,8 @@ def basics():# This module provides an overview of the basic structures and data
            itAddsThings() or main()
            To declare a function... def itAddsThings(): or def main():\n
            1def itAddsThings 2  (2+2)\n''')
+    
+    proceed()
    
     print ('''INVOKING FUNCTIONS\n
            Once a function is declared, it needs to be invoked in a subsequent line of the program.
@@ -65,22 +70,30 @@ def basics():# This module provides an overview of the basic structures and data
            2  (2 + 2)\n
            3itAddsThings()\n''')
     
+    proceed()
+    
     print ('''DATA TYPES\n
            INTEGER\n
            Integers are numbers 1, 2, -1, 0 -3
            Integer are declared like
            number = 4\n''')
+    
+    proceed()
            
     print('''STRINGS\n
           Strings are words, or numbers. If a string is a number, it is the name of the number not the value of the number
           Strings are declared such that:
           dog =("Rico") OR
           my_number = "3"\n''')
+    
+    proceed()
 
     print ('''FLOATS\n
         Floats are decimals such as 7.2, 8.1, -.4\n
         Anytime division is done '/' it returns a float.
         Floats are declared the same as integers.\n''')
+    
+    proceed()
 
     print ('''DICTONARIES DICT\n
            Dictionaries consist of two constructs, KEYS and VALUES
@@ -104,6 +117,8 @@ def basics():# This module provides an overview of the basic structures and data
     print(unsc_marine.get('name'))
     print(unsc_marine.get('weapon'))
     print(unsc_marine.get("ship"))
+
+    proceed()
     
     print('''TUPLE\n
         TUPLE is similar to list except TUPLE is immutable, or it cannot be altered once declared.
@@ -116,6 +131,7 @@ def basics():# This module provides an overview of the basic structures and data
     #populated tuple
     snake_stuff = ("nm7267719","bandana")
     print (snake_stuff)
+
     returnsToMAin()  
 
 def inputs(): # This function provides overview of inputs.
