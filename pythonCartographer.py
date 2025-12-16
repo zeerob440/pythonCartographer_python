@@ -198,7 +198,7 @@ def selection(): # This function highlights selection basics.
         IF IF IF... ELSE SELECTIONS\n
         IF IF IF ...ELSE SELECTIONS are evaluated as 3 seperate distinct selections by Python.
         However, in this structure, THE ELSE STATEMENT DOES NOT NEED A CONDITION, IT TRIGGERS WHEN THE PREVIOUS
-        IF AND ONLY IF THE PREVIOUS IF CONDITION TEST IS FALSE.\n
+        IF, AND ONLY IF THE PREVIOUS IF CONDITION TEST IS FALSE.\n
         The IF IF IF ELSE STRUCTURE has a very narrow use case.It is best to think of it as
         2 seperate if selections with no else statement and one if else selection.
         IF IF IF ELSE SELECTION EXAMPLE\n''')
@@ -213,6 +213,8 @@ def selection(): # This function highlights selection basics.
     if quantity >= 3:
         print ("Three is greater than 1 and 2.")
     else: print("Quantity is greater than or equal to 3, OR equal to 2, OR less than or equal to 1.\n")
+
+    proceed()
    
     print ('''IF IF ... SELECTIONS\n
            In an IF IF Selection...
@@ -272,6 +274,9 @@ def inputValidation(): # input validation function.
         TRY EXCEPT SELECTIONS are usually contained in a WHILE lOOP. This structure indefinately prompts the user to input info until
         the correct data type is used.
         EXAMPLE\n''')
+    
+    proceed()
+
     print ('''In this example the user is prompted to enter an integer.
            The TRY EXCEPT structure is nested within a WHILE LOOP.
            If the user does not enter a integer, the EXCEPT BRANCH continues the loop.
@@ -290,6 +295,8 @@ def inputValidation(): # input validation function.
         except ValueError:
             print ("Invalid input, please enter an integer.\n")
 
+    proceed()
+    
     print ('''TRY EXCEPT ElSE FINALLY Structures\n
            In these sort of structures:
            Try is try this operation that may include an error, such as entering a string into an integer input.
@@ -299,6 +306,7 @@ def inputValidation(): # input validation function.
            Otherwise, one can just run a print command with the try branch.\n
            Finally run no matter what happens, it is also an optional branch.
            IF EXCEPT ELSE FINALLY Structure Example\n''')
+    
     proceed()
     
     # Try Except Else Finally Structure
@@ -315,11 +323,12 @@ def inputValidation(): # input validation function.
             break
         finally: print('''The finally branch doesn't care what the user does, it will always print. EVEN IF A LOOP BREAKS BEFOREHAND.\n
                        This originates from the finally structure.\n''')
-    print ()
-    print ("This structure enters a WHILE LOOP until a integer is entered\nif an integer is entered the try, else and finally branches activate.")
-    print ("If a non-integer value is entered the loop will execute the EXCEPT branch and reprompt the user")
-    print ()
-    print ("TRY EXCEPT EXCEPT...STRUCTURE")
+            
+    proceed()
+    
+    print ('''
+        This structure enters a WHILE LOOP until a integer is entered. If an integer is entered the try, else, and finally branches activate.
+        If a non-integer value is entered the loop will execute the EXCEPT branch and reprompt the user\n''')
 
 def for_loops():
     print('''FOR LOOPS\n
@@ -328,15 +337,22 @@ def for_loops():
         FOR LOOPS require a PRIMING VALUE,and a Counter(INCRMENTOR OR DECREMENTOR)
         FOR LOOPS are often described as "for i in range of.." in classroom settings.\n''')
     
+    proceed()
+    
     #Create simple "for i in range of" FOR LOOP
     print("The following is a hardcoded simple FOR LOOP that prints number of iterations.\n")
     for i in range (3):
         print (i)
+
+    proceed()
+    
     print('''In the above example the you will see...\n
         0\n
         1\n
         2\n
         That is because all iterations start with 0 by defult in Python. Unless specified otherwise\n''')
+    
+    proceed()
     
     print('''RANGE CONTROL EXAMPLE/n
         To control range in a for loop, it can be declared as\nfor i in range (1, 4):\n''')
@@ -362,6 +378,8 @@ def indefiniteLoops():
             iteration_counter += iteration counter
           print("Loop exited)\n''')
     
+    proceed()
+    
     # sentinel value exited indifinite loop. 
     sentinel_value = 4 # declare sentinel value
     iteration_counter = 0 # declare counter
@@ -385,15 +403,17 @@ def indefiniteLoops():
         print("Loop Exited")''')
     
     counter = 0 # set counter
-    sentinel = False # set flag, True or False depending on what the use case is
+    sentinel = False # set flag, True or False depending on what the usecase is.
     while sentinel == False:
         print(counter)
         counter += 1
-        if counter == 10: # when counter hits the prescribed value, sentinel evaluates as True
+        if counter == 10: # when counter hits the prescribed value, sentinel evaluates as True.
             sentinel = True
         else:
             sentinel = False # serves as a redundant switch
     print('Loop Exited.')
+
+    returnsToMAin()
 
 main()     
 
