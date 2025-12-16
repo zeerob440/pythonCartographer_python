@@ -126,7 +126,7 @@ def basics():# This module provides an overview of the basic structures and data
     print('''Example of empty TUPLE\n
         snake_stuff = ()\n
         TUPLE populated
-        snake_stuff = ("nm7267719","bandana")''')
+        snake_stuff = ("nm7267719","bandana")\n''')
     
     #populated tuple
     snake_stuff = ("nm7267719","bandana")
@@ -170,31 +170,39 @@ def selection(): # This function highlights selection basics.
            IF, ELSE SELECTIONS\n
            IF, ELIF, ELSE SELECTIONS\n
            IF,IF,ELSE SELECTIONS\n
-           IF IF IF ... SELECTIONS.\n
-           IF, ELSE SELETIONS\n
-           IF, ELSE SELECTIONS, create a condition test that executes once branch of the selection if true.
-           It executes the oppisite branch if the condition is not true.
-           IT IS IMPORTANT THAT ELSE DOES NOT REQUIRE A CONDITION\n
-           IF, ELSE SELECTION EXAMPLE\n
-           1 branch_a_b = (input("Input a for branch a OR any other key for branch b: "))
-           2 if branch_a_b == "a":
-           3    print("You have selected branch a.")
-           4 else: print ("You have selected branch b.")\n''')
+           IF IF IF ... SELECTIONS.\n''')
+
+    proceed()
+
+    print('''IF, ELSE SELETIONS\n
+        IF, ELSE SELECTIONS, create a condition test that executes once branch of the selection if true.
+        It executes the oppisite branch if the condition is not true.
+        IT IS IMPORTANT THAT ELSE DOES NOT REQUIRE A CONDITION\n
+        IF, ELSE SELECTION EXAMPLE\n
+        1 branch_a_b = (input("Input a for branch a OR any other key for branch b: "))
+        2 if branch_a_b == "a":
+        3    print("You have selected branch a.")
+        4 else: print ("You have selected branch b.")\n''')
    
     branch_a_b = (input("Input a for branch a OR any other key for branch b: "))
     # if-else example.
     if branch_a_b == "a":
-        print ("You have selected branch a.")
-    else: print ("You have selected branch b.")
+        print ("You have selected branch a.\n")
+    else: print ("You have selected branch b.\n")
    
-    print ('''The if else selection will print which selction was chosen by the user.\n
-           IF IF IF... ELSE SELECTIONS\n
-           IF IF IF ...ELSE SELECTIONS are evaluated as 3 seperate distinct selections by Python.
-           However, in this structure, THE ELSE STATEMENT DOES NOT NEED A CONDITION, IT TRIGGERS WHEN THE PREVIOUS
-           IF AND ONLY IF THE PREVIOUS IF CONDITION TEST IS FALSE.\n
-           The IF IF IF ELSE STRUCTURE has a very narrow use case.It is best to think of it as
-           2 seperate if selections with no else statement and one if else selection.
-           IF IF IF ELSE SELECTION EXAMPLE\n''')
+    print ('The if else selection will print which selction was chosen by the user.\n')
+
+    proceed()
+    
+    print('''
+        IF IF IF... ELSE SELECTIONS\n
+        IF IF IF ...ELSE SELECTIONS are evaluated as 3 seperate distinct selections by Python.
+        However, in this structure, THE ELSE STATEMENT DOES NOT NEED A CONDITION, IT TRIGGERS WHEN THE PREVIOUS
+        IF AND ONLY IF THE PREVIOUS IF CONDITION TEST IS FALSE.\n
+        The IF IF IF ELSE STRUCTURE has a very narrow use case.It is best to think of it as
+        2 seperate if selections with no else statement and one if else selection.
+        IF IF IF ELSE SELECTION EXAMPLE\n''')
+    
     
     # if if...else example.
     quantity = int(input("Select a number between 1-3: \n"))
@@ -210,6 +218,7 @@ def selection(): # This function highlights selection basics.
            In an IF IF Selection...
            Python will search the entire structure for true condition tests and return all true condition tests.
            Therefore, it will continue to search the structure even after it has found the first true condition test.\n''')
+    
 
     # if if ... example.
     legion_says = int(input("Enter a number between 1-3: "))
@@ -228,6 +237,8 @@ def selection(): # This function highlights selection basics.
            If 3 was chosen, it would have printed Legion's line from Mass Effect 2.
            If > 3 it would have admonished you for not following directions.\n''')
     
+    proceed()
+
     print ('''IF ELIF ELSE SELECTIONS\n
            IF ELIF ELSE SELECTIONS are a structure that will ONLY EXECUTE THE FIRST CONDITION THAT IS TRUE.\n
            If greater than 3 conditions are needed to complete this sort of structure, ONLY ADDITIONAL ELIF Conditions are created.
@@ -242,6 +253,8 @@ def selection(): # This function highlights selection basics.
     elif sorting_hat_selection == "friendship":
         print ("You are in House Hufflepuff.\n")
     else: print ("Your are in House Slytherin.\n")
+
+    proceed()
 
     print ('''Since this is an IF ELIF... ELSE structure it will only return the true statement.
            IF "bravery was selected, the user is Gryffindor; intelligence Ravenclaw
