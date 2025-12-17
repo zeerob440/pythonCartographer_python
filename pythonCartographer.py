@@ -17,22 +17,22 @@ def main():# it serves as the main menu of Python Cartographer, one may call it 
         Lists: 8\n''')
     select_structure = int(input("Input structure you would like to review: "))
     if select_structure == 1:
-        print ("Accessing Basics...")
+        print ("Accessing Basics...\n")
         basics()
     elif select_structure == 2:
-        print ("Accessing Inputs...")
+        print ("Accessing Inputs...\n")
         inputs()
     elif select_structure == 3:
-        print ("Accessing Selections")
+        print ("Accessing Selections\n")
         selection()
     elif select_structure == 4:
-        print ("Accessing Input Validation...")
+        print ("Accessing Input Validation...\n")
         inputValidation()
     elif select_structure == 5:
-        print("Accessing For Loops...")
+        print("Accessing For Loops...\n")
         for_loops()
     elif select_structure == 6:
-        print('Accessing indefinite loops...')
+        print('Accessing indefinite loops...\n')
         indefiniteLoops()
 
 def returnsToMAin():# It returns user to main menu at the end of a function. 
