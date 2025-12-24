@@ -469,10 +469,16 @@ def functions():
         print(f'a + b = {itAddsThings(a, b)}')
         print(f'a - b = {itSubtractsThings(a, b)}')
         print(f'a * b = {itMultipliesThings(a, b)}')
-        print(f'a / b = {itDividesthings(a, b)}')\n''')
+        print(f'a / b = {itDividesthings(a, b)}')
+        
+        print(itMultipliesThings(a, b) + 9)
+        divide_multiply_sum = (itDividesthings(a, b) + itMultipliesThings(a, b))
+        print(divide_multiply_sum)\n''')
+
     proceed()
 
-    print('Time to run this program. This program will return the values of a and b added, subtracted, divived and multiplied.')
+    print('''Time to run this program. This program will return the values of a and b added, subtracted, divived and multiplied.
+          it will also demostrate how function returns can be saved as variables.''')
     proceed()
     # Example of simple function, doing math ops, printing a function to f-string. 
     a = 10 # globally declared var
@@ -499,6 +505,12 @@ def functions():
     print(f'a - b = {itSubtractsThings(a, b)}\n')
     print(f'a * b = {itMultipliesThings(a, b)}\n')
     print(f'a / b = {itDividesthings(a, b)}\n')
+
+    #function return values can be used to create new variables and print statements.
+    print(itMultipliesThings(a, b) + 9)
+    divide_multiply_sum = (itDividesthings(a, b) + itMultipliesThings(a, b))
+    print(divide_multiply_sum)
+
     
 
 
