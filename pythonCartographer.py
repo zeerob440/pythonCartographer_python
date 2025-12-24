@@ -39,7 +39,7 @@ def main():# it serves as the main menu of Python Cartographer, one may call it 
         functions()
     elif select_structure == 8:
         print('Accessing Lists')
-        listPopulation()
+        listsPopulation()
 
 def returnsToMAin():# It returns user to main menu at the end of a function. 
     return_key = (input("Press any key when ready to return to Main Menu. "))
@@ -514,9 +514,9 @@ def functions():
     divide_multiply_sum = (itDividesthings(a, b) + itMultipliesThings(a, b))
     print(divide_multiply_sum)
 
-returnsToMAin()
+    returnsToMAin()
 
-def listPopulation():
+def listsPopulation():
     print('''POPULATING LISTS\n
         Lists are a great way to store data. Lists can store virtually any Python data type.
         They can be populated via hardcoding values into them such that:\n
@@ -528,15 +528,14 @@ def listPopulation():
 
     print('''POPULATNIG LISTS WITH .append()\n
         .append() is a method for adding an item to the last indice of a list. It expects an argument inside the ().
-        the argument is the input variable intended to be added to the list such that\n
-        dog_list ['Rico']
-        new_dog = input('Enter a dog to list: )\n
+        The argument is the input variable intended to be added to the list such that\n
+        dog_list =['Rico']
+        new_dog = input('Enter a dog to list: ')\n
         new_list.append(new_dog)
         print(dog_list)
-        ['Rico', 'Mia]''')
+        ['Rico', 'Mia']\n
+        ''')
        
-
-
 main()     
 
  
