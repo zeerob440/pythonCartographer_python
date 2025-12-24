@@ -420,10 +420,86 @@ def indefiniteLoops():
 
 def functions():
     print('''FUNCTIONS\n
-          When programming in any language it is important to not repeat yourself with repetative tasks.\n
-          This is know as the "don't repeat youself" principal. (DRY).\n
-          Functions are essential for completing repeatitive tasks. They can be used to call locations in a program,\n
-          such as they are used in pythonCartographer, or to do repetative math operations.''')
+          When programming in any language it is important to not repeat yourself with repetative tasks.
+          This is know as the "don't repeat youself" principal. (DRY).
+          Functions are essential for completing repeatitive tasks. They can be used to call locations in a program,
+          such as they are used in pythonCartographer, or to do repeatitive math operations.\n
+          
+          ARGUMENTS\n
+          Functions are designed to take arguments like this\n
+          itAddsThings(a, b)\n
+          For arugment's sake for the arguments a = 5 and b = 7 are globally declared variables
+          the function finds these two arguments and expects to do something with them.
+          in this case it will add them.\n
+          ''')
+    proceed()
+
+    print('''To build out the function it has to be directed to do something with a and b.\n
+          itAddsThings():\n
+          sum = a + b
+          return sum\n
+          
+          sum = a + b takes the targeted global arguments, adds them, and stores the value in sum. 
+          Once happens return is used to make sum accesible to the main program, from here it can be printed, 
+          or moved into another structure as needed.\n
+          ''')
+    proceed()
+
+    print('''Below is an example of the function that is going to run in this program\n
+        a = 10
+        b = 5
+
+        def itAddsThings(a, b):
+        sum = a + b
+        return sum 
+
+        def itSubtractsThings(a, b):
+        difference = a - b
+        return difference
+
+        def itMultipliesThings(a, b):
+        product = a * b
+        return product
+
+        def itDividesthings(a, b):
+        quotent = a / b
+        return quotent
+
+
+        print(f'a + b ={itAddsThings(a, b)}')
+        print(f'a - b ={itSubtractsThings(a, b)}')
+        print(f'a * b ={itMultipliesThings(a, b)}')
+        print(f'a / b ={itDividesthings(a, b)}')\n''')
+    proceed()
+
+    print('Time to run this program. This program will return the values of a and b added, subtracted, divived and multiplied.')
+    proceed()
+    # Example of simple function, doing math ops, printing a function to f-string. 
+    a = 10 # globally declared var
+    b = 5  # globally declared var
+
+    def itAddsThings(a, b):# function declared with variables as arguments. 
+        sum = a + b
+        return sum 
+
+    def itSubtractsThings(a, b):
+        difference = a - b
+        return difference
+
+    def itMultipliesThings(a, b):
+        product = a * b
+        return product
+
+    def itDividesthings(a, b):
+        quotent = a / b
+        return quotent
+
+    # printing functions to f-string is possible.
+    print(f'a + b ={itAddsThings(a, b)}\n')
+    print(f'a - b ={itSubtractsThings(a, b)}\n')
+    print(f'a * b ={itMultipliesThings(a, b)}\n')
+    print(f'a / b ={itDividesthings(a, b)}\n')
+    
 
 
 main()     
