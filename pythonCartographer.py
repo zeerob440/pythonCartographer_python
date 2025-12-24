@@ -13,7 +13,7 @@ def main():# it serves as the main menu of Python Cartographer, one may call it 
         Input Validation: 4
         For Loops: 5
         Indefinate Loops: 6
-        Switch Loop: 7
+        Functions: 7
         Lists: 8\n''')
     select_structure = int(input("Input structure you would like to review: "))
     if select_structure == 1:
@@ -34,6 +34,9 @@ def main():# it serves as the main menu of Python Cartographer, one may call it 
     elif select_structure == 6:
         print('Accessing indefinite loops...\n')
         indefiniteLoops()
+    elif select_structure == 7:
+        print('Accessing Functions...')
+        functions()
 
 def returnsToMAin():# It returns user to main menu at the end of a function. 
     return_key = (input("Press any key when ready to return to Main Menu. "))
@@ -414,6 +417,14 @@ def indefiniteLoops():
     print('Loop Exited.')
 
     returnsToMAin()
+
+def functions():
+    print('''FUNCTIONS\n
+          When programming in any language it is important to not repeat yourself with repetative tasks.\n
+          This is know as the "don't repeat youself" principal. (DRY).\n
+          Functions are essential for completing repeatitive tasks. They can be used to call locations in a program,\n
+          such as they are used in pythonCartographer, or to do repetative math operations.''')
+
 
 main()     
 
