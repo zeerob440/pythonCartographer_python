@@ -466,10 +466,10 @@ def functions():
         return quotent
 
 
-        print(f'a + b ={itAddsThings(a, b)}')
-        print(f'a - b ={itSubtractsThings(a, b)}')
-        print(f'a * b ={itMultipliesThings(a, b)}')
-        print(f'a / b ={itDividesthings(a, b)}')\n''')
+        print(f'a + b = {itAddsThings(a, b)}')
+        print(f'a - b = {itSubtractsThings(a, b)}')
+        print(f'a * b = {itMultipliesThings(a, b)}')
+        print(f'a / b = {itDividesthings(a, b)}')\n''')
     proceed()
 
     print('Time to run this program. This program will return the values of a and b added, subtracted, divived and multiplied.')
@@ -491,14 +491,14 @@ def functions():
         return product
 
     def itDividesthings(a, b):
-        quotent = a / b
+        quotent = int(a / b)
         return quotent
 
     # printing functions to f-string is possible.
-    print(f'a + b ={itAddsThings(a, b)}\n')
-    print(f'a - b ={itSubtractsThings(a, b)}\n')
-    print(f'a * b ={itMultipliesThings(a, b)}\n')
-    print(f'a / b ={itDividesthings(a, b)}\n')
+    print(f'a + b = {itAddsThings(a, b)}\n')
+    print(f'a - b = {itSubtractsThings(a, b)}\n')
+    print(f'a * b = {itMultipliesThings(a, b)}\n')
+    print(f'a / b = {itDividesthings(a, b)}\n')
     
 
 
