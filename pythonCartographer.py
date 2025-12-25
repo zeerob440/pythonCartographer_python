@@ -464,7 +464,7 @@ def functions():
         product = a * b
         return product
 
-        def itDividesthings(a, b):
+        def itDividesThings(a, b):
         quotient = a / b
         return quotient
 
@@ -472,10 +472,10 @@ def functions():
         print(f'a + b = {itAddsThings(a, b)}')
         print(f'a - b = {itSubtractsThings(a, b)}')
         print(f'a * b = {itMultipliesThings(a, b)}')
-        print(f'a / b = {itDividesthings(a, b)}')
+        print(f'a / b = {itDividesThings(a, b)}')
         
         print(itMultipliesThings(a, b) + 9)
-        divide_multiply_sum = (itDividesthings(a, b) + itMultipliesThings(a, b))
+        divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
         print(divide_multiply_sum)\n''')
 
     proceed()
@@ -499,7 +499,7 @@ def functions():
         product = a * b
         return product
 
-    def itDividesthings(a, b):
+    def itDividesThings(a, b):
         quotient = int(a / b)
         return quotient
 
@@ -507,11 +507,11 @@ def functions():
     print(f'a + b = {itAddsThings(a, b)}\n')
     print(f'a - b = {itSubtractsThings(a, b)}\n')
     print(f'a * b = {itMultipliesThings(a, b)}\n')
-    print(f'a / b = {itDividesthings(a, b)}\n')
+    print(f'a / b = {itDividesThings(a, b)}\n')
 
     #function return values can be used to create new variables and print statements.
     print(itMultipliesThings(a, b) + 9)
-    divide_multiply_sum = (itDividesthings(a, b) + itMultipliesThings(a, b))
+    divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
     print(divide_multiply_sum)
 
     returnsToMAin()
