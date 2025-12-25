@@ -361,7 +361,7 @@ def inputValidation(): # input validation function.
         Otherwise, one can just run a print command with the try branch.\n
         Finally run no matter what happens, it is also an optional branch.
         IF EXCEPT ELSE FINALLY Structure Example.\n
-        Now Try it!''')
+        Now Try it!\n''')
     
     proceed()
     
