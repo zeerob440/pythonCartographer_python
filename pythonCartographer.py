@@ -96,6 +96,8 @@ def basics():# This module provides an overview of the basic structures and data
         "weapon" : "MA5B",
         "ship" : "Pillar of Autumn"
         }
+    print('The below output is from the program running\n')
+
     print(unsc_marine.get('rank'))
     print(unsc_marine.get('name'))
     print(unsc_marine.get('weapon'))
@@ -112,8 +114,8 @@ def basics():# This module provides an overview of the basic structures and data
         Example of empty TUPLE\n
         snake_stuff = ()\n
         TUPLE populated
-        snake_stuff = ("nm7267719","bandana")\n
-        ''')
+        snake_stuff = ("nm7267719","bandana")
+        The below output is the program running\n''')
     
     #populated tuple
     snake_stuff = ("nm7267719","bandana")
@@ -153,7 +155,7 @@ def inputs(): # This function provides overview of inputs.
         Example...
         This variable has been created a float INPUT VARIABLE.
         my_number = float(input('Input a number:
-        Proceed to use this example.
+        Proceed to use this example.\n
         ''')
     
     proceed()
