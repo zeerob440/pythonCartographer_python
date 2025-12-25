@@ -665,7 +665,7 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
         while True:
             menu = print
             ('''
-                                        MENU-pythonCArtographer
+                                        MENU-pythonCartographer
             -----------------------------------------------------------------------
             1: BASICS, VARIABLE DECLARATIONS, DATA TYPES
             2: INPUT
