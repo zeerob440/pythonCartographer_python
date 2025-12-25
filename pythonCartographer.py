@@ -663,9 +663,9 @@ def listsPopulation():
      
 def main():# it serves as the main menu of pythonCartographer, one may call it the "index".
         while True:
-            menu = print
+            print
             ('''
-                                        MENU-pythonCartographer
+            MENU-pythonCartographer
             -----------------------------------------------------------------------
             1: BASICS, VARIABLE DECLARATIONS, DATA TYPES
             2: INPUT
