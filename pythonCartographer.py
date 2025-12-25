@@ -292,7 +292,7 @@ def selection(): # This function highlights selection basics.
         print ("You are in House Ravenclaw.\n")
     elif sorting_hat_selection == "friendship":
         print ("You are in House Hufflepuff.\n")
-    else: print ("Your are in House Slytherin.\n")
+    else: print ("You are in House Slytherin.\n")
 
     proceed()
 
