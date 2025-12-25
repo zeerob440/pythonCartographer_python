@@ -676,10 +676,10 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
             8: LISTS
             OR ANY OTHER KEY TO EXIT.
             ------------------------------------------------------------------------
-            \n''')
+            ''')
 
             print(menu)
-            
+
             select_structure = int(input("Input structure you would like to review: "))
             if select_structure == 1:
                 print ("Accessing Basics...\n")
