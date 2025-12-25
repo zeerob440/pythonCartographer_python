@@ -160,7 +160,7 @@ def inputs(): # This function provides overview of inputs.
     
     proceed()
     print('The below output is from the program running\n')
-    
+
     my_number = float(input("Input a number: "))
     print ("This has prompted the user to input a number, my_number is converted to a float.\n")
     print (my_number)
@@ -205,53 +205,74 @@ def selection(): # This function highlights selection basics.
     proceed()
     
     print('''
-        IF IF IF... ELSE SELECTIONS\n
-        IF IF IF ...ELSE SELECTIONS are evaluated as 3 separate distinct selections by Python.
-        However, in this structure, THE ELSE STATEMENT DOES NOT NEED A CONDITION, IT TRIGGERS WHEN THE PREVIOUS
-        IF, AND ONLY IF THE PREVIOUS IF CONDITION TEST IS FALSE.\n
-        The IF IF IF ELSE STRUCTURE has a very narrow use case.It is best to think of it as
-        2 separate if selections with no else statement and one if else selection.
-        IF IF IF ELSE SELECTION EXAMPLE\n
-        ''')
+        IF IF IF... SELECTIONS\n
+        IF IF IF ...SELECTIONS will search the entire structure and return ALL THE TRUE STATEMENTS.
+        IF IF IF...SELECTIONS are useful for finding things.
+        in the below example we find an IF IF IF... SELECTION\n
+          
+        quantity = int(input("Select a number between 1-3: "))
+        if quantity >= 1:
+            print ("Quantity is greater than or equal to 1. ")
+        if quantity >= 2:
+            print ("Quantity is greater than or equal to 2. ")
+        if quantity >= 3:
+            print ("Quantity is greater than or equal to 3. ")  
+        \n''')
     
+    proceed()
+
+    print('The above structure will print all True conditions and not print any False Conditions. Try it.\n')
     
-    # if if...else example.
+    # if if if example.
     quantity = int(input("Select a number between 1-3: \n"))
     if quantity >= 1:
         print ("Quantity is greater than or equal to 1.\n")
     if quantity >= 2:
         print ("Quantity is greater than or equal to 2.\n")
     if quantity >= 3:
-        print ("Three is greater than 1 and 2.")
-    else: print("Quantity is greater than or equal to 3, OR equal to 2, OR less than or equal to 1.\n")
+        print ("Quantity is greater than or equal to 3.\n")
+
+    print('''
+        If 1 is selected only "Quantity is greater than or equal to 1." will return.\n
+        if 2 is selected "Quantity is greater than or equal to 1.", and "Quantity is greater than or equal to 2." will return\n
+        if 3 is selected all three statements will return.
+        ''')
+    
 
     proceed()
    
     print ('''
-        IF IF ... SELECTIONS\n
-        In an IF IF Selection...
-        Python will search the entire structure for true condition tests and return all true condition tests.
-        Therefore, it will continue to search the structure even after it has found the first true condition test.\n
+        IF ELIF ELIF ELSE SELECTIONS\n
+        In an IF ELIF ELSE Selection...
+        Python will search the entire structure for tho only true condition test return the true value.
+        In these selections as many ELIF statements as needed can be written.
+        If the value is not found, it will execute the else branch.\n
         ''')
     
 
-    # if if ... example.
+    # if elif else ... example.
     legion_says = int(input("Enter a number between 1-3: "))
     if legion_says <= 1:
         print ("Heretics say 1 is less than 2.\n")
-    if legion_says <=2:
+    elif legion_says <=2:
         print ("Heretics say 2 is greater than 1.\n")
-    if legion_says == 3:
+    elif legion_says == 3:
         print ("Geth say 3 is greater than 1 and 2.\n")
-    if legion_says >3:
+    else:
         print("You do not follow directions Shepard Commander, you must be indoctrinated.\n")
 
     print ('''
-        In this example, if you picked 1 or 2 the program would have returned\n
-        1 Heretics say 2 is greater than 1\n2 Heretics say 2 is greater than
-        it would have skipped "Geth say 3 is greater than 1 and 2"
-        If 3 was chosen, it would have printed Legion's line from Mass Effect 2.
-        If > 3 it would have admonished you for not following directions.\n
+        In this example, if you picked 1 the program would have returned\n
+        Heretics say 1 is less than 2\n
+           
+        If you picked 2\n
+   
+        Heretics say 2 is greater than 1\n
+           
+        If 3 was chosen, it would have printed Legion's line from Mass Effect 2\n
+           
+        If anything other than 1,2, or 3 was chosen the program would have admonished you for not following directions,
+        by executing the else branch.\n
         ''')
     
     proceed()
