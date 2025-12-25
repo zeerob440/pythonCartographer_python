@@ -340,7 +340,7 @@ def for_loops():
     print('''FOR LOOPS\n
         FOR LOOPS are a type of indefinite loop. They are used to do various tasks such as populating LISTS,
         completing a task in a set amount of iterations.
-        FOR LOOPS require a PRIMING VALUE,and a Counter(INCREMENTOR OR DECEREMENTOR)
+        FOR LOOPS require a PRIMING VALUE,and a Counter(INCREMENTOR OR DECREMENTOR)
         FOR LOOPS are often described as "for i in range of.." in classroom settings.\n''')
     
     proceed()
