@@ -1,51 +1,14 @@
-'''pythonCartographer is a program that I wrote to help me "map" Python's structures and basic functions.'''
-'''Proudly engineered by Zachary Roberts 11 August, 2025. 
-    "We should now have access to the main facility. Let’s find the map room."-Cortana'''
+'''pythonCartographer is a program that I wrote to help me "map" Python's structures and basic functions.
+   
+   Version:Bravo 25 DEC 2025; pythonCartographer Bravo fixes early recursion navigation. Removed returnsToMain function. main()
+   is now a infinite loop that calls functions from the variable menu. 
+   
+   Proudly engineered by Zachary Roberts 11 August, 2025 
+   "We should now have access to the main facility. Let’s find the map room."-Cortana'''
 
 print ("This program helps navigate notes and simple structures in the Python language. Zachary Roberts 11 AUG 2025.\n")
 
-# Main menu of program. Prints valid input selection, runs through indefinite loop.     
-def main():# it serves as the main menu of pythonCartographer, one may call it the "index".
-    print ('''
-        Basics, variable declarations, data types that sort: 1
-        Input: 2
-        IF Else selections, IF IF IF..Else selections IF ELIF ElSE Selections: 3
-        Input Validation: 4
-        For Loops: 5
-        Indefinite Loops: 6
-        Functions: 7
-        Lists: 8\n''')
-    select_structure = int(input("Input structure you would like to review: "))
-    if select_structure == 1:
-        print ("Accessing Basics...\n")
-        basics()
-    elif select_structure == 2:
-        print ("Accessing Inputs...\n")
-        inputs()
-    elif select_structure == 3:
-        print ("Accessing Selections\n")
-        selection()
-    elif select_structure == 4:
-        print ("Accessing Input Validation...\n")
-        inputValidation()
-    elif select_structure == 5:
-        print("Accessing For Loops...\n")
-        for_loops()
-    elif select_structure == 6:
-        print('Accessing indefinite loops...\n')
-        indefiniteLoops()
-    elif select_structure == 7:
-        print('Accessing Functions...')
-        functions()
-    elif select_structure == 8:
-        print('Accessing Lists')
-        listsPopulation()
-
-def returnsToMAin():# It returns user to main menu at the end of a function. 
-    return_key = (input("Press any key when ready to return to Main Menu. "))
-    while True: 
-        main()
-
+# . Prints valid input selection, runs through indefinite loop.
 def proceed(): # It asks the user to continue after each example within a module
     any_key_to_continue = input('Press any key to advance to the next example:\n')
 
@@ -138,8 +101,6 @@ def basics():# This module provides an overview of the basic structures and data
     snake_stuff = ("nm7267719","bandana")
     print (snake_stuff)
 
-    returnsToMAin()  
-
 def inputs(): # This function provides overview of inputs.
 
     print ('''Inputs are foundational structure in any programming language.
@@ -168,7 +129,7 @@ def inputs(): # This function provides overview of inputs.
     print (my_number)
     print ("As a result it outputs a decimal number.")
     
-    returnsToMAin()  
+     
 def selection(): # This function highlights selection basics.
     print ('''SELECTIONS\n
            Selections are an integral software structure used in almost all programs.
@@ -269,9 +230,7 @@ def selection(): # This function highlights selection basics.
            friendship Hufflepuff.And if you don't follow rules, the else statement captures
            all other values, Slytherin.\n
            This concludes the selection module.\n''')
-
-    returnsToMAin()
-
+    
 def inputValidation(): # input validation function.
     print ('''Input validation is the process of forcing user input to adhear to specific data types. It is similar to the feeding ramp
         between the magazine of a firearm and the chamber.Input validation forces intent into the correct position, thereby allowing the
@@ -366,7 +325,7 @@ def for_loops():
         print(i)
     print("The RANGE CONTROL the above example starts at 1, and ALWAYS END AT THE HIGHEST DECLARED NUMBER - 1.\n")
     
-    returnsToMAin()
+    
 
 def indefiniteLoops():
     print('''INDEFINITE LOOPS\n
@@ -419,7 +378,7 @@ def indefiniteLoops():
             sentinel = False # serves as a redundant switch
     print('Loop Exited.')
 
-    returnsToMAin()
+   
 
 def functions():
     print('''FUNCTIONS\n
@@ -514,7 +473,7 @@ def functions():
     divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
     print(divide_multiply_sum)
 
-    returnsToMAin()
+    
 
 def listsPopulation():
     print('''POPULATING LISTS\n
@@ -606,11 +565,50 @@ def listsPopulation():
     
     proceed()
 
-    enter_items = input('enter and item separated by space ')
+    enter_items = input('enter and item separated by space. ')
     items = enter_items.split()
-    print(items) 
-    
-    returnsToMAin()
+    print(items)
+     
+
+def main():# it serves as the main menu of pythonCartographer, one may call it the "index".
+        while True:
+            menu = print('''
+            Basics, variable declarations, data types that sort: 1
+            Input: 2
+            IF Else selections, IF IF IF..Else selections IF ELIF ElSE Selections: 3
+            Input Validation: 4
+            For Loops: 5
+            Indefinite Loops: 6
+            Functions: 7
+            Lists: 8\n''')
+            select_structure = int(input("Input structure you would like to review: "))
+            if select_structure == 1:
+                print ("Accessing Basics...\n")
+                basics()
+            elif select_structure == 2:
+                print ("Accessing Inputs...\n")
+                inputs()
+            elif select_structure == 3:
+                print ("Accessing Selections\n")
+                selection()
+            elif select_structure == 4:
+                print ("Accessing Input Validation...\n")
+                inputValidation()
+            elif select_structure == 5:
+                print("Accessing For Loops...\n")
+                for_loops()
+            elif select_structure == 6:
+                print('Accessing indefinite loops...\n')
+                indefiniteLoops()
+            elif select_structure == 7:
+                print('Accessing Functions...')
+                functions()
+            elif select_structure == 8:
+                print('Accessing Lists')
+                listsPopulation()
+            else:
+                print('Exiting pythonCartographer!')
+                break    
 main()     
 
  
