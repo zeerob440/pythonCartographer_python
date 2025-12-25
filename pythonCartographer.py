@@ -4,7 +4,7 @@
 
 print ("This program helps navigate notes and simple structures in the Python language. Zachary Roberts 11 AUG 2025.\n")
 
-# Main menu of program. Prints valid input selection, runs through indefinate loop.     
+# Main menu of program. Prints valid input selection, runs through indefinite loop.     
 def main():# it serves as the main menu of Python Cartographer, one may call it the "index"
     print ('''
         Basics, variable declarations, data types that sort: 1
@@ -215,7 +215,7 @@ def selection(): # This function highlights selection basics.
     if quantity >= 1:
         print ("Quantity is greater than or equal to 1.\n")
     if quantity >= 2:
-        print ("Quantity is greater than or eqaul to 2.\n")
+        print ("Quantity is greater than or equal to 2.\n")
     if quantity >= 3:
         print ("Three is greater than 1 and 2.")
     else: print("Quantity is greater than or equal to 3, OR equal to 2, OR less than or equal to 1.\n")
