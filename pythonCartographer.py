@@ -12,7 +12,7 @@ def main():# it serves as the main menu of Python Cartographer, one may call it 
         IF Else selections, IF IF IF..Else selections IF ELIF ElSE Selections: 3
         Input Validation: 4
         For Loops: 5
-        Indefinate Loops: 6
+        Indefinite Loops: 6
         Functions: 7
         Lists: 8\n''')
     select_structure = int(input("Input structure you would like to review: "))
@@ -46,11 +46,11 @@ def returnsToMAin():# It returns user to main menu at the end of a function.
     while True: 
         main()
 
-def proceed(): # It askes the user to continue after each example within a module
+def proceed(): # It asks the user to continue after each example within a module
     any_key_to_continue = input('Press any key to advance to the next example:\n')
 
 def basics():# This module provides an overview of the basic structures and data types used in Python.
-    print ('''This is and overview of basic declerations of Python structures.\n
+    print ('''This is and overview of basic declarations of Python structures.\n
            VARIABLES\n
            To declare a variable use singular verbs or nouns in snake_case.
            dog = ("Rico") or number = 1\n''')
@@ -71,7 +71,7 @@ def basics():# This module provides an overview of the basic structures and data
            Once a function is declared, it needs to be invoked in a subsequent line of the program.
            Invoke the function by: itAddsThings()\n
            RULES FOR FUNCTIONS:\n
-           Fucntions must be FULLY DECLARED before calling them.
+           Functions must be FULLY DECLARED before calling them.
            1 def itAddsThings:()\n
            2  (2 + 2)\n
            3itAddsThings()\n''')
@@ -101,7 +101,7 @@ def basics():# This module provides an overview of the basic structures and data
     
     proceed()
 
-    print ('''DICTONARIES DICT\n
+    print ('''DICTIONARIES DICT\n
            Dictionaries consist of two constructs, KEYS and VALUES
            KEYS are the UNIQUE IDENTIFIER, or a searchable keyword to access the dictionary.
            VALUES are attributes or properties of the key.
@@ -128,7 +128,7 @@ def basics():# This module provides an overview of the basic structures and data
     
     print('''TUPLE\n
         TUPLE is similar to list except TUPLE is immutable, or it cannot be altered once declared.
-        To decalre a TUPLE...''')
+        To declare a TUPLE...''')
     print('''Example of empty TUPLE\n
         snake_stuff = ()\n
         TUPLE populated
@@ -155,12 +155,12 @@ def inputs(): # This function provides overview of inputs.
            float is a decimal
            string is string
            bool is boolean
-           An INPUT VARAIBLE with a forced data type is written as:\n
+           An INPUT VARIABLE with a forced data type is written as:\n
            1 my_thing = datatype(input("input message here: "))
            Therefore a variable needing an integer datatype is:
            1 my_number = int(input("pick a number :"))\n
            Example...
-           This varible has been created a float INPUT VARIABLE.
+           This variable has been created a float INPUT VARIABLE.
            my_number = float(input('Input a number: '\n''')
 
     my_number = float(input("Input a number: "))
@@ -180,9 +180,9 @@ def selection(): # This function highlights selection basics.
 
     proceed()
 
-    print('''IF, ELSE SELETIONS\n
+    print('''IF, ELSE SELECTIONS\n
         IF, ELSE SELECTIONS, create a condition test that executes once branch of the selection if true.
-        It executes the oppisite branch if the condition is not true.
+        It executes the opposite branch if the condition is not true.
         IT IS IMPORTANT THAT ELSE DOES NOT REQUIRE A CONDITION\n
         IF, ELSE SELECTION EXAMPLE\n
         1 branch_a_b = (input("Input a for branch a OR any other key for branch b: "))
@@ -196,17 +196,17 @@ def selection(): # This function highlights selection basics.
         print ("You have selected branch a.\n")
     else: print ("You have selected branch b.\n")
    
-    print ('The if else selection will print which selction was chosen by the user.\n')
+    print ('The if else selection will print which selection was chosen by the user.\n')
 
     proceed()
     
     print('''
         IF IF IF... ELSE SELECTIONS\n
-        IF IF IF ...ELSE SELECTIONS are evaluated as 3 seperate distinct selections by Python.
+        IF IF IF ...ELSE SELECTIONS are evaluated as 3 separate distinct selections by Python.
         However, in this structure, THE ELSE STATEMENT DOES NOT NEED A CONDITION, IT TRIGGERS WHEN THE PREVIOUS
         IF, AND ONLY IF THE PREVIOUS IF CONDITION TEST IS FALSE.\n
         The IF IF IF ELSE STRUCTURE has a very narrow use case.It is best to think of it as
-        2 seperate if selections with no else statement and one if else selection.
+        2 separate if selections with no else statement and one if else selection.
         IF IF IF ELSE SELECTION EXAMPLE\n''')
     
     
@@ -240,7 +240,7 @@ def selection(): # This function highlights selection basics.
         print("You do not follow directions Shepard Commander, you must be indoctrinated.\n")
 
     print ('''In this example, if you picked 1 or 2 the program would have returned\n
-           1 Heritics say 2 is greater than 1\n2 Heretics say 2 is greater than
+           1 Heretics say 2 is greater than 1\n2 Heretics say 2 is greater than
            it would have skipped "Geth say 3 is greater than 1 and 2"
            If 3 was chosen, it would have printed Legion's line from Mass Effect 2.
            If > 3 it would have admonished you for not following directions.\n''')
@@ -274,10 +274,10 @@ def selection(): # This function highlights selection basics.
 
 def inputValidation(): # input validation function.
     print ('''Input validation is the process of forcing user input to adhear to specific data types. It is similar to the feeding ramp
-        between the magazine of a firearm and the chamber.Input validation forces intent into the correct postion, thereby allowing the
+        between the magazine of a firearm and the chamber.Input validation forces intent into the correct position, thereby allowing the
         program to execute as designed.\n
         TRY EXCEPT SELECTIONS\n 
-        TRY EXCEPT SELECTIONS are usually contained in a WHILE lOOP. This structure indefinately prompts the user to input info until
+        TRY EXCEPT SELECTIONS are usually contained in a WHILE lOOP. This structure indefinitely prompts the user to input info until
         the correct data type is used.
         EXAMPLE\n''')
     
@@ -289,8 +289,8 @@ def inputValidation(): # input validation function.
            In order for the EXCEPT BRANCH to work, THE ERROR THAT WILL OCCUR MUST BE DEFINED, such that instead of crashing at ValueError,
            it simply continues.
            the loop when ValueError is returned by the EXCEPT BRANCH.\n
-           In other words, the EXCEPT BRANCH directs instead of chashing continue the loop
-           If the user enters an integer the TRY BRANCH executes, and the loop breaks with the BREAK commannd.
+           In other words, the EXCEPT BRANCH directs instead of crashing continue the loop
+           If the user enters an integer the TRY BRANCH executes, and the loop breaks with the BREAK command.
            Do not enter an integer first to experiment with the TRY EXCEPT structure.\n''')
     # Try Except example.
     while True:
@@ -306,9 +306,9 @@ def inputValidation(): # input validation function.
     print ('''TRY EXCEPT ElSE FINALLY Structures\n
            In these sort of structures:
            Try is try this operation that may include an error, such as entering a string into an integer input.
-           Except must be a defined error such as ValueError, It instructs the program what to do when the error is trigged
+           Except must be a defined error such as ValueError, It instructs the program what to do when the error is triggered
            INSTEAD OF CRASHING.\n
-           Else in this case only runs if the try attempt succedes, it is an optional branch.
+           Else in this case only runs if the try attempt succeeds, it is an optional branch.
            Otherwise, one can just run a print command with the try branch.\n
            Finally run no matter what happens, it is also an optional branch.
            IF EXCEPT ELSE FINALLY Structure Example\n''')
@@ -338,9 +338,9 @@ def inputValidation(): # input validation function.
 
 def for_loops():
     print('''FOR LOOPS\n
-        FOR LOOPS are a type of indefinate loop. They are used to do various tasks such as populating LISTS,
+        FOR LOOPS are a type of indefinite loop. They are used to do various tasks such as populating LISTS,
         completing a task in a set amount of iterations.
-        FOR LOOPS require a PRIMING VALUE,and a Counter(INCRMENTOR OR DECREMENTOR)
+        FOR LOOPS require a PRIMING VALUE,and a Counter(INCREMENTOR OR DECEREMENTOR)
         FOR LOOPS are often described as "for i in range of.." in classroom settings.\n''')
     
     proceed()
@@ -356,7 +356,7 @@ def for_loops():
         0\n
         1\n
         2\n
-        That is because all iterations start with 0 by defult in Python. Unless specified otherwise\n''')
+        That is because all iterations start with 0 by default in Python. Unless specified otherwise\n''')
     
     proceed()
     
@@ -369,8 +369,8 @@ def for_loops():
     returnsToMAin()
 
 def indefiniteLoops():
-    print('''INDIFINITE LOOPS\n
-          Indifinite loops are useful structures. They have a combo of a few components:\n
+    print('''INDEFINITE LOOPS\n
+          Indefinite loops are useful structures. They have a combo of a few components:\n
           1. Sentinel Value: A value that ends the loop.\n
           2. Flag: A bool that determines if an event has happened, I also call these switches.
           3. Counter: A structure that keeps counts of iterations, until it reaches the sentinel 
@@ -386,7 +386,7 @@ def indefiniteLoops():
     
     proceed()
     
-    # sentinel value exited indifinite loop. 
+    # sentinel value exited indefinite loop. 
     sentinel_value = 4 # declare sentinel value
     iteration_counter = 0 # declare counter
     while sentinel_value > iteration_counter:
@@ -423,15 +423,15 @@ def indefiniteLoops():
 
 def functions():
     print('''FUNCTIONS\n
-          When programming in any language it is important to not repeat yourself with repetative tasks.
-          This is know as the "don't repeat youself" principal. (DRY).
-          Functions are essential for completing repeatitive tasks. They can be used to call locations in a program,
-          such as they are used in pythonCartographer, or to do repeatitive math operations.\n
+          When programming in any language it is important to not repeat yourself with repetitive tasks.
+          This is know as the "don't repeat yourself" principal. (DRY).
+          Functions are essential for completing repetitive tasks. They can be used to call locations in a program,
+          such as they are used in pythonCartographer, or to do repetitive math operations.\n
           
           ARGUMENTS\n
           Functions are designed to take arguments like this\n
           itAddsThings(a, b)\n
-          For arugment's sake for the arguments a = 5 and b = 7 are globally declared variables
+          For argument's sake for the arguments a = 5 and b = 7 are globally declared variables
           the function finds these two arguments and expects to do something with them.
           in this case it will add them.\n
           ''')
@@ -443,7 +443,7 @@ def functions():
           return sum\n
           
           sum = a + b takes the targeted global arguments, adds them, and stores the value in sum. 
-          Once happens return is used to make sum accesible to the main program, from here it can be printed, 
+          Once happens return is used to make sum accessible to the main program, from here it can be printed, 
           or moved into another structure as needed.\n
           ''')
     proceed()
@@ -465,8 +465,8 @@ def functions():
         return product
 
         def itDividesthings(a, b):
-        quotent = a / b
-        return quotent
+        quotient = a / b
+        return quotient
 
 
         print(f'a + b = {itAddsThings(a, b)}')
@@ -480,8 +480,8 @@ def functions():
 
     proceed()
 
-    print('''Time to run this program. This program will return the values of a and b added, subtracted, divived and multiplied.
-          it will also demostrate how function returns can be saved as variables.''')
+    print('''Time to run this program. This program will return the values of a and b added, subtracted, divided and multiplied.
+          it will also demonstrate how function returns can be saved as variables.''')
     proceed()
     # Example of simple function, doing math ops, printing a function to f-string. 
     a = 10 # globally declared var
@@ -500,8 +500,8 @@ def functions():
         return product
 
     def itDividesthings(a, b):
-        quotent = int(a / b)
-        return quotent
+        quotient = int(a / b)
+        return quotient
 
     # printing functions to f-string is possible.
     print(f'a + b = {itAddsThings(a, b)}\n')
@@ -526,8 +526,8 @@ def listsPopulation():
     
     proceed()
 
-    print('''POPULATNIG LISTS WITH .append()\n
-        .append() is a method for adding an item to the last indice of a list. It expects an argument inside the ().
+    print('''POPULATING LISTS WITH .append()\n
+        .append() is a method for adding an item to the last index of a list. It expects an argument inside the().
         The argument is the input variable intended to be added to the list such that\n
         dog_list =['Rico']
         new_dog = input('Enter a dog to list: ')\n
