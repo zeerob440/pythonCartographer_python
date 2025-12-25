@@ -534,8 +534,52 @@ def listsPopulation():
         new_list.append(new_dog)
         print(dog_list)
         ['Rico', 'Mia']\n
-        ''')
-       
+        The example that will run below this print statement is:\n
+        numbers = []
+            for i in range(3):
+            user_num = (int(input('Enter a number: ')))
+            numbers.append(user_num)
+        print(numbers)\n
+        input any three integers you want, the code will return your numbers in a list.''')
+    proceed()
+
+    # Below is an example of populating a list with the .append() method.
+    numbers = [] # declare empty list.
+    for i in range(3):# initiate for loop.
+        user_num = (int(input('Enter a number: ')))# declare user input variable.
+        numbers.append(user_num)# use .append() method to populate the list
+    print(numbers)# print raw list.
+
+    proceed()
+
+    print('''POPULATING LIST WITH INDEFINITE LOOP\n
+          It is also possible to populate a list with an indefinite loop. Below is an example of how this is achieved\n
+        another_list = [] #declare empty list
+        append_list = True
+        while append_list:
+            list_apendenator = input('Enter an item to list: ')
+            another_list.append(list_apendenator)
+            sentinel_prompt = input('Would you like to add another item? Enter "y" or "n": ')
+                if sentinel_prompt == ('y'):      
+                    append_list = True
+                else: append_list = False
+        print(*another_list)# * is used for argument unpacking it removes commas and brackets.
+        Below this code will prompt you to populate a list until you input 'n'\n''')
+
+    proceed()
+
+    another_list = [] #declare empty list
+    append_list = True
+    while append_list:
+        list_apendenator = input('Enter an item to list: ')
+        another_list.append(list_apendenator)
+        sentinel_prompt = input('Would you like to add another item? Enter "y" or "n": ')
+        if sentinel_prompt == ('y'):      
+            append_list = True
+        else: append_list = False
+    print(*another_list)# * is used for argument unpacking it removes commas and brackets.
+    
+    returnsToMAin()
 main()     
 
  
