@@ -663,8 +663,7 @@ def listsPopulation():
      
 def main():# it serves as the main menu of pythonCartographer, one may call it the "index".
         while True:
-            print
-            ('''
+            menu =('''
             MENU-pythonCartographer
             -----------------------------------------------------------------------
             1: BASICS, VARIABLE DECLARATIONS, DATA TYPES
@@ -678,6 +677,9 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
             OR ANY OTHER KEY TO EXIT.
             ------------------------------------------------------------------------
             \n''')
+
+            print(menu)
+            
             select_structure = int(input("Input structure you would like to review: "))
             if select_structure == 1:
                 print ("Accessing Basics...\n")
