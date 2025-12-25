@@ -12,6 +12,9 @@ print ("This program helps navigate notes and simple structures in the Python la
 def proceed(): # It asks the user to continue after each example within a module
     any_key_to_continue = input('Press any key to advance to the next example:\n')
 
+def proceedToMenu():
+    any_key_to_menu = input('This concludes this module. Press any key to return to main menu. ')
+
 def basics():# This module provides an overview of the basic structures and data types used in Python.
     print ('''This is and overview of basic declarations of Python structures.\n
            VARIABLES\n
@@ -75,6 +78,7 @@ def basics():# This module provides an overview of the basic structures and data
            This is an example of an EMPTY DICTIONARY.\n
            The following 4 outputs are pulling VALUES from the KEY unsc_marine using .get
            VALUES of unsc_marine include name, rank, weapon, and ship.\n''')
+    
     #Example of populated dictionary
     unsc_marine = {
         "name" : "Johnson",
@@ -101,33 +105,47 @@ def basics():# This module provides an overview of the basic structures and data
     snake_stuff = ("nm7267719","bandana")
     print (snake_stuff)
 
+    proceedToMenu()
+
 def inputs(): # This function provides overview of inputs.
 
-    print ('''Inputs are foundational structure in any programming language.
+    print('''Inputs are foundational structure in any programming language.
            They allow the user to provide data into a program.\n
            BUILDING A USER INPUT\n
            To build a user input an INPUT VARIABLE must be declared. Like this:
            ("")\n
            1 one_or_two = (input("For selection 1 input 1 for selection 2 input 2: "))
-           Always leave a null space between the last letter and closing parenthesis to allow user input.\n
-           INPUT TRANSLATION\n
-           Sometimes a certain data type must be used for an INPUT VARIABLE.
+           Always leave a null space between the last letter and closing parenthesis to allow user input.\n''')
+
+    proceed()
+
+    print('''INPUT TRANSLATION\n
+           Sometimes a certain data type must be used for an INPUT VARIABLE.\n
+          
            int is integer
            float is a decimal
            string is string
-           bool is boolean
+           bool is boolean\n
+          
            An INPUT VARIABLE with a forced data type is written as:\n
+          
            1 my_thing = datatype(input("input message here: "))
            Therefore a variable needing an integer datatype is:
            1 my_number = int(input("pick a number :"))\n
+          
            Example...
            This variable has been created a float INPUT VARIABLE.
-           my_number = float(input('Input a number: '\n''')
+           my_number = float(input('Input a number:
+           Proceed to use this example.''')
+    
+    proceed()
 
     my_number = float(input("Input a number: "))
     print ("This has prompted the user to input a number, my_number is converted to a float.")
     print (my_number)
     print ("As a result it outputs a decimal number.")
+
+    proceedToMenu()
     
      
 def selection(): # This function highlights selection basics.
@@ -228,10 +246,12 @@ def selection(): # This function highlights selection basics.
     print ('''Since this is an IF ELIF... ELSE structure it will only return the true statement.
            IF "bravery was selected, the user is Gryffindor; intelligence Ravenclaw
            friendship Hufflepuff.And if you don't follow rules, the else statement captures
-           all other values, Slytherin.\n
-           This concludes the selection module.\n''')
+           all other values, Slytherin.\n''')
+    
+    proceedToMenu()
     
 def inputValidation(): # input validation function.
+
     print ('''Input validation is the process of forcing user input to adhear to specific data types. It is similar to the feeding ramp
         between the magazine of a firearm and the chamber.Input validation forces intent into the correct position, thereby allowing the
         program to execute as designed.\n
@@ -294,6 +314,8 @@ def inputValidation(): # input validation function.
     print ('''
         This structure enters a WHILE LOOP until a integer is entered. If an integer is entered the try, else, and finally branches activate.
         If a non-integer value is entered the loop will execute the EXCEPT branch and reprompt the user\n''')
+    
+    proceedToMenu()
 
 def for_loops():
     print('''FOR LOOPS\n
@@ -324,9 +346,9 @@ def for_loops():
     for i in range (1,4):
         print(i)
     print("The RANGE CONTROL the above example starts at 1, and ALWAYS END AT THE HIGHEST DECLARED NUMBER - 1.\n")
-    
-    
 
+    proceedToMenu()
+        
 def indefiniteLoops():
     print('''INDEFINITE LOOPS\n
           Indefinite loops are useful structures. They have a combo of a few components:\n
@@ -378,7 +400,7 @@ def indefiniteLoops():
             sentinel = False # serves as a redundant switch
     print('Loop Exited.')
 
-   
+    proceedToMenu()
 
 def functions():
     print('''FUNCTIONS\n
@@ -394,6 +416,7 @@ def functions():
           the function finds these two arguments and expects to do something with them.
           in this case it will add them.\n
           ''')
+    
     proceed()
 
     print('''To build out the function it has to be directed to do something with a and b.\n
@@ -405,6 +428,7 @@ def functions():
           Once happens return is used to make sum accessible to the main program, from here it can be printed, 
           or moved into another structure as needed.\n
           ''')
+    
     proceed()
 
     print('''Below is an example of the function that is going to run in this program\n
@@ -427,7 +451,6 @@ def functions():
         quotient = a / b
         return quotient
 
-
         print(f'a + b = {itAddsThings(a, b)}')
         print(f'a - b = {itSubtractsThings(a, b)}')
         print(f'a * b = {itMultipliesThings(a, b)}')
@@ -441,7 +464,9 @@ def functions():
 
     print('''Time to run this program. This program will return the values of a and b added, subtracted, divided and multiplied.
           it will also demonstrate how function returns can be saved as variables.''')
+    
     proceed()
+
     # Example of simple function, doing math ops, printing a function to f-string. 
     a = 10 # globally declared var
     b = 5  # globally declared var
@@ -473,7 +498,7 @@ def functions():
     divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
     print(divide_multiply_sum)
 
-    
+    proceedToMenu
 
 def listsPopulation():
     print('''POPULATING LISTS\n
@@ -568,8 +593,9 @@ def listsPopulation():
     enter_items = input('enter and item separated by space. ')
     items = enter_items.split()
     print(items)
-     
 
+    proceedToMenu()
+     
 def main():# it serves as the main menu of pythonCartographer, one may call it the "index".
         while True:
             menu = print('''
@@ -609,6 +635,7 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
             else:
                 print('Exiting pythonCartographer!')
                 break    
+
 main()     
 
  
