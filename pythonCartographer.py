@@ -5,7 +5,7 @@
 print ("This program helps navigate notes and simple structures in the Python language. Zachary Roberts 11 AUG 2025.\n")
 
 # Main menu of program. Prints valid input selection, runs through indefinite loop.     
-def main():# it serves as the main menu of Python Cartographer, one may call it the "index"
+def main():# it serves as the main menu of pythonCartographer, one may call it the "index".
     print ('''
         Basics, variable declarations, data types that sort: 1
         Input: 2
@@ -528,7 +528,7 @@ def listsPopulation():
 
     print('''POPULATING LISTS WITH .append()\n
         .append() is a method for adding an item to the last index of a list. It expects an argument inside the().
-        The argument is the input variable intended to be added to the list such that\n
+        The argument is the input variable intended to be added to the list such that:\n
         dog_list =['Rico']
         new_dog = input('Enter a dog to list: ')\n
         new_list.append(new_dog)
@@ -541,6 +541,18 @@ def listsPopulation():
             numbers.append(user_num)
         print(numbers)\n
         input any three integers you want, the code will return your numbers in a list.''')
+    
+    proceed()
+
+    print('''POPULATING LIST WITH FOR LOOP\n
+        Lists are often populated with loops the example below is:
+        numbers = [] # declare empty list.
+        for i in range(3):# initiate for loop.
+            user_num = (int(input('Enter a number: ')))# declare user input variable.
+            numbers.append(user_num)# use .append() method to populate the list
+        print(numbers)# print raw list.\n
+        Proceed to try it. The code will allow you to input 3 items.''')
+    
     proceed()
 
     # Below is an example of populating a list with the .append() method.
@@ -578,6 +590,25 @@ def listsPopulation():
             append_list = True
         else: append_list = False
     print(*another_list)# * is used for argument unpacking it removes commas and brackets.
+
+    proceed()
+
+    print('''CREATING LIST WITH .split()\n
+        Lists can be created using the .split() method. However, it is important to warn the user
+        that this method of input is being used. The .split() method uses space to separate several items in a list
+        the list is then created when the user presses enter
+        Below is an example of how this method is used for user input.\n
+          
+        enter_items = input('enter and item separated by space ')# input variable
+        items = enter_items.split() create a variable to contain the items once split into a list the var becomes the list.
+        print(items) # items is now a list\n.
+        Now you try:\n''')
+    
+    proceed()
+
+    enter_items = input('enter and item separated by space ')
+    items = enter_items.split()
+    print(items) 
     
     returnsToMAin()
 main()     
