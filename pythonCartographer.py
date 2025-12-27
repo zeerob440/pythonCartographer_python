@@ -558,7 +558,8 @@ def functions():
     a = 10 # globally declared var
     b = 5  # globally declared var
 
-    def itAddsThings(a, b):# function declared with variables as arguments. 
+    # functions below declared with variables as arguments.
+    def itAddsThings(a, b): 
         sum = a + b
         return sum 
 
@@ -573,6 +574,15 @@ def functions():
     def itDividesThings(a, b):
         quotient = int(a / b)
         return quotient
+    
+    print('''It is possible to print a function to an f-string by:\n
+        print(f'a + b = {itAddsThings(a, b)}\n')
+        print(f'a - b = {itSubtractsThings(a, b)}\n')
+        print(f'a * b = {itMultipliesThings(a, b)}\n')
+        print(f'a / b = {itDividesThings(a, b)}\n')  
+        Proceed to see the values report in f-strings.''')
+    
+    proceed()
 
     # printing functions to f-string is possible.
     print(f'a + b = {itAddsThings(a, b)}\n')
@@ -580,12 +590,63 @@ def functions():
     print(f'a * b = {itMultipliesThings(a, b)}\n')
     print(f'a / b = {itDividesThings(a, b)}\n')
 
-    #function return values can be used to create new variables and print statements.
+    proceed()
+
+    print('''
+        MAKING NEW VARIABLES WITH FUNCTIONS\n
+        It is possible to store a function return in a variable once the value is returned to main.
+        It is also possible to add a constant to a function return to alter the value. The
+        examples below are how to build these structures\n
+          
+        print(itMultipliesThings(a, b) + 9)
+        divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
+        print(divide_multiply_sum)''')
+    
+    print('Proceed to run the above code.')
+
+    proceed()
+
+    # function return values can be used to create new variables and print statements.
     print(itMultipliesThings(a, b) + 9)
     divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
     print(divide_multiply_sum)
 
-    proceedToMenu
+    print('''
+        REUSING FUNCTIONS\n
+        One of the advantages of functions is that they can be reused. This can be done by simply changing the args.
+        For instance using this code we just ran, we'll add two more values for the itAddsThings function to print.\n
+        
+        divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
+
+        add _subtract_sum = (itAddsThings(a,b) + itSubtractsThings(a, b))
+
+        print(divide_multiply_sum)
+
+        print(add_subtract_sum)
+
+        # using itAddsThings function with new args to add divide_multiply_sum and add_subtract_sum
+        itAddsThings(divide_multiply_sum, add_subtract_sum)
+
+        print(itAddsThings(divide_multiply_sum, add_subtract_sum))\n
+        
+        The function will return ''')
+    
+    print('Proceed to run code.')
+
+    proceed()
+
+    divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
+
+    add_subtract_sum = (itAddsThings(a,b) + itSubtractsThings(a, b))
+
+    # using itAddsThings function with new args to add divide_multiply_sum and add_subtract_sum
+    itAddsThings(divide_multiply_sum, add_subtract_sum)
+
+    print(f'''
+        The new args in itAddsThings(divide_multiply_sum, add_subtract_sum)
+        is:{itAddsThings(divide_multiply_sum, add_subtract_sum)}.''')
+
+    proceedToMenu()
 
 def listsPopulation():
     print('''
