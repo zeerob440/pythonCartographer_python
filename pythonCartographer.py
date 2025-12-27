@@ -508,7 +508,7 @@ def functions():
         return sum\n
           
         sum = a + b takes the targeted global arguments, adds them, and stores the value in sum. 
-        Once happens return is used to make sum accessible to the main program, from here it can be printed, 
+        Once that happens return is used to make sum accessible to the main program, from here it can be printed, 
         or moved into another structure as needed.\n
         ''')
     
@@ -577,10 +577,10 @@ def functions():
     
     print('''
         It is possible to print a function to an f-string by:\n
-        print(f'a + b = {itAddsThings(a, b)}\n')
-        print(f'a - b = {itSubtractsThings(a, b)}\n')
-        print(f'a * b = {itMultipliesThings(a, b)}\n')
-        print(f'a / b = {itDividesThings(a, b)}\n')  
+        print(f'a + b = {itAddsThings(a, b)}')\n
+        print(f'a - b = {itSubtractsThings(a, b)}')
+        print(f'a * b = {itMultipliesThings(a, b)}')\n
+        print(f'a / b = {itDividesThings(a, b)}')\n  
         Proceed to see the values report in f-strings.\n
         ''')
     
@@ -598,7 +598,7 @@ def functions():
         MAKING NEW VARIABLES WITH FUNCTIONS\n
         It is possible to store a function return in a variable once the value is returned to main.
         It is also possible to add a constant to a function return to alter the value. The
-        examples below are how to build these structures\n
+        examples below are how to build these structures.\n
           
         print(itMultipliesThings(a, b) + 9)
         divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
