@@ -10,7 +10,7 @@ print ("This program helps navigate notes and simple structures in the Python la
 
 # . Prints valid input selection, runs through indefinite loop.
 def proceed(): # It asks the user to continue after each example within a module
-    any_key_to_continue = input('Press any key to proceed.:\n')
+    any_key_to_continue = input('Press any key to proceed:\n')
 
 def proceedToMenu():
     any_key_to_menu = input('This concludes this module. Press any key to return to main menu. ')
@@ -758,6 +758,7 @@ def listsPopulation():
         if sentinel_prompt == ('y'):      
             append_list = True
         else: append_list = False
+    print('You entered\n')
     print(*another_list)# * is used for argument unpacking it removes commas and brackets.
 
     proceed()
