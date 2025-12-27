@@ -551,14 +551,41 @@ def functions():
         Time to run this program. This program will return the values of a and b added, subtracted,
         divided and multiplied. It will also demonstrate how function returns can be saved as variables.\n
         ''')
+    a = 10
+    b = 5
+
+    def itAddsThings(a, b):
+        sum = a + b
+        return sum 
+
+    def itSubtractsThings(a, b):
+        difference = a - b
+        return difference
+
+    def itMultipliesThings(a, b):
+        product = a * b
+        return product
+
+    def itDividesThings(a, b):
+        quotient = a / b
+        return quotient
+
+    print(f'a + b = {itAddsThings(a, b)}')
+    print(f'a - b = {itSubtractsThings(a, b)}')
+    print(f'a * b = {itMultipliesThings(a, b)}')
+    print(f'a / b = {itDividesThings(a, b)}')
+        
+    print(itMultipliesThings(a, b) + 9)
+    divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
+    print(divide_multiply_sum)
     
     proceed()
 
-    # Example of simple function, doing math ops, printing a function to f-string. 
+        # Example of simple function, doing math ops, printing a function to f-string. 
     a = 10 # globally declared var
     b = 5  # globally declared var
 
-    # functions below declared with variables as arguments.
+        # functions below declared with variables as arguments.
     def itAddsThings(a, b): 
         sum = a + b
         return sum 
