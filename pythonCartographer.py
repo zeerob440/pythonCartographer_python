@@ -494,8 +494,8 @@ def functions():
         ARGUMENTS\n
         Functions are designed to take arguments like this:\n
         itAddsThings(a, b)\n
-        For argument's sake, the arguments a = 5 and b = 7 are globally declared variables
-        the function finds these two arguments and expects to do something with them.
+        For argument's sake, the arguments a = 5 and b = 7 are globally declared variables.
+        The function finds these two arguments and expects to do something with them.
         in this case it will add them.\n
         ''')
     
