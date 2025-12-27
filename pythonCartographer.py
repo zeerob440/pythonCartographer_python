@@ -503,7 +503,7 @@ def functions():
 
     print('''
         To build out the function it has to be directed to do something with a and b.\n
-        itAddsThings(a, b):\n
+        itAddsThings(a, b):
             sum = a + b
             return sum\n
           
