@@ -492,9 +492,9 @@ def functions():
         such as they are used in pythonCartographer, or to do repetitive math operations.\n
           
         ARGUMENTS\n
-        Functions are designed to take arguments like this\n
+        Functions are designed to take arguments like this:\n
         itAddsThings(a, b)\n
-        For argument's sake for the arguments a = 5 and b = 7 are globally declared variables
+        For argument's sake, the arguments a = 5 and b = 7 are globally declared variables
         the function finds these two arguments and expects to do something with them.
         in this case it will add them.\n
         ''')
@@ -548,8 +548,8 @@ def functions():
     proceed()
 
     print('''
-        Time to run this program. This program will return the values of a and b added, subtracted, divided and multiplied.
-        it will also demonstrate how function returns can be saved as variables.\n
+        Time to run this program. This program will return the values of a and b added, subtracted,
+        divided and multiplied. It will also demonstrate how function returns can be saved as variables.\n
         ''')
     
     proceed()
@@ -575,12 +575,14 @@ def functions():
         quotient = int(a / b)
         return quotient
     
-    print('''It is possible to print a function to an f-string by:\n
+    print('''
+        It is possible to print a function to an f-string by:\n
         print(f'a + b = {itAddsThings(a, b)}\n')
         print(f'a - b = {itSubtractsThings(a, b)}\n')
         print(f'a * b = {itMultipliesThings(a, b)}\n')
         print(f'a / b = {itDividesThings(a, b)}\n')  
-        Proceed to see the values report in f-strings.''')
+        Proceed to see the values report in f-strings.\n
+        ''')
     
     proceed()
 
@@ -600,9 +602,9 @@ def functions():
           
         print(itMultipliesThings(a, b) + 9)
         divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
-        print(divide_multiply_sum)''')
+        print(divide_multiply_sum)\n''')
     
-    print('Proceed to run the above code.')
+    print('Proceed to run the above code.\n')
 
     proceed()
 
@@ -627,11 +629,9 @@ def functions():
         # using itAddsThings function with new args to add divide_multiply_sum and add_subtract_sum
         itAddsThings(divide_multiply_sum, add_subtract_sum)
 
-        print(itAddsThings(divide_multiply_sum, add_subtract_sum))\n
-        
-        The function will return ''')
+        print(itAddsThings(divide_multiply_sum, add_subtract_sum))\n''')
     
-    print('Proceed to run code.')
+    print('Proceed to run code.\n')
 
     proceed()
 
@@ -644,7 +644,7 @@ def functions():
 
     print(f'''
         The new args in itAddsThings(divide_multiply_sum, add_subtract_sum)
-        is:{itAddsThings(divide_multiply_sum, add_subtract_sum)}.''')
+        is:{itAddsThings(divide_multiply_sum, add_subtract_sum)}.\n''')
 
     proceedToMenu()
 
