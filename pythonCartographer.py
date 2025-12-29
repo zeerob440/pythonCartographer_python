@@ -702,7 +702,7 @@ def listsPopulation():
             user_num = (int(input('Enter a number: ')))
             numbers.append(user_num)
         print(numbers)\n
-        input any three integers you want, the code will return your numbers in a list.
+        input any three integers you want, the code will return your numbers in a list.\n
         ''')
     
     proceed()
@@ -727,9 +727,23 @@ def listsPopulation():
     for i in range(3):# initiate for loop.
         user_num = (int(input('Enter a number: ')))# declare user input variable.
         numbers.append(user_num)# use .append() method to populate the list
-    print(numbers)# print raw list.
+    print(numbers +'/n')# print raw list.
 
     proceed()
+
+    print('''POPULATING LIST WITH insert()\n
+          Another way to populate a list is with the insert()method.
+          insert() is used to populate and item at a specific index, the method need an index argument and a item to insert, such  that:/n
+          cat_list = ['tabby', 'siamese', 'persian']\n
+          cat_list.insert(1, 'main coon')\n
+          print(cat_list)\n
+          
+          proceed to run this code.\n
+          ''')
+    cat_list = ['tabby', 'siamese', 'persian']
+    cat_list.insert(1, 'main coon')
+    print (cat_list + "\n")
+    
 
     print('''
         POPULATING LIST WITH INDEFINITE LOOP\n
