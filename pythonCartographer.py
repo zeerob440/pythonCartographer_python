@@ -798,7 +798,7 @@ def listsPopulation():
     
     proceed()
 
-    enter_items = input('enter and item separated by space. ')
+    enter_items = input('Enter an item separated by space. ')
     items = enter_items.split()
     print(items)
 
