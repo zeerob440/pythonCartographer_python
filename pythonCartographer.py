@@ -727,7 +727,7 @@ def listsPopulation():
     for i in range(3):# initiate for loop.
         user_num = (int(input('Enter a number: ')))# declare user input variable.
         numbers.append(user_num)# use .append() method to populate the list
-    print(numbers +'/n')# print raw list.
+    print(numbers)# print raw list.
 
     proceed()
 
