@@ -882,7 +882,7 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
                 listsPopulation()
             elif select_structure == 9:
                 print('Accessing Depopulating Lists')
-                depopulatingLists
+                depopulatingLists()
             else:
                 print('Exiting pythonCartographer!')
                 break    
