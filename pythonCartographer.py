@@ -810,6 +810,30 @@ def depopulatingLists():
           Modifying lists is a typical workflow in Python, items need to be added, and items need to be removed.
           We will explore how to depopulate lists with the pop() and remove() methods, and typical structures whereby these methods are
           used\n''')
+    
+    print('''DEPOPULATING LIST WITH pop() and remove()\n
+          The pop() method is a technique to remove the LAST ITEM of a list if no argument is added, or it can remove the item
+          in a specific index if an argument is added, below is an example of how pop() is used in both manners.
+          remove() searches all the indices of a list and removes all items equal to the value specified in its arg.\n
+          
+        the_list = ['dog', 'cat', 'bird', 'whale', 'cat', 'dolphin']
+        the_list.pop() #removes last item of list "dolphin
+        print(the_list)
+        the_list.pop(2) #removes item in the second index "bird"
+        print(the_list)
+        the_list.remove('cat') #removes the item "cat" from all indexes containing that value
+        print(the_list)\n
+          
+        Proceed to run the code.\n''')
+    
+    the_list = ['dog', 'cat', 'bird', 'whale', 'cat', 'dolphin']
+    the_list.pop() #removes last item of list "dolphin
+    print(the_list)
+    the_list.pop(2) #removes item in the second index "bird"
+    print(the_list)
+    the_list.remove('cat') #removes the item "cat" from all indexes containing that value
+    print(the_list)
+        
      
 def main():# it serves as the main menu of pythonCartographer, one may call it the "index".
         while True:
