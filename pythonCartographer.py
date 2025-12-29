@@ -803,6 +803,12 @@ def listsPopulation():
     print(items)
 
     proceedToMenu()
+
+def depopulatingLists():
+
+    print('''DEPOPULATING LISTS\n
+          Modifying lists is a typical workflow in Python, items need to be added, and items need to be removed.
+          ''')
      
 def main():# it serves as the main menu of pythonCartographer, one may call it the "index".
         while True:
@@ -817,6 +823,7 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
             6: INDEFINITE LOOPS
             7: FUNCTIONS
             8: POPULATING LISTS
+            9: DEPOPULATING LISTS
             OR ANY OTHER KEY TO EXIT.
             ------------------------------------------------------------------------
             ''')
