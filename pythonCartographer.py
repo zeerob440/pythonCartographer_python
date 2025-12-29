@@ -693,17 +693,18 @@ def listsPopulation():
         The argument is the input variable intended to be added to the list such that:\n
         dog_list =['Rico']
         new_dog = input('Enter a dog to list: ')\n
-        new_list.append(new_dog)
+        dog_list.append(new_dog)
         print(dog_list)
         ['Rico', 'Mia']\n
-        The example that will run below this print statement is:\n
-        numbers = []
-            for i in range(3):
-            user_num = (int(input('Enter a number: ')))
-            numbers.append(user_num)
-        print(numbers)\n
-        input any three integers you want, the code will return your numbers in a list.\n
+        Proceed to run this example: You'll need to input a name.\n
         ''')
+    
+    proceed()
+
+    dog_list = ['Rico']
+    new_dog = input("Enter a new dog: ")
+    dog_list.append(new_dog)
+    print(dog_list)
     
     proceed()
 
@@ -733,7 +734,7 @@ def listsPopulation():
 
     print('''POPULATING LIST WITH insert()\n
           Another way to populate a list is with the insert()method.
-          insert() is used to populate and item at a specific index, the method need an index argument and a item to insert, such  that:/n
+          insert() is used to populate an item at a specific index, the method need an index argument and a item to insert, such  that:/n
           cat_list = ['tabby', 'siamese', 'persian']\n
           cat_list.insert(1, 'main coon')\n
           print(cat_list)\n
@@ -783,7 +784,7 @@ def listsPopulation():
     proceed()
 
     print('''
-        CREATING LIST WITH .split()\n
+        POPULATING LIST WITH .split()\n
         Lists can be created using the .split() method. However, it is important to warn the user
         that this method of input is being used. The .split() method uses space to separate several items in a list
         the list is then created when the user presses enter
