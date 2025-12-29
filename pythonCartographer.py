@@ -740,9 +740,14 @@ def listsPopulation():
           
           proceed to run this code.\n
           ''')
+    
+    proceed()
+
     cat_list = ['tabby', 'siamese', 'persian']
     cat_list.insert(1, 'main coon')
     print (cat_list + "\n")
+
+    proceed()
     
 
     print('''
