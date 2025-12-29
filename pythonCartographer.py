@@ -746,7 +746,7 @@ def listsPopulation():
 
     cat_list = ['tabby', 'siamese', 'persian']
     cat_list.insert(1, 'main coon')
-    print (cat_list + "\n")
+    print (cat_list)
 
     proceed()
     
@@ -816,7 +816,7 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
             5: FOR LOOPS
             6: INDEFINITE LOOPS
             7: FUNCTIONS
-            8: LISTS
+            8: POPULATING LISTS
             OR ANY OTHER KEY TO EXIT.
             ------------------------------------------------------------------------
             ''')
