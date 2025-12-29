@@ -808,7 +808,8 @@ def depopulatingLists():
 
     print('''DEPOPULATING LISTS\n
           Modifying lists is a typical workflow in Python, items need to be added, and items need to be removed.
-          ''')
+          We will explore how to depopulate lists with the pop() and remove() methods, and typical structures whereby these methods are
+          used\n''')
      
 def main():# it serves as the main menu of pythonCartographer, one may call it the "index".
         while True:
