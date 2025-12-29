@@ -826,6 +826,8 @@ def depopulatingLists():
           
         Proceed to run the code.\n''')
     
+    proceed()
+    
     the_list = ['dog', 'cat', 'bird', 'whale', 'cat', 'dolphin']
     the_list.pop() #removes last item of list "dolphin
     print(the_list)
