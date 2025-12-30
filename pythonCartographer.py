@@ -802,6 +802,33 @@ def listsPopulation():
     items = enter_items.split()
     print(items)
 
+    proceed()
+
+    print('''JOINING LISTS WITH CONCATENATION\n
+        Another method of populating lists is to concatenate them. Such that you simply add the list together in another variable.
+        since you are concatenating two list the new variable is also list such that:\n
+         A simple program demonstrating how to concatenate lists.
+
+        list1 = [1, 2 , 3]
+        listA = ['a','b','c']\n
+
+        combined_list = (list1 + listA)\n
+
+        print(combined_list)\n
+
+        Proceed to run this program, it will output [1, 2 ,3, a, b, c]
+        ''')
+    
+    proceed()
+    list1 = [1, 2 , 3]
+    listA = ['a','b','c']
+
+    combined_list = (list1 + listA)
+
+    print(combined_list)
+
+
+
     proceedToMenu()
 
 def depopulatingLists():
@@ -814,32 +841,31 @@ def depopulatingLists():
     print('''DEPOPULATING LIST WITH pop() and remove()\n
           The pop() method is a technique to remove the LAST ITEM of a list if no argument is added, or it can remove the item
           in a specific index if an argument is added, below is an example of how pop() is used in both manners.
-          remove() searches all the indices of a list and removes all items equal to the value specified in its arg.\n
+          remove() removes the first occurrence of the value specified in its arg.\n
           
-        the_list = ['dog', 'cat', 'bird', 'whale', 'cat', 'dolphin']
+        the_list = ['dog', 'cat', 'bird', 'cat', 'whale', 'cat', 'dolphin']
         the_list.pop() #removes last item of list "dolphin
         print(the_list)
         the_list.pop(2) #removes item in the second index "bird"
         print(the_list)
-        the_list.remove('cat') #removes the item "cat" from all indexes containing that value
+        the_list.remove('cat') #removes the first "cat" from the list
         print(the_list)\n
           
         Proceed to run the code.\n''')
     
     proceed()
     
-    the_list = ['dog', 'cat', 'bird', 'whale', 'cat', 'dolphin']
+    the_list = ['dog', 'cat', 'bird', 'cat', 'whale', 'cat', 'dolphin']
     the_list.pop() #removes last item of list "dolphin
     print(the_list)
     the_list.pop(2) #removes item in the second index "bird"
     print(the_list)
-    the_list.remove('cat') #removes the item "cat" from all indexes containing that value
+    the_list.remove('cat') #removes the first "cat" from list
     print(the_list)
 
     proceed()
 
-    print('''ITERATING THROUGH A LIST TO REMOVE A SPECIFIC ITEM\n
-        FIXME: add code.''')
+    print('''ME: add code.''')
         
      
 def main():# it serves as the main menu of pythonCartographer, one may call it the "index".
