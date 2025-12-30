@@ -867,7 +867,37 @@ def depopulatingLists():
 
     proceed()
 
-    print('''ME: add code.''')
+    print('''REMOVING LIST ITEMS WITH ANOTHER LIST\n
+        Items can be removed from one list by another list with remove(). This is done by iterating through one list
+        and then searching for duplicate items in another list and removing them.
+        like this:\n
+        
+
+    list26 = [1, 2, 3, 4, 5, 6]
+    list62 = [2, 4, 6]
+
+    for item26 in list26:
+        if item26 in list62:
+            list26.remove(item26)
+    print(*list26)\n
+          
+    It will output 1 3 5 since * unpacker is used here
+    
+    Proceed to run the code''')
+
+    proceed()
+
+    # remove items from one list that are in another.
+
+    list26 = [1, 2, 3, 4, 5, 6]
+    list62 = [2, 4, 6]
+
+    for item26 in list26:
+        if item26 in list62:
+            list26.remove(item26)
+    print(*list26)
+
+    proceedToMenu()
         
      
 def main():# it serves as the main menu of pythonCartographer, one may call it the "index".
