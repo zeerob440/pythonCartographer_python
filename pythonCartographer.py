@@ -897,6 +897,11 @@ def depopulatingLists():
             list26.remove(item26)
     print(*list26)
 
+    proceed()
+
+    print('''REMOVE WITH LIST COMPREHENSION\n
+        FIXME: create list comprehension example. ''')
+
     proceedToMenu()
         
      
