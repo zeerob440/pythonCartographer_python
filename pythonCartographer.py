@@ -734,7 +734,7 @@ def listsPopulation():
 
     print('''POPULATING LIST WITH insert()\n
           Another way to populate a list is with the insert()method.
-          insert() is used to populate an item at a specific index, the method need an index argument and a item to insert, such  that:/n
+          insert() is used to populate an item at a specific index, the method need an index argument and a item to insert, such  that:\n
           cat_list = ['tabby', 'siamese', 'persian']\n
           cat_list.insert(1, 'main coon')\n
           print(cat_list)\n
@@ -816,7 +816,7 @@ def listsPopulation():
 
         print(combined_list)\n
 
-        Proceed to run this program, it will output [1, 2 ,3, a, b, c]
+        Proceed to run this program, it will output [1, 2 ,3, 'a', 'b', 'c']
         ''')
     
     proceed()
