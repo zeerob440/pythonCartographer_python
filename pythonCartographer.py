@@ -835,6 +835,11 @@ def depopulatingLists():
     print(the_list)
     the_list.remove('cat') #removes the item "cat" from all indexes containing that value
     print(the_list)
+
+    proceed()
+
+    print('''ITERATING THROUGH A LIST TO REMOVE A SPECIFIC ITEM\n
+        FIXME: add code.''')
         
      
 def main():# it serves as the main menu of pythonCartographer, one may call it the "index".
