@@ -838,7 +838,7 @@ def depopulatingLists():
     print('''DEPOPULATING LISTS\n
           Modifying lists is a typical workflow in Python, items need to be added, and items need to be removed.
           We will explore how to depopulate lists with the pop() and remove() methods, and typical structures whereby these methods are
-          used\n''')
+          used.\n''')
     
     print('''DEPOPULATING LIST WITH pop() and remove()\n
           The pop() method is a technique to remove the LAST ITEM of a list if no argument is added, or it can remove the item
@@ -940,13 +940,13 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
                 print('Accessing indefinite loops...\n')
                 indefiniteLoops()
             elif select_structure == 7:
-                print('Accessing Functions...')
+                print('Accessing Functions...\n')
                 functions()
             elif select_structure == 8:
-                print('Accessing Populating Lists...')
+                print('Accessing Populating Lists...\n')
                 listsPopulation()
             elif select_structure == 9:
-                print('Accessing Depopulating Lists')
+                print('Accessing Depopulating Lists\n')
                 depopulatingLists()
             else:
                 print('Exiting pythonCartographer!')
