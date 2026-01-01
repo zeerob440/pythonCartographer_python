@@ -187,7 +187,7 @@ def basics():
         else:
             print(ex)
         break
-
+    
 
 def inputs(): # This function provides overview of inputs.
 
@@ -1021,10 +1021,10 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
                 print('Exiting pythonCartographer!')
                 break
             
-            #deposit daughter function invocations here
-            basics()    
+            #deposit daughter function invocations here    
 
-main()     
+main()
+basics()     
 
  
 
