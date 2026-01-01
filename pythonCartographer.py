@@ -14,8 +14,10 @@ def proceed(): # It asks the user to continue after each example within a module
                         Press any key to proceed\n''')
 
 def proceedToMenu():
-    any_key_to_menu = input('''\n
-                        This concludes this module. Press any key to return to menu.\n''')
+    any_key_to_menu = int(input('''\n
+                        This concludes this module. Press any key to continue.\n'''))
+    
+
 
 #used to denote that content is being accessed.
 atopic = 'Accessing Topic...\n'
@@ -184,7 +186,7 @@ def basics():
             dataTypes()
         else:
             print(ex)
-        break
+            break
     
 
 def inputs(): # This function provides overview of inputs.
