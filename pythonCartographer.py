@@ -479,21 +479,21 @@ def inputValidation(): # input validation function, and daughter functions.
         print ('''
         In the below example the user is prompted to enter an integer.
         The TRY EXCEPT structure is nested within a WHILE LOOP.
-        If the user does not enter a integer, the EXCEPT BRANCH continues the loop.
+        If the user does not enter an integer, the EXCEPT BRANCH continues the loop.
         In order for the EXCEPT BRANCH to work, THE ERROR THAT WILL OCCUR MUST BE DEFINED, such that instead of crashing at ValueError,
-        it simply continues.
-        the loop when ValueError is returned by the EXCEPT BRANCH.\n
+        it simply continues the loop when ValueError is returned by the EXCEPT BRANCH.\n
         In other words, the EXCEPT BRANCH directs instead of crashing continuing the loop
-        If the user enters an integer the TRY BRANCH executes, and the loop breaks with the BREAK command.
-        Do not enter an integer first to experiment with the TRY EXCEPT structure.\n
+        If the user enters an integer the TRY BRANCH executes, and the loop breaks with the BREAK command.\n
+               
+        DO NOT ENTER AN INTEGER on the first try when experimenting with the TRY EXCEPT structure.\n
         
          while True:
-        try:
-            user_integer = int(input("Enter an integer: "))
-            print(f'You enter entered {user_integer}.')
-            break
-        except ValueError:
-            print ("Invalid input, please enter an integer.\n")
+            try:
+                user_integer = int(input("Enter an integer: "))
+                print(f'You enter entered {user_integer}.')
+                break
+            except ValueError:
+                print ("Invalid input, please enter an integer.\n")
               
         Now proceed to try it\n''')
 
