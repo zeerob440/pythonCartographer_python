@@ -298,7 +298,9 @@ def selection(): # This function highlights selection basics.
             2 if branch_a_b == "a":
             3    print("You have selected branch a.")
             4 else: print ("You have selected branch b.")\n
-        ''')
+            Hit proceed to try the above example''')
+        
+        proceed()
    
         branch_a_b = (input("Input a for branch a OR any other key for branch b: "))
             # if-else example.
@@ -308,7 +310,7 @@ def selection(): # This function highlights selection basics.
    
         print ('The if else selection will print which selection was chosen by the user.\n')
 
-        proceed()
+        proceedToMenu()
     
     def ifIfIfSelections():
         print('''
@@ -344,7 +346,8 @@ def selection(): # This function highlights selection basics.
             if 2 is selected "Quantity is greater than or equal to 1.", and "Quantity is greater than or equal to 2." will return\n
             if 3 is selected all three statements will return.
             ''')
-    
+        
+        proceedToMenu
 
     def ifElifElifElseSelections():
    
