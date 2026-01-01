@@ -24,75 +24,72 @@ atopic = 'Accessing Topic...\n'
 ex = 'Exiting...\n'
 
 def basics():
+    
+    def variableDeclaration():
         
-        
-        def variableDeclaration():
-        
-            print('''This is and overview of basic declarations of Python structures.\n
-                VARIABLES\n
-                To declare a variable use singular verbs or nouns in snake_case.
-                dog = ("Rico") or number = 1\n''')
+        print('''This is and overview of basic declarations of Python structures.\n
+            VARIABLES\n
+            To declare a variable use singular verbs or nouns in snake_case.
+            dog = ("Rico") or number = 1\n''')
     
         proceedToMenu()
 
-        def functionBasics():
+    def functionBasics():
 
 
-            print ('''FUNCTIONS\n
-                Functions are subroutines within programs that do something. A single program may have several functions.
-                Name functions after what part of the program they access in camelCase, OR
-                Name them a verb for what the function does...\n
-                itAddsThings() or main()
-                To declare a function... def itAddsThings(): or def main():\n
-                1def itAddsThings 2  (2+2)\n''')
+        print ('''FUNCTIONS\n
+            Functions are subroutines within programs that do something. A single program may have several functions.
+            Name functions after what part of the program they access in camelCase, OR
+            Name them a verb for what the function does...\n
+            itAddsThings() or main()
+            To declare a function... def itAddsThings(): or def main():\n
+            1def itAddsThings 2  (2+2)\n''')
     
-            proceed()
+        proceed()
    
-            print ('''
-                 INVOKING FUNCTIONS\n
+        print('''
+            INVOKING FUNCTIONS\n
                    
-                    Once a function is declared, it needs to be invoked in a subsequent line of the program.
-                    Invoke the function by: itAddsThings()\n
+            Once a function is declared, it needs to be invoked in a subsequent line of the program.
+            Invoke the function by: itAddsThings()\n
                    
-                    RULES FOR FUNCTIONS:\n
+            RULES FOR FUNCTIONS:\n
                    
-                    Functions must be FULLY DECLARED before calling them.\n
+            Functions must be FULLY DECLARED before calling them.\n
                    
-                    1 def itAddsThings:()\n
+            1 def itAddsThings:()\n
                    
-                    2  (2 + 2)\n
+            2  (2 + 2)\n
                    
-                    3itAddsThings()\n
-                   
-                    ''')
+            3itAddsThings()
+            \n''')
     
-            proceedToMenu()
+        proceedToMenu()
 
         
-        def dataTypes():
-            print ('''
-            DATA TYPES\n
+    def dataTypes():
+        print ('''
+        DATA TYPES\n
                    
-            INTEGER\n
+        INTEGER\n
                    
-            Integers are numbers 1, 2, -1, 0 -3
-            Integer are declared like
-            number = 4\n
-                   
-           ''')
+        Integers are numbers 1, 2, -1, 0 -3
+        Integer are declared like
+        number = 4
+        \n''')
     
         proceed()
            
         print('''
-            STRINGS\n
+        STRINGS\n
               
-            Strings are words, or numbers. If a string is a number, it is the name of the number not the value of the number.
-            Any input from a user is automatically converted to a string, unless explicitly converted during the input call.
-            Strings are declared such that:\n
+        Strings are words, or numbers. If a string is a number, it is the name of the number not the value of the number.
+        Any input from a user is automatically converted to a string, unless explicitly converted during the input call.
+        Strings are declared such that:\n
               
-            dog =("Rico") OR
-            my_number = "3"
-            \n''')
+        dog =("Rico") OR
+        my_number = "3"
+        \n''')
     
         proceed()
 
@@ -125,9 +122,8 @@ def basics():
         This is an example of an EMPTY DICTIONARY.\n
                
         The following 4 outputs are pulling VALUES from the KEY unsc_marine using .get
-        VALUES of unsc_marine include name, rank, weapon, and ship.\n
-               
-        ''')
+        VALUES of unsc_marine include name, rank, weapon, and ship.
+        \n''')
     
         #Example of populated dictionary
         unsc_marine = {
@@ -165,35 +161,32 @@ def basics():
 
         proceedToMenu()
 
-        while True:
-            basics_menu =('''
-            MENU -Basics
-            ........................................................................
-            1: Declaring Variables
-            2: Functions Basics
-            3: Data Types             
-            OR ANY OTHER KEY TO EXIT.
-            .........................................................................
-            \n''')
+    while True:
+        basics_menu =('''
+        MENU -Basics
+        ........................................................................
+        1: Declaring Variables
+        2: Functions Basics
+        3: Data Types             
+        OR ANY OTHER KEY TO EXIT.
+        .........................................................................
+        \n''')
   
-            print(basics_menu)
-            basic_selection = int(input('Select a Topic \n'))
+        print(basics_menu)
+        basic_selection = int(input('Select a Topic \n'))
 
-            if basic_selection == 1:
-                print(atopic)
-                variableDeclaration()
-            elif basic_selection ==2:
-                print(atopic)
-                functionBasics()
-            elif basic_selection == 3:
-                print(atopic)
-                dataTypes()
-            else:
-                print(ex)
-                break
-        basics()
-
-
+        if basic_selection == 1:
+            print(atopic)
+            variableDeclaration()
+        elif basic_selection ==2:
+            print(atopic)
+            functionBasics()
+        elif basic_selection == 3:
+            print(atopic)
+            dataTypes()
+        else:
+            print(ex)
+            break
 
 
 def inputs(): # This function provides overview of inputs.
@@ -1026,7 +1019,8 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
                 depopulatingLists()
             else:
                 print('Exiting pythonCartographer!')
-                break    
+                break
+            basics()    
 
 main()     
 
