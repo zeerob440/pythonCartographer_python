@@ -1021,8 +1021,6 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
                 print('Exiting pythonCartographer!')
                 break
             
-            #deposit daughter function invocations here    
-
 main()
 basics()     
 
