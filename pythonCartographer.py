@@ -189,7 +189,11 @@ def basics():
             break
     
 
-def inputs(): # This function provides overview of inputs.
+def inputs():
+    '''
+    inputs() provides overview of input and its daughter functions inputBasics, and inputTranslation.
+    it serves as an index of sorts for the daughter functions to be invoked. 
+    '''
 
     def inputBasics():
         print('''
@@ -242,7 +246,12 @@ def inputs(): # This function provides overview of inputs.
 
     proceedToMenu()
     
-    inputs_menu =('''
+   
+    
+    while True:
+        
+        # declarations for inputs() menu
+        inputs_menu =('''
         MENU -Inputs
         ........................................................................
         1: Input Basics
@@ -250,9 +259,7 @@ def inputs(): # This function provides overview of inputs.
         OR ANY OTHER KEY TO EXIT.
         .........................................................................
         \n''')
-    
-    while True:
-
+        
         print(inputs_menu)
         input_selection = int(input('Select a Topic \n'))
 
