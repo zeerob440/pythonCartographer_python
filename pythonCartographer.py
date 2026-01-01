@@ -191,6 +191,7 @@ def basics():
             else:
                 print(ex)
                 break
+        basics()
 
 
 
