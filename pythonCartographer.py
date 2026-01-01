@@ -108,26 +108,26 @@ def basics():
     
         proceed()
 
-        print ('''
-            DICTIONARIES DICT\n
+        print('''
+        DICTIONARIES DICT\n
                
-            Dictionaries consist of two constructs, KEYS and VALUES
-             KEYS are the UNIQUE IDENTIFIER, or a searchable keyword to access the dictionary.
-            VALUES are attributes or properties of the key.
-            in other words if it was like an actual dictionary he KEY is the Word, the VALUE is the definition.\n
+        Dictionaries consist of two constructs, KEYS and VALUES
+        KEYS are the UNIQUE IDENTIFIER, or a searchable keyword to access the dictionary.
+        VALUES are attributes or properties of the key.
+        in other words if it was like an actual dictionary he KEY is the Word, the VALUE is the definition.\n
                
-            DECLARING A DICTIONARY\n
+        DECLARING A DICTIONARY\n
                
-            Dictionaries are declared like:\n
+        Dictionaries are declared like:\n
                
-            marine = {}\n # example of empty dictionary
+        marine = {}\n # example of empty dictionary
                
-            This is an example of an EMPTY DICTIONARY.\n
+        This is an example of an EMPTY DICTIONARY.\n
                
-            The following 4 outputs are pulling VALUES from the KEY unsc_marine using .get
-            VALUES of unsc_marine include name, rank, weapon, and ship.\n
+        The following 4 outputs are pulling VALUES from the KEY unsc_marine using .get
+        VALUES of unsc_marine include name, rank, weapon, and ship.\n
                
-           ''')
+        ''')
     
         #Example of populated dictionary
         unsc_marine = {
