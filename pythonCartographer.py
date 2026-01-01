@@ -298,7 +298,7 @@ def selection(): # This function highlights selection basics.
             2 if branch_a_b == "a":
             3    print("You have selected branch a.")
             4 else: print ("You have selected branch b.")\n
-            Hit proceed to try the above example''')
+            Hit proceed to try the above example.''')
         
         proceed()
    
@@ -347,7 +347,7 @@ def selection(): # This function highlights selection basics.
             if 3 is selected all three statements will return.
             ''')
         
-        proceedToMenu
+        proceedToMenu()
 
     def ifElifElifElseSelections():
    
@@ -413,11 +413,11 @@ def selection(): # This function highlights selection basics.
         proceed()
 
         print ('''
-            Since this is an IF ELIF... ELSE structure it will only return the true statement.
-            IF "bravery was selected, the user is Gryffindor; intelligence Ravenclaw
-            friendship Hufflepuff.And if you don't follow rules, the else statement captures
-            all other values, Slytherin.\n
-            ''')
+        Since this is an IF ELIF... ELSE structure it will only return the true statement.
+        IF "bravery was selected, the user is Gryffindor; intelligence Ravenclaw
+        friendship Hufflepuff.And if you don't follow rules, the else statement captures
+        all other values, Slytherin.\n
+        ''')
     
         proceedToMenu()
     
