@@ -243,7 +243,7 @@ def inputs(): # This function provides overview of inputs.
     proceedToMenu()
     
     inputs_menu =('''
-        MENU -Basics
+        MENU -Inputs
         ........................................................................
         1: Input Basics
         2: Input Translation            
@@ -252,7 +252,7 @@ def inputs(): # This function provides overview of inputs.
         \n''')
     
     while True:
-        
+
         print(inputs_menu)
         input_selection = int(input('Select a Topic \n'))
 
@@ -1053,7 +1053,9 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
                 break
             
 main()
-basics()     
+#invoke daughter functions
+basics()
+inputs()     
 
  
 
