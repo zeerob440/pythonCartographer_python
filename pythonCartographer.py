@@ -57,10 +57,8 @@ def basics():
                    
             Functions must be FULLY DECLARED before calling them.\n
                    
-            1 def itAddsThings:()\n
-                   
-            2  (2 + 2)\n
-                   
+            1 def itAddsThings:()   
+            2  (2 + 2)      
             3itAddsThings()
             \n''')
     
