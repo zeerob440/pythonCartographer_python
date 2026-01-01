@@ -11,7 +11,7 @@ print ("This program helps navigate notes and simple structures in the Python la
 # . Prints valid input selection, runs through indefinite loop.
 def proceed(): # It asks the user to continue after each example within a module
     any_key_to_continue = input('''\n
-                        Press any key to proceed\n''')
+                        Press any key to proceed.\n''')
 
 def proceedToMenu():
     any_key_to_menu = input('''\n
@@ -454,28 +454,36 @@ def selection(): # This function highlights selection basics.
             print(ex)
             break
 
-def inputValidation(): # input validation function.
+def inputValidation(): # input validation function, and daughter functions.
 
-    print ('''
+    def iValidationBasics():
+
+        print ('''
         Input validation is the process of forcing user input to adhear to specific data types. It is similar to the feeding ramp
-        between the magazine of a firearm and the chamber.Input validation forces intent into the correct position, thereby allowing the
-        program to execute as designed.\n
-        TRY EXCEPT SELECTIONS\n 
-        TRY EXCEPT SELECTIONS are usually contained in a WHILE lOOP. This structure indefinitely prompts the user to input info until
+        between the magazine of a firearm and the chamber. Input validation forces intent into the correct position, thereby allowing the
+        program to execute as designed.\n''')
+
+        proceedToMenu()
+
+    def tryExcept():
+
+        print('''   
+        TRY EXCEPT\n 
+        TRY EXCEPT are usually contained in a WHILE lOOP. This structure indefinitely prompts the user to input info until
         the correct data type is used.
         EXAMPLE\n
         ''')
     
-    proceed()
+        proceed()
 
-    print ('''
-        In this example the user is prompted to enter an integer.
+        print ('''
+        In the below example the user is prompted to enter an integer.
         The TRY EXCEPT structure is nested within a WHILE LOOP.
         If the user does not enter a integer, the EXCEPT BRANCH continues the loop.
         In order for the EXCEPT BRANCH to work, THE ERROR THAT WILL OCCUR MUST BE DEFINED, such that instead of crashing at ValueError,
         it simply continues.
         the loop when ValueError is returned by the EXCEPT BRANCH.\n
-        In other words, the EXCEPT BRANCH directs instead of crashing continue the loop
+        In other words, the EXCEPT BRANCH directs instead of crashing continuing the loop
         If the user enters an integer the TRY BRANCH executes, and the loop breaks with the BREAK command.
         Do not enter an integer first to experiment with the TRY EXCEPT structure.\n
         
@@ -487,20 +495,24 @@ def inputValidation(): # input validation function.
         except ValueError:
             print ("Invalid input, please enter an integer.\n")
               
-        Now try it\n''')
-    
-    # Try Except example.
-    while True:
-        try:
-            user_integer = int(input("Enter an integer: "))
-            print(f'You enter entered {user_integer}.\n')
-            break
-        except ValueError:
-            print ("Invalid input, please enter an integer.\n")
+        Now proceed to try it\n''')
 
-    proceed()
+        proceed()
     
-    print ('''
+        # Try Except example.
+        while True:
+            try:
+                user_integer = int(input("Enter an integer: "))
+                print(f'You enter entered {user_integer}.\n')
+                break
+            except ValueError:
+                print ("Invalid input, please enter an integer.\n")
+
+        proceedToMenu()
+    
+    def tryExceptElseFinally():
+
+        print ('''
         TRY EXCEPT ElSE FINALLY Structures\n
         In these sort of structures:
         Try is try this operation that may include an error, such as entering a string into an integer input.
@@ -512,33 +524,65 @@ def inputValidation(): # input validation function.
         IF EXCEPT ELSE FINALLY Structure Example.\n
         Now Try it!\n''')
     
-    proceed()
+        proceed()
     
-    # Try Except Else Finally Structure
-    print ('''
+        # Try Except Else Finally Structure
+        print ('''
         Try this TRY EXCEPT ELSE FINALLY Structure.\n
-        Enter a string first.\n
+        Enter a string first. Proceed to try and except!\n
         ''')
-    while True:
-        try: 
-            integer_two = int(input("Enter another integer: "))
-            print (f'You entered {integer_two}.')
-        except ValueError:
-            print("You did not enter an integer.")
-        else: 
-            print ("The else branch says, you have entered an integer.ELSE is optional. If structure is nested in WHILE Loop, break loop here.\n")
-            break
-        finally: print('''The finally branch doesn't care what the user does, it will always print. EVEN IF A LOOP BREAKS BEFOREHAND.\n
+        proceed()
+
+        while True:
+            try: 
+                integer_two = int(input("Enter another integer: "))
+                print (f'You entered {integer_two}.')
+            except ValueError:
+                print("You did not enter an integer.")
+            else: 
+                print ("The else branch says, you have entered an integer.ELSE is optional. If structure is nested in WHILE Loop, break loop here.\n")
+                break
+            finally: print('''The finally branch doesn't care what the user does, it will always print. EVEN IF A LOOP BREAKS BEFOREHAND.\n
                        This originates from the finally structure.\n''')
             
-    proceed()
+        proceed()
     
-    print('''
+        print('''
         This structure enters a WHILE LOOP until a integer is entered. If an integer is entered the try, else, and finally branches activate.
         If a non-integer value is entered the loop will execute the EXCEPT branch and reprompt the user\n
         ''')
     
-    proceedToMenu()
+        proceedToMenu()
+    
+    while True:
+        
+        # declarations for inputs() menu
+        validation_menu =('''
+        MENU - Input Validation
+        ........................................................................
+        1: Input Validation Basics
+        2: Try Except
+        3: If, If, If... Selections
+        4: If ELif Else Selections            
+        OR ANY OTHER KEY TO EXIT.
+        .........................................................................
+        \n''')
+        
+        print(validation_menu)
+        validation_selection = int(input('Select a Topic \n'))
+
+        if validation_selection == 1:
+            print(atopic)
+            iValidationBasics()
+        elif validation_selection == 2:
+            print(atopic)
+            tryExcept()
+        elif validation_selection == 3:
+            print(atopic)
+            tryExceptElseFinally()
+        else:
+            print(ex)
+            break
 
 def for_loops():
     print('''
@@ -548,6 +592,8 @@ def for_loops():
         FOR LOOPS require a PRIMING VALUE,and a Counter(INCREMENTOR OR DECREMENTOR)
         FOR LOOPS are often described as "for i in range of.." in classroom settings.\n
         ''')
+    
+
     
     proceed()
     
