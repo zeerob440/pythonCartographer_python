@@ -14,8 +14,8 @@ def proceed(): # It asks the user to continue after each example within a module
                         Press any key to proceed\n''')
 
 def proceedToMenu():
-    any_key_to_menu = '''\n
-                    This concludes this module. Press any key to continue.\n'''
+    any_key_to_menu = print('''\n
+                    This concludes this module. Press any key to continue.\n''')
     
 
 
