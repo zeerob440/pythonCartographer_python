@@ -562,7 +562,7 @@ def inputValidation(): # input validation function, and daughter functions.
         ........................................................................
         1: Input Validation Basics
         2: Try Except
-        3: If, If, If... Selections            
+        3: Try Except Else Finally            
         OR ANY OTHER KEY TO EXIT.
         .........................................................................
         \n''')
