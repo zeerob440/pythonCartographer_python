@@ -206,7 +206,7 @@ def inputs():
         Always leave a null space between the last letter and closing parenthesis to allow user input.
         ''')
 
-        proceedToMenu()
+    proceedToMenu()
 
     def inputTranslation():
 
@@ -235,7 +235,7 @@ def inputs():
         Proceed to use this example.
         ''')
     
-        proceed()
+    proceed()
 
     print('The below output is from the actual program.\n')
 
