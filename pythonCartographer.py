@@ -191,27 +191,33 @@ def basics():
 
 def inputs(): # This function provides overview of inputs.
 
-    print('''
+    def inputBasics():
+        print('''
         Inputs are foundational structure in any programming language.
         They allow the user to provide data into a program.\n
         BUILDING A USER INPUT\n
         To build a user input an INPUT VARIABLE must be declared. Like this:
         ("")\n
         1 one_or_two = (input("For selection 1 input 1 for selection 2 input 2: "))
-        Always leave a null space between the last letter and closing parenthesis to allow user input.\n
+        Always leave a null space between the last letter and closing parenthesis to allow user input.
         ''')
 
-    proceed()
+    proceedToMenu()
 
-    print('''
+    def inputTranslation():
+
+        print('''
         INPUT TRANSLATION\n
         Sometimes a certain data type must be used for an INPUT VARIABLE.\n
-          
-        int is integer
-        float is a decimal
-        string is string
-        bool is boolean\n
-          
+
+        Datatype shorthand
+        ==============================================================================================
+        int is integer: int(input())
+        float is a decimal: float(input())
+        string is string: all user inputs are string by default, but string(5) is how to translate it.
+        bool is boolean: bool(input())
+        ===============================================================================================\n
+                
         An INPUT VARIABLE with a forced data type is written as:\n
           
         1 my_thing = datatype(input("input message here: "))
@@ -219,13 +225,15 @@ def inputs(): # This function provides overview of inputs.
         1 my_number = int(input("pick a number :"))\n
           
         Example...
-        This variable has been created a float INPUT VARIABLE.
+        This variable has been created a float INPUT VARIABLE.\n
+              
         my_number = float(input('Input a number:
-        Proceed to use this example.\n
+        Proceed to use this example.
         ''')
     
     proceed()
-    print('The below output is from the program running\n')
+
+    print('The below output is from the actual program.\n')
 
     my_number = float(input("Input a number: "))
     print ("This has prompted the user to input a number, my_number is converted to a float.\n")
@@ -234,6 +242,29 @@ def inputs(): # This function provides overview of inputs.
 
     proceedToMenu()
     
+    inputs_menu =('''
+        MENU -Basics
+        ........................................................................
+        1: Input Basics
+        2: Input Translation            
+        OR ANY OTHER KEY TO EXIT.
+        .........................................................................
+        \n''')
+    
+    while True:
+        
+        print(inputs_menu)
+        input_selection = int(input('Select a Topic \n'))
+
+        if input_selection == 1:
+            print(atopic)
+            inputBasics()
+        elif input_selection ==2:
+            print(atopic)
+            inputTranslation()
+        else:
+            print(ex)
+            break
      
 def selection(): # This function highlights selection basics.
     print ('''
