@@ -10,11 +10,11 @@ print ("This program helps navigate notes and simple structures in the Python la
 
 # . Prints valid input selection, runs through indefinite loop.
 def proceed(): # It asks the user to continue after each example within a module
-    any_key_to_continue = print('''\n
+    any_key_to_continue = input('''\n
                         Press any key to proceed\n''')
 
 def proceedToMenu():
-    any_key_to_menu = print('''\n
+    any_key_to_menu = input('''\n
                     This concludes this module. Press any key to continue.\n''')
     
 
