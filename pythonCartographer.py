@@ -206,7 +206,7 @@ def inputs():
         Always leave a null space between the last letter and closing parenthesis to allow user input.
         ''')
 
-    proceedToMenu()
+        proceedToMenu()
 
     def inputTranslation():
 
@@ -235,18 +235,16 @@ def inputs():
         Proceed to use this example.
         ''')
     
-    proceed()
+        proceed()
 
-    print('The below output is from the actual program.\n')
+        print('The below output is from the actual program.\n')
 
-    my_number = float(input("Input a number: "))
-    print ("This has prompted the user to input a number, my_number is converted to a float.\n")
-    print (my_number)
-    print ("As a result it outputs a decimal number.\n")
+        my_number = float(input("Input a number: "))
+        print ("This has prompted the user to input a number, my_number is converted to a float.\n")
+        print (my_number)
+        print ("As a result it outputs a decimal number.\n")
     
-    proceedToMenu()
-    
-   
+        proceedToMenu()
     
     while True:
         
