@@ -1061,8 +1061,8 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
             
 main()
 #invoke daughter functions
-basics()
-inputs()     
+#basics()
+#inputs()     
 
  
 
