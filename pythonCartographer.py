@@ -1,7 +1,7 @@
 '''pythonCartographer is a program that I wrote to help me "map" Python's structures and basic functions.
    
-   Version:Bravo 25 DEC 2025; pythonCartographer Bravo fixes early recursion navigation. Removed returnsToMain function. main()
-   is now a infinite loop that calls functions from the variable menu. 
+   Version: Charley 01 JAN 2026; pythonCartographer Charley was created to aid navigation of pythonCartographer when it became to large to
+   navigate via brute force. It is less butalistic tool, and more application now. Each topic now has while loop controlled submenus invoked from the main menu while loop.
    
    Proudly engineered by Zachary Roberts 11 August, 2025 
    "We should now have access to the main facility. Let’s find the map room."-Cortana'''
@@ -663,8 +663,6 @@ def forLoops():
         print("The RANGE CONTROL the above example starts at 1, and ALWAYS END AT THE HIGHEST DECLARED NUMBER - 1.\n")
 
         proceedToMenu()
-
-
 
     while True:
         
