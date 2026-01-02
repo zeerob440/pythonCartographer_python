@@ -697,8 +697,8 @@ def indefiniteLoops():
 
     def indefiniteLoopsBasics():
         print('''
-        INDEFINITE LOOPS\n
-        Indefinite loops are useful structures. They have a combo of a few components:\n
+        WHILE LOOPS\n
+        WHILE loops are useful structures. They have a combo of a few components:\n
         1. Sentinel Value: A value that ends the loop.
         2. Flag: A bool that determines if an event has happened, I also call these switches.
         3. Counter: A structure that keeps counts of iterations, until it reaches the sentinel
@@ -728,7 +728,7 @@ def indefiniteLoops():
     
     def flagILoop():
     
-        print('''Next indefinite loop structure is what I call a flag loop.\n
+        print('''The next while loop structure is what I call a flag loop.\n
         A flag loop uses a bool as a sentinel such that:
         counter = 0
         sentinel = False
@@ -759,12 +759,12 @@ def indefiniteLoops():
 
     while True:
         
-        # declarations for forLoops() menu
+        # declarations for indefiniteLoops() menu
         indefinite_loop_menu =('''
-        MENU - indefinite Loops
+        MENU - While Loops
         ........................................................................
-        1: Indefinite Loop Basics
-        2: Flag Controlled Indefinite Loops            
+        1: While Loop Basics
+        2: Flag Controlled While Loops            
         OR ANY OTHER KEY TO EXIT.
         .........................................................................
         \n''')
@@ -783,7 +783,9 @@ def indefiniteLoops():
             break    
 
 def functions():
-    print('''
+
+    def functionBasics():
+        print('''
         FUNCTIONS\n
         When programming in any language it is important to not repeat yourself with repetitive tasks.
         This is know as the "don't repeat yourself" principal. (DRY).
@@ -798,9 +800,9 @@ def functions():
         in this case it will add them.\n
         ''')
     
-    proceed()
+        proceed()
 
-    print('''
+        print('''
         To build out the function it has to be directed to do something with a and b.\n
         itAddsThings(a, b):
             sum = a + b
@@ -811,9 +813,9 @@ def functions():
         or moved into another structure as needed.\n
         ''')
     
-    proceed()
+        proceed()
 
-    print('''
+        print('''
         Below is an example of the function that is going to run in this program\n
         a = 10
         b = 5
@@ -844,64 +846,69 @@ def functions():
         print(divide_multiply_sum)\n
         ''')
 
-    proceed()
+        proceed()
 
-    print('''
+        print('''
         Time to run this program. This program will return the values of a and b added, subtracted,
-        divided and multiplied. It will also demonstrate how function returns can be saved as variables.\n
+        divided, and multiplied. It will also demonstrate how function returns can be saved as variables.\n
         ''')
-    a = 10
-    b = 5
 
-    def itAddsThings(a, b):
-        sum = a + b
-        return sum 
+        proceed()
 
-    def itSubtractsThings(a, b):
-        difference = a - b
-        return difference
+        a = 10
+        b = 5
+        #nesting block 2 functions for the lesson bleow
+        def itAddsThings(a, b):
+            sum = a + b
+            return sum 
 
-    def itMultipliesThings(a, b):
-        product = a * b
-        return product
+        def itSubtractsThings(a, b):
+            difference = a - b
+            return difference
 
-    def itDividesThings(a, b):
-        quotient = a / b
-        return quotient
+        def itMultipliesThings(a, b):
+            product = a * b
+            return product
 
-    print(f'a + b = {itAddsThings(a, b)}')
-    print(f'a - b = {itSubtractsThings(a, b)}')
-    print(f'a * b = {itMultipliesThings(a, b)}')
-    print(f'a / b = {itDividesThings(a, b)}')
+        def itDividesThings(a, b):
+            quotient = a / b
+            return quotient
+
+        print(f'a + b = {itAddsThings(a, b)}')
+        print(f'a - b = {itSubtractsThings(a, b)}')
+        print(f'a * b = {itMultipliesThings(a, b)}')
+        print(f'a / b = {itDividesThings(a, b)}')
         
-    print(itMultipliesThings(a, b) + 9)
-    divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
-    print(divide_multiply_sum)
+        print(itMultipliesThings(a, b) + 9)
+        divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
+        print(divide_multiply_sum)
     
-    proceed()
+        proceed()
 
         # Example of simple function, doing math ops, printing a function to f-string. 
-    a = 10 # globally declared var
-    b = 5  # globally declared var
+        a = 10 # globally declared var
+        b = 5  # globally declared var
 
         # functions below declared with variables as arguments.
-    def itAddsThings(a, b): 
-        sum = a + b
-        return sum 
+        def itAddsThings(a, b): 
+            sum = a + b
+            return sum 
 
-    def itSubtractsThings(a, b):
-        difference = a - b
-        return difference
+        def itSubtractsThings(a, b):
+            difference = a - b
+            return difference
 
-    def itMultipliesThings(a, b):
-        product = a * b
-        return product
+        def itMultipliesThings(a, b):
+            product = a * b
+            return product
 
-    def itDividesThings(a, b):
-        quotient = int(a / b)
-        return quotient
+        def itDividesThings(a, b):
+            quotient = int(a / b)
+            return quotient
     
-    print('''
+        proceed()
+    
+        print('''OUTPUT FUNCTION WITH f-STRING\n
         It is possible to print a function to an f-string by:\n
         print(f'a + b = {itAddsThings(a, b)}')\n
         print(f'a - b = {itSubtractsThings(a, b)}')
@@ -910,36 +917,36 @@ def functions():
         Proceed to see the values report in f-strings.\n
         ''')
     
-    proceed()
+        proceed()
 
-    # printing functions to f-string is possible.
-    print(f'a + b = {itAddsThings(a, b)}\n')
-    print(f'a - b = {itSubtractsThings(a, b)}\n')
-    print(f'a * b = {itMultipliesThings(a, b)}\n')
-    print(f'a / b = {itDividesThings(a, b)}\n')
+        # printing functions to f-string is possible.
+        print(f'a + b = {itAddsThings(a, b)}\n')
+        print(f'a - b = {itSubtractsThings(a, b)}\n')
+        print(f'a * b = {itMultipliesThings(a, b)}\n')
+        print(f'a / b = {itDividesThings(a, b)}\n')
 
-    proceed()
+        proceed()
 
-    print('''
+        print('''
         MAKING NEW VARIABLES WITH FUNCTIONS\n
         It is possible to store a function return in a variable once the value is returned to main.
-        It is also possible to add a constant to a function return to alter the value. The
+        It is also possible to add a constants to a function return to alter the value. The
         examples below are how to build these structures.\n
           
         print(itMultipliesThings(a, b) + 9)
         divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
         print(divide_multiply_sum)\n''')
     
-    print('Proceed to run the above code.\n')
+        print('Proceed to run the above code.\n')
 
-    proceed()
+        proceed()
 
-    # function return values can be used to create new variables and print statements.
-    print(itMultipliesThings(a, b) + 9)
-    divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
-    print(divide_multiply_sum)
+        # function return values can be used to create new variables and print statements.
+        print(itMultipliesThings(a, b) + 9)
+        divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
+        print(divide_multiply_sum)
 
-    print('''
+        print('''
         REUSING FUNCTIONS\n
         One of the advantages of functions is that they can be reused. This can be done by simply changing the args.
         For instance using this code we just ran, we'll add two more values for the itAddsThings function to print.\n
@@ -957,22 +964,42 @@ def functions():
 
         print(itAddsThings(divide_multiply_sum, add_subtract_sum))\n''')
     
-    print('Proceed to run code.\n')
+        print('Proceed to run code.\n')
 
-    proceed()
+        proceed()
 
-    divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
+        divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
 
-    add_subtract_sum = (itAddsThings(a,b) + itSubtractsThings(a, b))
+        add_subtract_sum = (itAddsThings(a,b) + itSubtractsThings(a, b))
 
-    # using itAddsThings function with new args to add divide_multiply_sum and add_subtract_sum
-    itAddsThings(divide_multiply_sum, add_subtract_sum)
+        # using itAddsThings function with new args to add divide_multiply_sum and add_subtract_sum
+        itAddsThings(divide_multiply_sum, add_subtract_sum)
 
-    print(f'''
+        print(f'''
         The new args in itAddsThings(divide_multiply_sum, add_subtract_sum)
         is:{itAddsThings(divide_multiply_sum, add_subtract_sum)}.\n''')
 
-    proceedToMenu()
+        proceedToMenu()
+    while True:
+        
+        # declarations for functions() menu
+        functions_menu =('''
+        MENU - Functions
+        ........................................................................
+        1: Functions Basics           
+        OR ANY OTHER KEY TO EXIT.
+        .........................................................................
+        \n''')
+        
+        print(functions_menu)
+        functions_selection = int(input('Select a Topic \n'))
+
+        if functions_selection == 1:
+            print(atopic)
+            functionBasics()
+        else:
+            print(ex)
+            break    
 
 def listsPopulation():
     print('''
