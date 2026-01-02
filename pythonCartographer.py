@@ -886,7 +886,13 @@ def functions():
 
         proceed()
 
-        # Example of simple function, doing math ops, printing a function to f-string. 
+        print('''OUTPUT RETURNS
+              Producing output for returns follows this process:\n
+            1. Declare Vars needed for function arguments
+            2. Declare Functions.
+            3. Invoke functions.
+            4. Save returns to variables in the main program.''')
+        # Example of simple function, doing math ops, outputing function returns. 
         a = 10 # globally declared var
         b = 5  # globally declared var
 
@@ -907,8 +913,27 @@ def functions():
             quotient = int(a / b)
             return quotient
         
-    
+        #functions invoked
+        itAddsThings()
+        itSubtractsThings()
+        itMultipliesThings()
+        itDividesThings()
+
+        #returns saved to variables 
+        add = itAddsThings(a, b)
+        subtract = itSubtractsThings(a, b)
+        multiply = itMultipliesThings(a, b)
+        divide = itDividesThings(a, b)
+
+        # variables printed
+        print(add)
+        print(subtract)
+        print(multiply)
+        print(divide)
+
+
         proceed()
+    
     
         print('''OUTPUT FUNCTION WITH f-STRING\n
         It is possible to print a function to an f-string by:\n
