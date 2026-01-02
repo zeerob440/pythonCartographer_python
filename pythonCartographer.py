@@ -1096,11 +1096,11 @@ def listsPopulation():
         POPULATING LIST WITH FOR LOOP\n
         Lists are often populated with loops the example below is:\n
           
-        numbers = [] # declare empty list.
+        user_things = [] # declare empty list.
         for i in range(3):# initiate for loop.
-            user_num = (int(input('Enter a number: ')))# declare user input variable.
-            numbers.append(user_num)# use .append() method to populate the list
-        print(numbers)# print raw list.\n
+            user_thing_input = input('Enter a anything: ')# declare user input variable.
+            user_things.append(user_thing_input)# use .append() method to populate the list
+        print(user_things)# print raw list.\n
           
         Proceed to try it. The code will allow you to input 3 items.
         ''')
@@ -1108,11 +1108,11 @@ def listsPopulation():
         proceed()
 
         # Below is an example of populating a list with the .append() method.
-        numbers = [] # declare empty list.
+        user_things = [] # declare empty list.
         for i in range(3):# initiate for loop.
-            user_num = (int(input('Enter a number: ')))# declare user input variable.
-            numbers.append(user_num)# use .append() method to populate the list
-        print(numbers)# print raw list.
+            user_thing_input = input('Enter anything: ')# declare user input variable.
+            user_things.append(user_thing_input)# use .append() method to populate the list
+        print(user_things)# print raw list.
 
         proceedToMenu()
 
@@ -1139,7 +1139,7 @@ def listsPopulation():
     def populateListWhileLoop():
         print('''
         POPULATING LIST WITH WHILE LOOP\n
-        It is also possible to populate a list with an indefinite loop. Below is an example of how this is achieved\n
+        It is also possible to populate a list with an while loop. Below is an example of how this is achieved\n
         another_list = [] #declare empty list
         append_list = True
         while append_list:
