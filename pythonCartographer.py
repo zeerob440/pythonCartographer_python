@@ -816,10 +816,9 @@ def functions():
         d_plus_f = itAddsDF(d, f) #declared var to store return value in
 
         print (d_plus_f) # output return value
-    
         
-              
-          
+        # it will return 20
+       
         sum = d + f takes the targeted global arguments, adds them, and stores the value in sum. 
         Once that happens return is used to make sum accessible to the main program, from here it can be printed, 
         or moved into another structure as needed. Proceed to try it.\n
@@ -835,9 +834,7 @@ def functions():
             return added
         
         itAddsDF(d, f) # function invoked with arguments
-
         d_plus_f = itAddsDF(d, f) #declared var to save return value in
-
         print (d_plus_f) # output return value
 
         proceedToMenu()
@@ -912,8 +909,6 @@ def functions():
         divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
         print(divide_multiply_sum)
     
-        proceed()
-
         # Example of simple function, doing math ops, printing a function to f-string. 
         a = 10 # globally declared var
         b = 5  # globally declared var
