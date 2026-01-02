@@ -808,8 +808,17 @@ def functions():
         print('''
         To build out the function it has to be directed to do something with d and f.\n
         itAddsDF(d, f):
-            sum = d + f
-            return sum\n
+            added = d + f
+            return added\n
+              
+        itAddsDF(d, f) # function invoked with arguments
+
+        d_plus_f = itAddsDF(d, f) #declared var to store return value in
+
+        print (d_plus_f) # output return value
+    
+        
+              
           
         sum = d + f takes the targeted global arguments, adds them, and stores the value in sum. 
         Once that happens return is used to make sum accessible to the main program, from here it can be printed, 
@@ -818,12 +827,18 @@ def functions():
     
         proceed()
 
-        def itAddsDF(d, f): # function is declared
-            sum = d + f
-            return sum
+
         d = 5 # argument variables are declared 
         f = 15
-        itAddsDF() # function invoked
+        def itAddsDF(d, f): # function is declared
+            added = d + f
+            return added
+        
+        itAddsDF(d, f) # function invoked with arguments
+
+        d_plus_f = itAddsDF(d, f) #declared var to save return value in
+
+        print (d_plus_f) # output return value
 
         proceedToMenu()
 
@@ -1001,7 +1016,7 @@ def functions():
         MENU - Functions
         ........................................................................
         1: Functions Basics
-        2: intermediate Functions Operations           
+        2: Intermediate Functions Operations           
         OR ANY OTHER KEY TO EXIT.
         .........................................................................
         \n''')
