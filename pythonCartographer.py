@@ -1343,8 +1343,9 @@ def depopulatingLists():
         depopulate_menu =('''
         MENU - Depopulating Lists
         ........................................................................
-        1: Depopulate List  Basics
-        2: Flag Controlled While Loops            
+        1: Depopulate List Basics
+        2: Depopulate List with Another List
+        3: Depopulate List with List Comprehension           
         OR ANY OTHER NUMBER TO EXIT.
         .........................................................................
         \n''')
