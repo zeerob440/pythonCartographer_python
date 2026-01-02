@@ -633,8 +633,8 @@ def forLoops():
     
         print('''FOR LOOP RANGE CONTROL\n
             In this example you will see...\n
-            0\n
-            1\n
+            0
+            1
             2\n
             That is because all iterations start with 0 by default in Python. Unless specified otherwise\n
             Proceed to run the code.''')
@@ -655,6 +655,9 @@ def forLoops():
                 print(i)\n
             print("The RANGE CONTROL the above example starts at 1, and ALWAYS END AT THE HIGHEST DECLARED NUMBER - 1.\n")
             Proceed to run this example!''')
+        
+        proceed()
+
         for i in range (1,4):
             print(i)
         print("The RANGE CONTROL the above example starts at 1, and ALWAYS END AT THE HIGHEST DECLARED NUMBER - 1.\n")
