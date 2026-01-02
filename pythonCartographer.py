@@ -852,7 +852,7 @@ def functions():
         
         proceed()
         print('''EXAMPLE CODE OF OUTPUT RETURNS.
-             # Example of simple function, doing math ops, outputing function returns. 
+             # Example of simple function, doing math ops, outputting function returns. 
         a = 10 # globally declared var
         b = 5  # globally declared var
 
@@ -902,7 +902,7 @@ def functions():
 
         proceed()
 
-        # Example of simple function, doing math ops, outputing function returns. 
+        # Example of simple function, doing math ops, outputting function returns. 
         a = 10 # globally declared var
         b = 5  # globally declared var
 
@@ -1056,13 +1056,15 @@ def functions():
             break    
 
 def listsPopulation():
-    print('''
+    
+    def populateLists():
+        print('''
         POPULATING LISTS\n
         Lists are a great way to store data. Lists can store virtually any Python data type.
         They can be populated via hardcoding values into them such that:\n
         my_list =['dog', 'cat']
         their_list = [2 ,'cherry','mouse']\n
-        In Python data types do not need to be the same to create a list like in many other languages.\n
+        In Python data types do not need to be the same to create a list like in many other languages.
         ''')
     
     proceed()
@@ -1086,9 +1088,11 @@ def listsPopulation():
     dog_list.append(new_dog)
     print(dog_list)
     
-    proceed()
+    proceedToMenu()
 
-    print('''
+    def populateListForLoop():
+
+        print('''
         POPULATING LIST WITH FOR LOOP\n
         Lists are often populated with loops the example below is:\n
           
@@ -1101,18 +1105,20 @@ def listsPopulation():
         Proceed to try it. The code will allow you to input 3 items.
         ''')
     
-    proceed()
+        proceed()
 
-    # Below is an example of populating a list with the .append() method.
-    numbers = [] # declare empty list.
-    for i in range(3):# initiate for loop.
-        user_num = (int(input('Enter a number: ')))# declare user input variable.
-        numbers.append(user_num)# use .append() method to populate the list
-    print(numbers)# print raw list.
+        # Below is an example of populating a list with the .append() method.
+        numbers = [] # declare empty list.
+        for i in range(3):# initiate for loop.
+            user_num = (int(input('Enter a number: ')))# declare user input variable.
+            numbers.append(user_num)# use .append() method to populate the list
+        print(numbers)# print raw list.
 
-    proceed()
+        proceedToMenu()
 
-    print('''POPULATING LIST WITH insert()\n
+    def populateListInsert():
+
+        print('''POPULATING LIST WITH insert()\n
           Another way to populate a list is with the insert()method.
           insert() is used to populate an item at a specific index, the method need an index argument and a item to insert, such  that:\n
           cat_list = ['tabby', 'siamese', 'persian']\n
@@ -1122,17 +1128,17 @@ def listsPopulation():
           proceed to run this code.\n
           ''')
     
-    proceed()
+        proceed()
 
-    cat_list = ['tabby', 'siamese', 'persian']
-    cat_list.insert(1, 'main coon')
-    print (cat_list)
+        cat_list = ['tabby', 'siamese', 'persian']
+        cat_list.insert(1, 'main coon')
+        print (cat_list)
 
-    proceed()
+        proceedToMenu()
     
-
-    print('''
-        POPULATING LIST WITH INDEFINITE LOOP\n
+    def populateListWhileLoop():
+        print('''
+        POPULATING LIST WITH WHILE LOOP\n
         It is also possible to populate a list with an indefinite loop. Below is an example of how this is achieved\n
         another_list = [] #declare empty list
         append_list = True
@@ -1147,23 +1153,24 @@ def listsPopulation():
         Below this code will prompt you to populate a list until you input 'n'\n
         ''')
 
-    proceed()
+        proceed()
 
-    another_list = [] #declare empty list
-    append_list = True
-    while append_list:
-        list_apendenator = input('Enter an item to list: ')
-        another_list.append(list_apendenator)
-        sentinel_prompt = input('Would you like to add another item? Enter "y" or "n": ')
-        if sentinel_prompt == ('y'):      
-            append_list = True
-        else: append_list = False
-    print('You entered\n')
-    print(*another_list)# * is used for argument unpacking it removes commas and brackets.
+        another_list = [] #declare empty list
+        append_list = True
+        while append_list:
+            list_apendenator = input('Enter an item to list: ')
+            another_list.append(list_apendenator)
+            sentinel_prompt = input('Would you like to add another item? Enter "y" or "n": ')
+            if sentinel_prompt == ('y'):      
+                append_list = True
+            else: append_list = False
+        print('You entered\n')
+        print(*another_list)# * is used for argument unpacking it removes commas and brackets.
 
-    proceed()
+        proceedToMenu()
 
-    print('''
+    def populateListSplit():
+        print('''
         POPULATING LIST WITH .split()\n
         Lists can be created using the .split() method. However, it is important to warn the user
         that this method of input is being used. The .split() method uses space to separate several items in a list
@@ -1176,15 +1183,17 @@ def listsPopulation():
         Now you try:\n
         ''')
     
-    proceed()
+        proceed()
 
-    enter_items = input('Enter an item separated by space. ')
-    items = enter_items.split()
-    print(items)
+        enter_items = input('Enter an item separated by space. ')
+        items = enter_items.split()
+        print(items)
 
-    proceed()
+        proceedToMenu()
+    
+    def populateListConcat():
 
-    print('''JOINING LISTS WITH CONCATENATION\n
+        print('''JOINING LISTS WITH CONCATENATION\n
         Another method of populating lists is to concatenate them. Such that you simply add the list together in another variable.
         since you are concatenating two list the new variable is also list such that:\n
          A simple program demonstrating how to concatenate lists.
@@ -1199,17 +1208,56 @@ def listsPopulation():
         Proceed to run this program, it will output [1, 2 ,3, 'a', 'b', 'c']
         ''')
     
-    proceed()
-    list1 = [1, 2 , 3]
-    listA = ['a','b','c']
+        proceed()
+        list1 = [1, 2 , 3]
+        listA = ['a','b','c']
 
-    combined_list = (list1 + listA)
+        combined_list = (list1 + listA)
 
-    print(combined_list)
-
-
+        print(combined_list)
 
     proceedToMenu()
+
+    while True:
+        
+        # declarations for populateLists() menu
+        populate_list_menu =('''
+        MENU - 
+        ........................................................................
+        1: List Population .append
+        2: List Population for loop
+        3: List Population insert()
+        4: List Population While Loop
+        5: List Population split()
+        6: List Population Concatenation           
+        OR ANY OTHER NUMBER TO EXIT.
+        .........................................................................
+        \n''')
+        
+        print(populate_list_menu)
+        populate_list_selection = int(input('Select a Topic \n'))
+
+        if populate_list_selection == 1:
+            print(atopic)
+            populateLists()
+        elif populate_list_selection == 2:
+            print(atopic)
+            populateListForLoop()
+        elif populate_list_selection == 3:
+            print(atopic)
+            populateListInsert()
+        elif populate_list_selection == 4:
+            print(atopic)
+            populateListWhileLoop()
+        elif populate_list_selection == 5:
+            print(atopic)
+            populateListSplit()
+        elif populate_list_selection == 6:
+            print(atopic)
+            populateListConcat()
+        else:
+            print(ex)
+            break        
 
 def depopulatingLists():
 
