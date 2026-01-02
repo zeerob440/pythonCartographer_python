@@ -624,7 +624,7 @@ def forLoops():
                 print(i)
         print(i)
     
-    proceedToMenu()
+        proceedToMenu()
     
     def rangeControl():
     #Create simple "for i in range of" FOR LOOP
