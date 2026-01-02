@@ -691,15 +691,19 @@ def forLoops():
         else:
             print(ex)
             break    
-        
+
+# indefiniteLoops() contains daughter functions indefiniteLoopsBasics, and flagILoops().       
 def indefiniteLoops():
-    print('''
+
+    def indefiniteLoopsBasics():
+        print('''
         INDEFINITE LOOPS\n
         Indefinite loops are useful structures. They have a combo of a few components:\n
-        1. Sentinel Value: A value that ends the loop.\n
+        1. Sentinel Value: A value that ends the loop.
         2. Flag: A bool that determines if an event has happened, I also call these switches.
-        3. Counter: A structure that keeps counts of iterations, until it reaches the sentinel 
-        4. Loop Body: the part of the loop that does the work\n
+        3. Counter: A structure that keeps counts of iterations, until it reaches the sentinel
+           Counters are incremented with += or decremented with -=. 
+        4. Loop Body: the part of the loop that does the work
         5. Graceful exit: A way to exit the loop without breaking the program.\n
         The first example will be a an indefinite loop that relies of a sentinel value to exit\n
         sentinel_value = 4
@@ -707,44 +711,76 @@ def indefiniteLoops():
         while sentinel_value > iteration_counter:
             print("Prints 4 times, because iterations in Python start with 0)
             iteration_counter += iteration counter
-        print("Loop exited)\n''')
+        print("Loop exited)\n
+        Proceed to run code!\n''')
     
-    proceed()
+        proceed()
     
-    # sentinel value exited indefinite loop. 
-    sentinel_value = 4 # declare sentinel value
-    iteration_counter = 0 # declare counter
-    while sentinel_value > iteration_counter:
-        print('This will print 4 times.')
-        iteration_counter += 1 # increment counter at end of loop workflow
-    print('Loop exited.\n') # stick the landing.
+        # sentinel value exited indefinite loop. 
+        sentinel_value = 4 # declare sentinel value
+        iteration_counter = 0 # declare counter
+        while sentinel_value > iteration_counter:
+            print('This will print 4 times.')
+            iteration_counter += 1 # increment counter at end of loop workflow
+        print('Loop exited.\n') # stick the landing.
 
-    proceed()
+        proceedToMenu()
     
-    print('''Next indefinite loop structure is what I call a flag loop.\n
-          A flag loop uses a bool as a sentinel such that:
-          counter = 0
-          sentinel = False
-          while sentinel == False:
+    def flagILoop():
+    
+        print('''Next indefinite loop structure is what I call a flag loop.\n
+        A flag loop uses a bool as a sentinel such that:
+        counter = 0
+        sentinel = False
+        while sentinel == False:
             print(counter)
+            counter += 1
             if counter == 10:
                 sentinel = True:
             else:
                 sentinel = False
-        print("Loop Exited")''')
+                print("Loop Exited")\n
+        Proceed to run the code.''')
     
-    counter = 0 # set counter
-    sentinel = False # set flag, True or False depending on what the usecase is.
-    while sentinel == False:
-        print(counter)
-        counter += 1
-        if counter == 10: # when counter hits the prescribed value, sentinel evaluates as True.
-            sentinel = True
-        else:
-            sentinel = False # serves as a redundant switch
-    print('Loop Exited.')
+        proceed()
+    
+        counter = 0 # set counter
+        sentinel = False # set flag, True or False depending on the usecase.
+        while sentinel == False:
+            print(counter)
+            counter += 1 # counter set to increment with each iteration.
+            if counter == 10: # when counter hits the prescribed value, sentinel evaluates as True.
+                sentinel = True
+            else:
+                sentinel = False # serves as a redundant switch
+                print('Loop Exited.')
 
-    proceedToMenu()
+        proceedToMenu()
+
+    while True:
+        
+        # declarations for forLoops() menu
+        indefinite_loop_menu =('''
+        MENU - indefinite Loops
+        ........................................................................
+        1: Indefinite Loop Basics
+        2: Flag Controlled Indefinite Loops            
+        OR ANY OTHER KEY TO EXIT.
+        .........................................................................
+        \n''')
+        
+        print(indefinite_loop_menu)
+        indefinite_loop_selection = int(input('Select a Topic \n'))
+
+        if indefinite_loop_selection == 1:
+            print(atopic)
+            indefiniteLoopsBasics()
+        elif indefinite_loop_selection == 2:
+            print(atopic)
+            flagILoop()
+        else:
+            print(ex)
+            break    
 
 def functions():
     print('''
