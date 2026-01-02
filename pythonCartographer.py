@@ -8,8 +8,9 @@
 
 print ("This program helps navigate notes and simple structures in the Python language. Zachary Roberts 11 AUG 2025.\n")
 
-# . Prints valid input selection, runs through indefinite loop.
-def proceed(): # It asks the user to continue after each example within a module
+# Start
+
+def proceed(): # It asks the user to continue after each example within a lesson.
     any_key_to_continue = input('''\n
                         Press any key to proceed.\n''')
 
@@ -17,14 +18,13 @@ def proceedToMenu():
     any_key_to_menu = input('''\n
                     This concludes this module. Press any key to continue.\n''')
     
-
-
-#used to denote that content is being accessed.
+# Used to denote that content is being accessed.
 atopic = 'Accessing Topic...\n'
 
-#ex used declare that a menu is exiting.
+#ex used to declare that a menu is exiting.
 ex = 'Exiting...\n'
 
+# basics() function, contains daughter functions variableDeclaration(), dataTyped() and functionBasics().
 def basics():
     
     def variableDeclaration():
@@ -188,7 +188,7 @@ def basics():
             print(ex)
             break
     
-
+# inputs() contains daughter functions inputBasics(), inputTranslation().
 def inputs():
     '''
     inputs() provides overview of input and its daughter functions inputBasics, and inputTranslation.
@@ -270,8 +270,9 @@ def inputs():
         else:
             print(ex)
             break
-     
-def selection(): # This function highlights selection basics.
+
+# selection() contains daughter functions selectionBasics(), ifElseSelections(), ifIfIFSelections(), and if ElifElifElseSelections()    
+def selection(): 
 
     def selectionBasics():
         print ('''
@@ -423,7 +424,7 @@ def selection(): # This function highlights selection basics.
     
     while True:
         
-        # declarations for inputs() menu
+        # declarations for selections() menu
         selections_menu =('''
         MENU - Selections
         ........................................................................
@@ -454,7 +455,8 @@ def selection(): # This function highlights selection basics.
             print(ex)
             break
 
-def inputValidation(): # input validation function, and daughter functions.
+# inputValidation() contains daughter functions inputValidationBasics(), tryExcept(), and tryExceptElseFinally()
+def inputValidation(): 
 
     def iValidationBasics():
 
@@ -556,7 +558,7 @@ def inputValidation(): # input validation function, and daughter functions.
     
     while True:
         
-        # declarations for inputs() menu
+        # declarations for inputValidation() menu
         validation_menu =('''
         MENU - Input Validation
         ........................................................................
@@ -583,6 +585,7 @@ def inputValidation(): # input validation function, and daughter functions.
             print(ex)
             break
 
+# forLoops() contains daughter functions forLoopsBasics(), and RangeControl().
 def forLoops():
 
     def forLoopBasics():
@@ -666,7 +669,7 @@ def forLoops():
 
     while True:
         
-        # declarations for inputs() menu
+        # declarations for forLoops() menu
         for_loop_menu =('''
         MENU - For Loops
         ........................................................................
