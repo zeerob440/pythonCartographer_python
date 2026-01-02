@@ -827,7 +827,7 @@ def functions():
 
         proceedToMenu()
 
-        
+    # This lesson is longer because it reuses the same code throughout the lesson.   
     def intermediateFunctionOps():
         print('''
         Below is an example of the function that is going to run in this program\n
@@ -1001,7 +1001,7 @@ def functions():
         MENU - Functions
         ........................................................................
         1: Functions Basics
-        2: intermediate Functions Basics           
+        2: intermediate Functions Operations           
         OR ANY OTHER KEY TO EXIT.
         .........................................................................
         \n''')
