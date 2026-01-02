@@ -842,7 +842,7 @@ def functions():
     # This lesson is longer because it reuses the same code throughout the lesson.   
     def intermediateFunctionOps():
         print('''INTERMEDIATE OPERATIONS\n
-        Below is an example of the function that is going to run in this program\n
+        Below is an example of the function that is going to run in this lesson.\n
         a = 10
         b = 5
 
@@ -907,9 +907,6 @@ def functions():
             quotient = int(a / b)
             return quotient
         
-        print(itMultipliesThings(a, b) + 9)
-        divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
-        print(divide_multiply_sum)
     
         proceed()
     
@@ -919,7 +916,7 @@ def functions():
         print(f'a - b = {itSubtractsThings(a, b)}')
         print(f'a * b = {itMultipliesThings(a, b)}')\n
         print(f'a / b = {itDividesThings(a, b)}')\n  
-        Proceed to see the values report in f-strings.\n
+        Proceed to see the values output in f-strings.\n
         ''')
     
         proceed()
@@ -940,7 +937,10 @@ def functions():
           
         print(itMultipliesThings(a, b) + 9)
         divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
-        print(divide_multiply_sum)\n''')
+        print(divide_multiply_sum)\n
+        output will be:\n
+        52
+        59''')
     
         print('Proceed to run the above code.\n')
 
@@ -950,6 +950,8 @@ def functions():
         print(itMultipliesThings(a, b) + 9)
         divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
         print(divide_multiply_sum)
+
+        proceed
 
         print('''
         REUSING FUNCTIONS\n
