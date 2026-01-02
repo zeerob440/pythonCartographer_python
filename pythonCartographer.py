@@ -1297,7 +1297,7 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
             7: FUNCTIONS
             8: POPULATING LISTS
             9: DEPOPULATING LISTS
-            OR ANY OTHER KEY TO EXIT.
+            OR ANY OTHER NUMBER TO EXIT.
             ------------------------------------------------------------------------
             ''')
 
