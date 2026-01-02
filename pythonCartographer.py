@@ -975,7 +975,8 @@ def functions():
         print(divide_multiply_sum)\n
         output will be:\n
         52
-        59''')
+        59\n
+        ''')
     
         print('Proceed to run the above code.\n')
 
@@ -997,14 +998,17 @@ def functions():
 
         add _subtract_sum = (itAddsThings(a,b) + itSubtractsThings(a, b))
 
-        print(divide_multiply_sum)
+        print(add_subtract_sum)     
 
-        print(add_subtract_sum)
+        print(divide_multiply_sum)
 
         # using itAddsThings function with new args to add divide_multiply_sum and add_subtract_sum
         itAddsThings(divide_multiply_sum, add_subtract_sum)
 
-        print(itAddsThings(divide_multiply_sum, add_subtract_sum))\n''')
+        print(itAddsThings(divide_multiply_sum, add_subtract_sum))\n
+        It will output\n
+        20
+        52''')
     
         print('Proceed to run code.\n')
 
@@ -1015,7 +1019,7 @@ def functions():
         add_subtract_sum = (itAddsThings(a,b) + itSubtractsThings(a, b))
 
         print(add_subtract_sum)
-        
+
         print(divide_multiply_sum)
 
         # using itAddsThings function with new args to add divide_multiply_sum and add_subtract_sum
