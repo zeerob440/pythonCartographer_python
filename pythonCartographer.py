@@ -1014,6 +1014,10 @@ def functions():
 
         add_subtract_sum = (itAddsThings(a,b) + itSubtractsThings(a, b))
 
+        print(add_subtract_sum)
+        
+        print(divide_multiply_sum)
+
         # using itAddsThings function with new args to add divide_multiply_sum and add_subtract_sum
         itAddsThings(divide_multiply_sum, add_subtract_sum)
 
