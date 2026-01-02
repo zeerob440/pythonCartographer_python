@@ -841,57 +841,67 @@ def functions():
 
     # This lesson is longer because it reuses the same code throughout the lesson.   
     def intermediateFunctionOps():
-        print('''INTERMEDIATE OPERATIONS\n
-        Below is an example of the function that is going to run in this lesson.\n
-        a = 10
-        b = 5
 
-        def itAddsThings(a, b):
-        sum = a + b
-        return sum 
-
-        def itSubtractsThings(a, b):
-        difference = a - b
-        return difference
-
-        def itMultipliesThings(a, b):
-        product = a * b
-        return product
-
-        def itDividesThings(a, b):
-        quotient = a / b
-        return quotient
-
-        print(f'a + b = {itAddsThings(a, b)}')
-        print(f'a - b = {itSubtractsThings(a, b)}')
-        print(f'a * b = {itMultipliesThings(a, b)}')
-        print(f'a / b = {itDividesThings(a, b)}')
-        
-        print(itMultipliesThings(a, b) + 9)
-        divide_multiply_sum = (itDividesThings(a, b) + itMultipliesThings(a, b))
-        print(divide_multiply_sum)\n
-        ''')
-
-        proceed()
-
-        print('''
-        Time to run this program. This program will return the values of a and b added, subtracted,
-        divided, and multiplied. It will also demonstrate how function returns can be saved as variables.
-        and print them as well.\n
-        Output will be:\n
-        59
-        52       \n
-        
-        ''')
-
-        proceed()
-
-        print('''OUTPUT RETURNS
-              Producing output for returns follows this process:\n
+        print('''OUTPUT RETURNS\n
+            Producing output for returns follows this process:\n
             1. Declare Vars needed for function arguments
             2. Declare Functions.
             3. Invoke functions.
-            4. Save returns to variables in the main program.''')
+            4. Save returns to variables in the main program.
+            ''')
+        
+        proceed()
+        print('''EXAMPLE CODE OF OUTPUT RETURNS.
+             # Example of simple function, doing math ops, outputing function returns. 
+        a = 10 # globally declared var
+        b = 5  # globally declared var
+
+        # functions below declared with variables as arguments.
+        def itAddsThings(a, b): 
+            sum = a + b
+            return sum 
+
+        def itSubtractsThings(a, b):
+            difference = a - b
+            return difference
+
+        def itMultipliesThings(a, b):
+            product = a * b
+            return product
+
+        def itDividesThings(a, b):
+            quotient = int(a / b)
+            return quotient
+        
+        #functions invoked with args
+        itAddsThings(a, b)
+        itSubtractsThings(a, b)
+        itMultipliesThings(a, b)
+        itDividesThings(a, b)
+
+        #returns saved to variables 
+        add = itAddsThings(a, b)
+        subtract = itSubtractsThings(a, b)
+        multiply = itMultipliesThings(a, b)
+        divide = itDividesThings(a, b)
+
+        # variables printed
+        print(add)
+        print(subtract)
+        print(multiply)
+        print(divide)\n
+        
+        Output will be:\n
+        
+        15
+        5
+        50
+        2\n
+        Proceed to run code.
+        ''')
+
+        proceed()
+
         # Example of simple function, doing math ops, outputing function returns. 
         a = 10 # globally declared var
         b = 5  # globally declared var
