@@ -790,12 +790,15 @@ def functions():
         When programming in any language it is important to not repeat yourself with repetitive tasks.
         This is know as the "don't repeat yourself" principal. (DRY).
         Functions are essential for completing repetitive tasks. They can be used to call locations in a program,
-        such as they are used in pythonCartographer, or to do repetitive math operations.\n
-          
+        such as they are used in pythonCartographer, or to do repetitive math operations.''')
+
+        proceed()      
+
+        print(''' 
         ARGUMENTS\n
         Functions are designed to take arguments like this:\n
         itAddsThings(a, b)\n
-        For argument's sake, the arguments a = 5 and b = 7 are globally declared variables.
+        For argument's sake, the arguments d = 5 and f = 15 are globally declared variables.
         The function finds these two arguments and expects to do something with them.
         in this case it will add them.\n
         ''')
@@ -803,18 +806,29 @@ def functions():
         proceed()
 
         print('''
-        To build out the function it has to be directed to do something with a and b.\n
-        itAddsThings(a, b):
-            sum = a + b
+        To build out the function it has to be directed to do something with d and f.\n
+        itAddsDF(d, f):
+            sum = d + f
             return sum\n
           
-        sum = a + b takes the targeted global arguments, adds them, and stores the value in sum. 
+        sum = d + f takes the targeted global arguments, adds them, and stores the value in sum. 
         Once that happens return is used to make sum accessible to the main program, from here it can be printed, 
-        or moved into another structure as needed.\n
+        or moved into another structure as needed. Proceed to try it.\n
         ''')
     
         proceed()
 
+        def itAddsDF(d, f): # function is declared
+            sum = d + f
+            return sum
+        d = 5 # argument variables are declared 
+        f = 15
+        itAddsDF() # function invoked
+
+        proceedToMenu()
+
+        
+    def intermediateFunctionOps():
         print('''
         Below is an example of the function that is going to run in this program\n
         a = 10
@@ -857,7 +871,7 @@ def functions():
 
         a = 10
         b = 5
-        #nesting block 2 functions for the lesson bleow
+        #nesting block 2 functions for the lesson below
         def itAddsThings(a, b):
             sum = a + b
             return sum 
@@ -986,7 +1000,8 @@ def functions():
         functions_menu =('''
         MENU - Functions
         ........................................................................
-        1: Functions Basics           
+        1: Functions Basics
+        2: intermediate Functions Basics           
         OR ANY OTHER KEY TO EXIT.
         .........................................................................
         \n''')
@@ -997,6 +1012,9 @@ def functions():
         if functions_selection == 1:
             print(atopic)
             functionBasics()
+        elif functions_selection == 2:
+            print(atopic)
+            intermediateFunctionOps()
         else:
             print(ex)
             break    
