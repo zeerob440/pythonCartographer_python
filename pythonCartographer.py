@@ -1216,7 +1216,7 @@ def listsPopulation():
 
         print(combined_list)
 
-    proceedToMenu()
+        proceedToMenu()
 
     while True:
         
