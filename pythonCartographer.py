@@ -1067,9 +1067,9 @@ def listsPopulation():
         In Python data types do not need to be the same to create a list like in many other languages.
         ''')
     
-    proceed()
+        proceed()
 
-    print('''
+        print('''
         POPULATING LISTS WITH .append()\n
         .append() is a method for adding an item to the last index of a list. It expects an argument inside the().
         The argument is the input variable intended to be added to the list such that:\n
@@ -1081,14 +1081,14 @@ def listsPopulation():
         Proceed to run this example: You'll need to input a name.\n
         ''')
     
-    proceed()
+        proceed()
 
-    dog_list = ['Rico']
-    new_dog = input("Enter a new dog: ")
-    dog_list.append(new_dog)
-    print(dog_list)
+        dog_list = ['Rico']
+        new_dog = input("Enter a new dog: ")
+        dog_list.append(new_dog)
+        print(dog_list)
     
-    proceedToMenu()
+        proceedToMenu()
 
     def populateListForLoop():
 
