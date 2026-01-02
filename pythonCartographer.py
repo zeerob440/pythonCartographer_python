@@ -583,45 +583,110 @@ def inputValidation(): # input validation function, and daughter functions.
             print(ex)
             break
 
-def for_loops():
-    print('''
+def forLoops():
+
+    def forLoopBasics():
+        print('''
         FOR LOOPS\n
         FOR LOOPS are a type of indefinite loop. They are used to do various tasks such as populating LISTS,
-        completing a task in a set amount of iterations.
+        and completing a task in a set amount of iterations. Iterations are the number of 'laps' ran around the loop.
         FOR LOOPS require a PRIMING VALUE,and a Counter(INCREMENTOR OR DECREMENTOR)
         FOR LOOPS are often described as "for i in range of.." in classroom settings.\n
+              
+        To set the range on a for loop set as:\n
+              
+        for i in range(number goes here)
         ''')
-    
 
-    
-    proceed()
-    
-    #Create simple "for i in range of" FOR LOOP
-    print("The following is a hardcoded simple FOR LOOP that prints number of iterations.\n")
-    for i in range (3):
-        print (i)
+        proceed()
 
-    proceed()
-    
-    print('''
-        In the above example the you will see...\n
-        0\n
-        1\n
-        2\n
-        That is because all iterations start with 0 by default in Python. Unless specified otherwise\n
-        ''')
-    
-    proceed()
-    
-    print('''
-        RANGE CONTROL EXAMPLE/n
-        To control range in a for loop, it can be declared as\nfor i in range (1, 4):\n
-        ''')
-    for i in range (1,4):
+        print('''LOOP VARIABLES\n
+            loop variables are unusual compared to other var declarations. In the following example:\n
+              
+            for i in range(3):
+                print(i)
+            print(i)\n
+            
+            i is the loop variable, it is declared to iterate through the loop, it can just as easily be named
+            "widgets" or "doodads". However, loop variables are intended to be used within the scope of the
+            for loop. If it is printed outside the scope of the loop, it outputs its last value from when it was in the loop.\n
+            
+            The example will output\n
+            0
+            1
+            2 # last iteration of for loop
+            2 # print statement outside of the loop's scope\n
+            Proceed to run the program.
+             ''')
+        
+        proceed()
+        for i in range(3):
+                print(i)
         print(i)
-    print("The RANGE CONTROL the above example starts at 1, and ALWAYS END AT THE HIGHEST DECLARED NUMBER - 1.\n")
-
+    
     proceedToMenu()
+    
+    def rangeControl():
+    #Create simple "for i in range of" FOR LOOP
+        
+        proceed()
+    
+        print('''FOR LOOP RANGE CONTROL\n
+            In this example you will see...\n
+            0\n
+            1\n
+            2\n
+            That is because all iterations start with 0 by default in Python. Unless specified otherwise\n
+            Proceed to run the code.''')
+        
+        proceed()
+
+        print("The following is a hardcoded simple FOR LOOP that prints number of iterations.\n")
+        for i in range (3):
+            print (i)
+
+
+        proceed()
+    
+        print('''
+            RANGE CONTROL EXAMPLE/n
+            To control range in a for loop, it can be declared as\n
+            for i in range (1, 4):
+                print(i)\n
+            print("The RANGE CONTROL the above example starts at 1, and ALWAYS END AT THE HIGHEST DECLARED NUMBER - 1.\n")
+            Proceed to run this example!''')
+        for i in range (1,4):
+            print(i)
+        print("The RANGE CONTROL the above example starts at 1, and ALWAYS END AT THE HIGHEST DECLARED NUMBER - 1.\n")
+
+        proceedToMenu()
+
+
+
+    while True:
+        
+        # declarations for inputs() menu
+        for_loop_menu =('''
+        MENU - For Loops
+        ........................................................................
+        1: For Loop Basics
+        2: Range Control            
+        OR ANY OTHER KEY TO EXIT.
+        .........................................................................
+        \n''')
+        
+        print(for_loop_menu)
+        for_loop_selection = int(input('Select a Topic \n'))
+
+        if for_loop_selection == 1:
+            print(atopic)
+            forLoopBasics()
+        elif for_loop_selection == 2:
+            print(atopic)
+            rangeControl()
+        else:
+            print(ex)
+            break    
         
 def indefiniteLoops():
     print('''
@@ -1132,7 +1197,7 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
                 inputValidation()
             elif select_structure == 5:
                 print("Accessing For Loops...\n")
-                for_loops()
+                forLoops()
             elif select_structure == 6:
                 print('Accessing indefinite loops...\n')
                 indefiniteLoops()
