@@ -913,11 +913,11 @@ def functions():
             quotient = int(a / b)
             return quotient
         
-        #functions invoked
-        itAddsThings()
-        itSubtractsThings()
-        itMultipliesThings()
-        itDividesThings()
+        #functions invoked with args
+        itAddsThings(a, b)
+        itSubtractsThings(a, b)
+        itMultipliesThings(a, b)
+        itDividesThings(a, b)
 
         #returns saved to variables 
         add = itAddsThings(a, b)
