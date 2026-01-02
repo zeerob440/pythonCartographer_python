@@ -739,7 +739,7 @@ def indefiniteLoops():
                 sentinel = True:
             else:
                 sentinel = False
-                print("Loop Exited")\n
+            print("Loop Exited")\n
         Proceed to run the code.''')
     
         proceed()
@@ -753,7 +753,7 @@ def indefiniteLoops():
                 sentinel = True
             else:
                 sentinel = False # serves as a redundant switch
-                print('Loop Exited.')
+            print('Loop Exited.')
 
         proceedToMenu()
 
