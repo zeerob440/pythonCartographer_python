@@ -1381,6 +1381,7 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
             7: FUNCTIONS
             8: POPULATING LISTS
             9: DEPOPULATING LISTS
+            10: DICTIONARIES
             OR ANY OTHER NUMBER TO EXIT.
             ------------------------------------------------------------------------
             ''')
@@ -1415,6 +1416,8 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
             elif select_structure == 9:
                 print('Accessing Depopulating Lists\n')
                 depopulatingLists()
+            elif select_structure == 10:
+                print('Accessing Dictionaries\n')
             else:
                 print('Exiting pythonCartographer!')
                 break
