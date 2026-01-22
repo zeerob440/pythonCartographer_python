@@ -1364,7 +1364,11 @@ def depopulatingLists():
             depopulateWListComp
         else:
             print(ex)
-            break    
+            break 
+
+def dictionaries():
+    # place content and menu for dictionaries here
+
         
      
 def main():# it serves as the main menu of pythonCartographer, one may call it the "index".
@@ -1418,6 +1422,7 @@ def main():# it serves as the main menu of pythonCartographer, one may call it t
                 depopulatingLists()
             elif select_structure == 10:
                 print('Accessing Dictionaries\n')
+                dictionaries()
             else:
                 print('Exiting pythonCartographer!')
                 break
