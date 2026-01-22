@@ -1367,8 +1367,23 @@ def depopulatingLists():
             break 
 
 def dictionaries():
-    print("FIX ME: dictionary content goes here")
-    # place content and menu for dictionaries here
+    while True:
+        dict_menu = '''MENU - Dictionaries
+        ........................................................................
+        1: Dictionary Basics
+        2: Populating Dictionary
+        3: Depopulating Dictionary
+        4: Iterating Dictionary          
+        OR ANY OTHER NUMBER TO EXIT.
+        .........................................................................\n)'''
+
+        print(dict_menu)
+        dict_selection = int(input("Select a topic:\n "))
+        if dict_selection == 1:
+            print(atopic)
+            dict_basics()
+
+        # place content and menu for dictionaries here
 
         
      
