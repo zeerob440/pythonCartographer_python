@@ -1400,6 +1400,14 @@ def dictionaries():
         print('With print(dictionaryName) method.\n', dictionaryName, '\n')
 
         print(f'with print(dictionaryName.items()) method\n', dictionaryName.items(), '\n')
+
+        print('''With\n 
+              for key, value in dictionaryName.items():\n
+                print(key, value))\n''')
+        for key, value in dictionaryName.items():
+                print(key, value)
+
+        print('this concludes this module.')
         
 
 
