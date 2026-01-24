@@ -1397,7 +1397,9 @@ def dictionaries():
         proceed()
         dictionaryName = {'key0': 0, 'key1': 1, 'key2': 2}
 
-        print('With print(dictionaryName) method.\n', dictionaryName)
+        print('With print(dictionaryName) method.\n', dictionaryName, '\n')
+
+        print(f'with print(dictionaryName.items()) method\n', dictionaryName.items(), '\n')
         
 
 
