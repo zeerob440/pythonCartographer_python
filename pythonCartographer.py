@@ -1374,7 +1374,7 @@ def dictionaries():
               Dictionaries are iterable structures that contain 2 components: key/value pairs.
               They are declared between {} such that:\n
               dictionaryName = {'keyName': 'valueName', ...}\n
-              dictionaries can be comprised of any datatype, abd key is delimited by : and values are delimited by , .\n''')
+              dictionaries can be comprised of any datatype; key is delimited by : and values are delimited by , .\n''')
 
         proceed()
 
@@ -1396,9 +1396,9 @@ def dictionaries():
         proceed()
         dictionaryName = {'key0': 0, 'key1': 1, 'key2': 2}
 
-        print('With print(dictionaryName) method.\n', dictionaryName, '\n')
+        print('With print(dictionaryName) method.\n', dictionaryName)
 
-        print(f'with print(dictionaryName.items()) method\n', dictionaryName.items(), '\n')
+        print(f'with print(dictionaryName.items()) method\n', dictionaryName.items())
 
         print('''With:\n 
             for key, value in dictionaryName.items():\n
@@ -1406,7 +1406,7 @@ def dictionaries():
         for key, value in dictionaryName.items():
                 print(key, value)
 
-        print('This concludes this module., Proceed to exit to Dictionaries menu.')
+        print('This concludes this module. Proceed to exit to Dictionaries menu.')
         
         proceed()
 
