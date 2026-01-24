@@ -1410,19 +1410,33 @@ def dictionaries():
 
         print('''PRINTING SPECIFIC KEYS AND VALUES\n
             Sometimes it is appropriate to print only part of a dictionary.
-              The most common methods I use for this are .get() and the bracket method.\n''')
+            The most common methods I use for this are .get() and the bracket method.\n''')
         
         print('''.get() METHOD\n
             The .get() method returns the value associated with a key/value pair such that:\n
             print(dictionaryName.get('keyname')) The code from earlier will be used to demonstrate
             this method\n''')
-        print('''We will use the following code to get a value\n
+        print('''We will use the following code to get a value:\n
               print(dictionaryName.get('key1'))\n
               Proceed to get value with .get()\n''')
 
         proceed()
 
         print(dictionaryName.get('key1'))
+
+        proceed()
+
+        print('''BRACKET METHOD\n
+            The bracket method prints the value of a key/value pair by:\n
+            print(dictionaryName['key1'])\n
+            The value returned will be 1.\n''')
+        print('Proceed to run code. ')
+
+        proceed()
+        
+        print(dictionaryName['key1'])
+
+
 
     def populating_dict():
         # populating dictionaries content here below
