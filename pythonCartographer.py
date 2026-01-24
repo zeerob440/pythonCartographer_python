@@ -1424,6 +1424,8 @@ def dictionaries():
 
         print(dictionaryName.get('key1'))
 
+        print('The program has output "1".')
+
         proceed()
 
         print('''BRACKET METHOD\n
@@ -1433,10 +1435,13 @@ def dictionaries():
         print('Proceed to run code. ')
 
         proceed()
-        
+
         print(dictionaryName['key1'])
 
+        print('''The program has output "1".\n
+        This is the end to the module proceed to exit.''')
 
+        proceed()
 
     def populating_dict():
         # populating dictionaries content here below
