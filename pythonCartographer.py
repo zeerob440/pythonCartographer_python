@@ -1410,12 +1410,8 @@ def dictionaries():
         
         proceed()
 
-
-              
-              
-              
-    
-
+    def populating_dict():
+        print('FIXME pop methods here')
 
     while True:
         dict_menu = '''MENU - Dictionaries
@@ -1432,6 +1428,12 @@ def dictionaries():
         if dict_selection == 1:
             print(atopic)
             dict_basics()
+        elif dict_selection == 2:
+            print(atopic)
+            populating_dict()
+        else:
+            print(ex)
+            break
 
         # place content and menu for dictionaries here
 
