@@ -1379,7 +1379,6 @@ def dictionaries():
         proceed()
 
         print('''PRINTING DICTIONARIES\n
-              The code we will be working with 
               There are a few common methods to print entire dictionaries.\n
               print(dictionaryName) and...\n
               with items() method
@@ -1401,14 +1400,15 @@ def dictionaries():
 
         print(f'with print(dictionaryName.items()) method\n', dictionaryName.items(), '\n')
 
-        print('''With\n 
-              for key, value in dictionaryName.items():\n
+        print('''With:\n 
+            for key, value in dictionaryName.items():\n
                 print(key, value))\n''')
         for key, value in dictionaryName.items():
                 print(key, value)
 
-        print('this concludes this module.')
+        print('This concludes this module., Proceed to exit to Dictionaries menu.')
         
+        proceed()
 
 
               
