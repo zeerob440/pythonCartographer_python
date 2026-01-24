@@ -1367,6 +1367,16 @@ def depopulatingLists():
             break 
 
 def dictionaries():
+
+    def dict_basics():
+        # Covers basic dictionary structure and declaration
+        print('''DICTIONARY BASICS\n
+              Dictionaries are iterable structures that contain 2 components: key/value pairs.
+              They are declared between {} such that:\n
+              dictionaryName = {'keyName': 'valueName', ...}\n
+              dictionaries can be comprised of any datatype. ''')
+
+
     while True:
         dict_menu = '''MENU - Dictionaries
         ........................................................................
