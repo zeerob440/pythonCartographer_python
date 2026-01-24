@@ -1374,7 +1374,37 @@ def dictionaries():
               Dictionaries are iterable structures that contain 2 components: key/value pairs.
               They are declared between {} such that:\n
               dictionaryName = {'keyName': 'valueName', ...}\n
-              dictionaries can be comprised of any datatype. ''')
+              dictionaries can be comprised of any datatype, abd key is delimited by : and values are delimited by , .\n''')
+
+        proceed()
+
+        print('''PRINTING DICTIONARIES\n
+              The code we will be working with 
+              There are a few common methods to print entire dictionaries.\n
+              print(dictionaryName) and...\n
+              with items() method
+              print(dictionaryName.items())\n 
+              with for loop
+              for key, value in dictionaryName.items():
+                print(key, value)\n
+              
+              The dictionary we will test these methods with is:\n
+              
+              dictionaryName = {'key0': 0, 'key1': 1, 'key2': 2}\n
+              
+              proceed to print the above dict with the above methods.''')
+        
+        proceed()
+        dictionaryName = {'key0': 0, 'key1': 1, 'key2': 2}
+
+        print('With print(dictionaryName) method.\n', dictionaryName)
+        
+
+
+              
+              
+              
+    
 
 
     while True:
