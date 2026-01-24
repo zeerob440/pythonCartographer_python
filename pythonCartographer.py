@@ -1406,12 +1406,29 @@ def dictionaries():
         for key, value in dictionaryName.items():
                 print(key, value)
 
-        print('This concludes this module. Proceed to exit to Dictionaries menu.')
-        
         proceed()
 
+        print('''PRINTING SPECIFIC KEYS AND VALUES\n
+            Sometimes it is appropriate to print only part of a dictionary.
+              The most common methods I use for this are .get() and the bracket method.\n''')
+        
+        print('''.get() METHOD\n
+            The .get() method returns the value associated with a key/value pair such that:\n
+            print(dictionaryName.get('keyname')) The code from earlier will be used to demonstrate
+            this method\n''')
+        print('''We will use the following code to get a value\n
+              print(dictionaryName.get('key1'))\n
+              Proceed to get value with .get()\n''')
+
+        proceed()
+
+        print(dictionaryName.get('key1'))
+
     def populating_dict():
-        print('FIXME pop methods here')
+        # populating dictionaries content here below
+        print('''POPULATING DICTIONARIES\n
+              In this module we will learn how to add key/value pairs to a dictionary using 
+              ''')
 
     while True:
         dict_menu = '''MENU - Dictionaries
