@@ -1446,8 +1446,27 @@ def dictionaries():
     def populating_dict():
         # populating dictionaries content here below
         print('''POPULATING DICTIONARIES\n
-              In this module we will learn how to add key/value pairs to a dictionary using 
+              In this module we will learn how to add key/value pairs to a dictionary using various methods.\n
+
+              APPENDING DICTIONARY WITH NEW KEY/VALUE PAIR\n
+
+              Adding a new key/value pair is easy. The method is:\n
+              dict_name['key4'] = 4\n
+
+              This will add the key/value pair to the last index of the dictionary.
+              The code we will be working with to demonstrate this adding a new key\n
+              dict_name = {'keyname0': 0, 'keyname1': 1}\n
+
+              proceed to run code:\n
               ''')
+        
+        proceed()
+
+        dict_name = {'keyname0': 0, 'keyname1': 1}
+        dict_name['key4'] = 4
+        print(dict_name.items())
+
+
 
     while True:
         dict_menu = '''MENU - Dictionaries
