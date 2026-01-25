@@ -1498,7 +1498,7 @@ def dictionaries():
             ''')
         
         proceed()
-
+        # write depopulating dictionaries and iterating though dicts above line 1501
     while True:
         dict_menu = '''MENU - Dictionaries
         ........................................................................
