@@ -1451,7 +1451,7 @@ def dictionaries():
               APPENDING DICTIONARY WITH NEW KEY/VALUE PAIR\n
 
               Adding a new key/value pair is easy. The method is:\n
-              dict_name['key4'] = 4\n
+              dict_name['keyname4'] = 4\n
 
               This will add the key/value pair to the last index of the dictionary.
               The code we will be working with to demonstrate this adding a new key\n
@@ -1463,8 +1463,35 @@ def dictionaries():
         proceed()
 
         dict_name = {'keyname0': 0, 'keyname1': 1}
-        dict_name['key4'] = 4
+        dict_name['keyname4'] = 4
         print(dict_name.items())
+
+        print('''This method of appending dictionaries is hard coded on the back end.
+            ''')
+        
+        proceed()
+
+        print ('''APPENDING A KEY/VALUE PAIR WITH USER INPUT\n
+               
+        Remember, keys are immutable so only values associated with keys can be appended.
+        Sometimes values must be appended with user input. We will use the previous code:\n
+               
+        dict_name = {'keyname0': 0, 'keyname1': 1, 'keyname4': 4}\n
+               
+        to append keyname4 to any other associated value with the following code:\n
+        
+        new_value = input('Enter a new value for keyname4: )
+        dict_name['keyname4'] = new_value
+        print(dict_name.get('keyname4'))\n
+               
+        Proceed to run code. 
+        ''')
+
+        proceed()
+
+        new_value = input('Enter a new value for keyname4: ')
+        dict_name['keyname4'] = new_value
+        print(dict_name.get('keyname4'))
 
 
 
