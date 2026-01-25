@@ -1493,6 +1493,8 @@ def dictionaries():
         dict_name['keyname4'] = new_value
         print(dict_name.get('keyname4'))
 
+        print('Remember keys are immutable, so to append a key the entire key/value pair must be deleted and redeclared.')
+
 
 
     while True:
