@@ -1517,6 +1517,7 @@ def dictionaries():
         elif dict_selection == 2:
             print(atopic)
             populating_dict()
+            # finish depopulating dict and iterating through dict. 
         else:
             print(ex)
             break
