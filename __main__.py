@@ -1,0 +1,91 @@
+import basics
+'''
+Version: Delta 6 AUG 2026; pythonCartographer Delta was created to make the program more modular and easier to maintain. 
+Each topic now has while loop controlled submenus invoked from the main menu while loop.
+   
+Proudly engineered by Zachary Roberts 11 August, 2025 
+"We should now have access to the main facility. Let's find the map room."-Cortana
+'''
+
+print ("This program helps navigate notes and simple structures in the Python language. Zachary Roberts 11 AUG 2025.\n")
+
+# Start
+class PROCEED_CLASS():
+    def proceed(): # It asks the user to continue after each example within a lesson.
+        any_key_to_continue = input('''\n
+            Press any key to proceed.\n''')
+
+class PROCEED_TO_MENU_CLASS():
+    def proceedToMenu():
+        any_key_to_menu = input('''\n
+                This concludes this module. Press any key to continue.\n''')
+    
+# Used to denote that content is being accessed, informs user when exiting.
+class ATOPIC_Y_EXIT():
+    
+    def atopic():
+        statement = 'Accessing Topic...\n'
+        print(statement)
+
+    #ex used to declare that a menu is exiting. 
+    def exiting():
+        ex = 'Exiting...\n'
+        print(ex)
+
+while True:
+        menu =('''
+        MENU-pythonCartographer
+        -----------------------------------------------------------------------
+        1: BASICS, VARIABLE DECLARATIONS, DATA TYPES
+        2: INPUT
+        3: SELECTIONS
+        4: INPUT VALIDATION
+        5: FOR LOOPS
+        6: INDEFINITE LOOPS
+        7: FUNCTIONS
+        8: POPULATING LISTS
+        9: DEPOPULATING LISTS
+        10: DICTIONARIES
+        OR ANY OTHER NUMBER TO EXIT.
+        ------------------------------------------------------------------------
+            ''')
+
+        print(menu)
+
+        select_structure = int(input("Input structure you would like to review: "))
+        if select_structure == 1:
+            print ("Accessing Basics...\n")
+            basics()
+        elif select_structure == 2:
+            print ("Accessing Inputs...\n")
+            inputs()
+        elif select_structure == 3:
+            print ("Accessing Selections...\n")
+            selection()
+        elif select_structure == 4:
+            print ("Accessing Input Validation...\n")
+            inputValidation()
+        elif select_structure == 5:
+            print("Accessing For Loops...\n")
+            forLoops()
+        elif select_structure == 6:
+            print('Accessing indefinite loops...\n')
+            indefiniteLoops()
+        elif select_structure == 7:
+            print('Accessing Functions...\n')
+            functions()
+        elif select_structure == 8:
+            print('Accessing Populating Lists...\n')
+            listsPopulation()
+        elif select_structure == 9:
+            print('Accessing Depopulating Lists\n')
+            depopulatingLists()
+        elif select_structure == 10:
+            print('Accessing Dictionaries\n')
+            dictionaries()
+        else:
+            print('Exiting pythonCartographer!')
+        break
+
+#if __name__ == 'main':
+    
