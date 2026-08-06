@@ -1,4 +1,9 @@
 import basics
+
+import basics
+
+print(basics)
+print(basics.__file__)
 '''
 Version: Delta 6 AUG 2026; pythonCartographer Delta was created to make the program more modular and easier to maintain. 
 Each topic now has while loop controlled submenus invoked from the main menu while loop.
