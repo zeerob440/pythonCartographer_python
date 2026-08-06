@@ -1,19 +1,9 @@
 from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
-print('basics.py')
-while True:
-    basics_menu =('''
-    MENU -Basics
-    ........................................................................
-    1: Declaring Variables
-    2: Functions Basics
-    3: Data Types             
-    OR ANY OTHER NUMBER TO EXIT.
-    .........................................................................
-    \n''')
-      
-    print(basics_menu)
 
-    class BASICS_MENU():
+
+
+      
+class BASICS_MENU():
 
         def inputBasics():
                 print('''
@@ -164,21 +154,33 @@ while True:
     
             PROCEED_TO_MENU_CLASS.proceedToMenu()
 
-    basic_selection = int(input('Select a Topic\n'))
+        while True:
+            basics_menu =('''
+        MENU -Basics
+        ........................................................................
+        1: Declaring Variables
+        2: Functions Basics
+        3: Data Types             
+        OR ANY OTHER NUMBER TO EXIT.
+        .........................................................................
+        \n''')
+            print(basics_menu)        
+
+            basic_selection = int(input('Select a Topic\n'))
     
-    if basic_selection == 1:
-        ATOPIC_Y_EXIT.atopic()
-        #print(atopic)
+            if basic_selection == 1:
+                ATOPIC_Y_EXIT.atopic()
+            #print(atopic)
         #inputBasics()
-    elif basic_selection == 2:
-        ATOPIC_Y_EXIT.atopic()
-        functionBasics()
-    elif basic_selection == 3:
-        ATOPIC_Y_EXIT.atopic()
-        dataTypes()
-    else:
-        ATOPIC_Y_EXIT.exiting()
-        break
+            elif basic_selection == 2:
+                ATOPIC_Y_EXIT.atopic()
+                functionBasics()
+            elif basic_selection == 3:
+                ATOPIC_Y_EXIT.atopic()
+                dataTypes()
+            else:
+                ATOPIC_Y_EXIT.exiting()
+                break
         
 
    

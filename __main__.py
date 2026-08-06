@@ -2,7 +2,7 @@ import basics
 
 '''
 Version: Delta 6 AUG 2026; pythonCartographer Delta was created to make the program more modular and easier to maintain. 
-Each topic now has while loop controlled submenus invoked from the main menu while loop.
+This program uses OOP concepts to navigate learning modules. 
    
 Proudly engineered by Zachary Roberts 11 August, 2025 
 "We should now have access to the main facility. Let's find the map room."-Cortana
@@ -10,8 +10,7 @@ Proudly engineered by Zachary Roberts 11 August, 2025
 
 print ("This program helps navigate notes and simple structures in the Python language. Zachary Roberts 11 AUG 2025.\n")
 
-# Start
-
+# Start Program
 def run():
     
     while True:
