@@ -1,4 +1,4 @@
-from basics import BASICS_MENU
+import basics
 '''
 Version: Delta 6 AUG 2026; pythonCartographer Delta was created to make the program more modular and easier to maintain. 
 Each topic now has while loop controlled submenus invoked from the main menu while loop.
@@ -10,27 +10,6 @@ Proudly engineered by Zachary Roberts 11 August, 2025
 print ("This program helps navigate notes and simple structures in the Python language. Zachary Roberts 11 AUG 2025.\n")
 
 # Start
-class PROCEED_CLASS():
-    def proceed(): # It asks the user to continue after each example within a lesson.
-        any_key_to_continue = input('''\n
-            Press any key to proceed.\n''')
-
-class PROCEED_TO_MENU_CLASS():
-    def proceedToMenu():
-        any_key_to_menu = input('''\n
-                This concludes this module. Press any key to continue.\n''')
-    
-# Used to denote that content is being accessed, informs user when exiting.
-class ATOPIC_Y_EXIT():
-    
-    def atopic():
-        statement = 'Accessing Topic...\n'
-        print(statement)
-
-    #ex used to declare that a menu is exiting. 
-    def exiting():
-        ex = 'Exiting...\n'
-        print(ex)
 
 while True:
         menu =('''
@@ -55,7 +34,7 @@ while True:
         select_structure = int(input("Input structure you would like to review: "))
         if select_structure == 1:
             print ("Accessing Basics...\n")
-            BASICS_MENU
+            basics
         elif select_structure == 2:
             print ("Accessing Inputs...\n")
             inputs()
