@@ -14,7 +14,8 @@ class BASICS_MENU():
                 ''')
         
                 PROCEED_TO_MENU_CLASS.proceedToMenu()
-        
+
+
         def variableDeclaration():
             
                 print('''This is and overview of basic declarations of Python structures.\n

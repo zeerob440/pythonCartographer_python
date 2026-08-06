@@ -1,7 +1,7 @@
 '''
 navigation.py contains class methods that enable the user to navigate the application. 
 '''
-
+#@staticmethod
 class PROCEED_CLASS():
     # It asks the user to continue after each example within a lesson.
     def proceed():
