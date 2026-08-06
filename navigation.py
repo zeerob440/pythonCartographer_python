@@ -24,4 +24,4 @@ class ATOPIC_Y_EXIT():
     def exiting():
         ex = 'Exiting...\n'
         print(ex)
-        exit()
+        return
