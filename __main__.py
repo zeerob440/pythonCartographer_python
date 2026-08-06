@@ -12,7 +12,9 @@ print ("This program helps navigate notes and simple structures in the Python la
 
 # Start
 
-while True:
+def run():
+    
+    while True:
         menu =('''
         MENU-pythonCartographer
         -----------------------------------------------------------------------
@@ -67,5 +69,6 @@ while True:
             print('Exiting pythonCartographer!')
         break
 
-#if __name__ == 'main':
+if __name__ == '__main__':
+    run()
     
