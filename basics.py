@@ -179,6 +179,7 @@ class BASICS_MENU():
                     else:
                         ATOPIC_Y_EXIT.exiting()
                         #break
+                        return
         
 
    

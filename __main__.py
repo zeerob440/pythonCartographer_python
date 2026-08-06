@@ -66,7 +66,7 @@ def run():
             dictionaries()
         else:
             print('Exiting pythonCartographer!')
-        break
+            break
 
 if __name__ == '__main__':
     run()
