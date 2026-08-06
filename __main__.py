@@ -1,4 +1,4 @@
-import basics
+from basics import BASICS_MENU
 '''
 Version: Delta 6 AUG 2026; pythonCartographer Delta was created to make the program more modular and easier to maintain. 
 Each topic now has while loop controlled submenus invoked from the main menu while loop.
@@ -55,7 +55,7 @@ while True:
         select_structure = int(input("Input structure you would like to review: "))
         if select_structure == 1:
             print ("Accessing Basics...\n")
-            basics()
+            BASICS_MENU
         elif select_structure == 2:
             print ("Accessing Inputs...\n")
             inputs()
