@@ -3,7 +3,8 @@ navigation.py contains class methods that enable the user to navigate the applic
 '''
 
 class PROCEED_CLASS():
-    def proceed(): # It asks the user to continue after each example within a lesson.
+    # It asks the user to continue after each example within a lesson.
+    def proceed():
         any_key_to_continue = input('''\n
             Press any key to proceed.\n''')
 
@@ -23,3 +24,4 @@ class ATOPIC_Y_EXIT():
     def exiting():
         ex = 'Exiting...\n'
         print(ex)
+        exit()
