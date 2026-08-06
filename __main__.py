@@ -1,7 +1,5 @@
 import basics
 
-import basics
-
 print(basics)
 print(basics.__file__)
 '''
