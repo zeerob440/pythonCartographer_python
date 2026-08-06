@@ -36,7 +36,7 @@ def run():
         select_structure = int(input("Input structure you would like to review: "))
         if select_structure == 1:
             print ("Accessing Basics...\n")
-            basics
+            basics.BASICS_MENU
         elif select_structure == 2:
             print ("Accessing Inputs...\n")
             inputs()

@@ -1,8 +1,5 @@
 from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
-
-
-
-      
+     
 class BASICS_MENU():
 
         def inputBasics():
