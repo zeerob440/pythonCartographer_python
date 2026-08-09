@@ -19,7 +19,7 @@ class INPUTS_MENU():
         Always leave a null space between the last letter and closing parenthesis to allow user input.
         ''')
 
-        PROCEED_TO_MENU_CLASS.proceedToMenu
+        PROCEED_TO_MENU_CLASS.proceedToMenu()
 
     @staticmethod
     def inputTranslation():
@@ -79,7 +79,7 @@ class INPUTS_MENU():
             input_selection = int(input('Select a Topic \n'))
 
             if input_selection == 1:
-                ATOPIC_Y_EXIT.atopic
+                ATOPIC_Y_EXIT.atopic()
                 INPUTS_MENU.inputBasics()
             elif input_selection == 2:
                 ATOPIC_Y_EXIT.atopic()
