@@ -79,10 +79,10 @@ class INPUTS_MENU():
             input_selection = int(input('Select a Topic \n'))
 
             if input_selection == 1:
-                print(atopic)
+                ATOPIC_Y_EXIT.atopic
                 INPUTS_MENU.inputBasics()
             elif input_selection == 2:
-                print(atopic)
+                ATOPIC_Y_EXIT.atopic()
                 INPUTS_MENU.inputTranslation()
             else:
                 ATOPIC_Y_EXIT.exiting()
