@@ -154,36 +154,36 @@ class BASICS_MENU():
     
         PROCEED_TO_MENU_CLASS.proceedToMenu()
 
-        @staticmethod    
-        def runBasicsMenu():
-                while True:
-                    basics_menu =('''
-                    MENU -Basics
-                    ........................................................................
-                    1: Declaring Variables
-                    2: Functions Basics
-                    3: Data Types             
-                    OR ANY OTHER NUMBER TO EXIT.
-                    .........................................................................
-                    \n''')
-                    print(basics_menu)        
+    @staticmethod    
+    def runBasicsMenu():
+            while True:
+                basics_menu =('''
+                MENU -Basics
+                ........................................................................
+                1: Declaring Variables
+                2: Functions Basics
+                3: Data Types             
+                OR ANY OTHER NUMBER TO EXIT.
+                .........................................................................
+                \n''')
+                print(basics_menu)        
 
-                    basic_selection = int(input('Select a Topic\n'))
+                basic_selection = int(input('Select a Topic\n'))
     
-                    if basic_selection == 1:
-                        ATOPIC_Y_EXIT.atopic()
-                        BASICS_MENU.variableDeclaration()
+                if basic_selection == 1:
+                    ATOPIC_Y_EXIT.atopic()
+                    BASICS_MENU.variableDeclaration()
 
-                    elif basic_selection == 2:
-                        ATOPIC_Y_EXIT.atopic()
-                        BASICS_MENU.functionBasics()
-                    elif basic_selection == 3:
-                        ATOPIC_Y_EXIT.atopic()
-                        BASICS_MENU.dataTypes()
-                    else:
-                        ATOPIC_Y_EXIT.exiting()
-                        #returns to navigation.py
-                        return
+                elif basic_selection == 2:
+                    ATOPIC_Y_EXIT.atopic()
+                    BASICS_MENU.functionBasics()
+                elif basic_selection == 3:
+                    ATOPIC_Y_EXIT.atopic()
+                    BASICS_MENU.dataTypes()
+                else:
+                    ATOPIC_Y_EXIT.exiting()
+                    #returns to navigation.py
+                    return
         
 
    
