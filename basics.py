@@ -18,13 +18,12 @@ class BASICS_MENU():
     @staticmethod
     def variableDeclaration():
             
-            print('''This is and overview of basic declarations of Python structures.\n
-            VARIABLES\n
-            To declare a variable use singular verbs or nouns in snake_case.
-            dog = ("Rico") or number = 1\n''')
+        print('''This is and overview of basic declarations of Python structures.\n
+        VARIABLES\n
+        To declare a variable use singular verbs or nouns in snake_case.
+        dog = ("Rico") or number = 1\n''')
 
-             
-    PROCEED_TO_MENU_CLASS.proceedToMenu()
+        PROCEED_TO_MENU_CLASS.proceedToMenu()
 
     @staticmethod
     def functionBasics():
