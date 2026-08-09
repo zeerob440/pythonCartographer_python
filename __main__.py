@@ -1,4 +1,5 @@
 from basics import BASICS_MENU
+from inputs import INPUTS_MENU
 
 '''
 Version: Delta 6 AUG 2026; pythonCartographer Delta was created to make the program more modular and easier to maintain. 
@@ -39,7 +40,7 @@ def run():
             BASICS_MENU.runBasicsMenu()
         elif select_structure == 2:
             print ("Accessing Inputs...\n")
-            inputs()
+            INPUTS_MENU.runInputsMenu()
         elif select_structure == 3:
             print ("Accessing Selections...\n")
             selection()

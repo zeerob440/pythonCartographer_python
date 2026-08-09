@@ -22,8 +22,9 @@ class BASICS_MENU():
                 VARIABLES\n
                 To declare a variable use singular verbs or nouns in snake_case.
                 dog = ("Rico") or number = 1\n''')
-        
-                PROCEED_TO_MENU_CLASS.proceedToMenu()
+
+             
+        PROCEED_TO_MENU_CLASS.proceedToMenu()
 
         @staticmethod
         def functionBasics():
