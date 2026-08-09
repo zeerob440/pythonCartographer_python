@@ -69,6 +69,7 @@ def run():
             print('Exiting pythonCartographer!')
             break
 
+# initiate pythonCartographer
 if __name__ == '__main__':
     run()
     
