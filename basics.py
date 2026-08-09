@@ -171,14 +171,14 @@ class BASICS_MENU():
     
                     if basic_selection == 1:
                         ATOPIC_Y_EXIT.atopic()
-                        #print(atopic)
-                    #inputBasics()
+                        BASICS_MENU.variableDeclaration()
+
                     elif basic_selection == 2:
                         ATOPIC_Y_EXIT.atopic()
-                        functionBasics()
+                        BASICS_MENU.functionBasics()
                     elif basic_selection == 3:
                         ATOPIC_Y_EXIT.atopic()
-                        dataTypes()
+                        BASICS_MENU.dataTypes()
                     else:
                         ATOPIC_Y_EXIT.exiting()
                         #returns to navigation.py
