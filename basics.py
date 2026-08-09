@@ -1,7 +1,7 @@
 from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
      
 class BASICS_MENU():
-
+        @staticmethod
         def inputBasics():
                 print('''
                 Inputs are foundational structure in any programming language.
@@ -15,7 +15,7 @@ class BASICS_MENU():
         
                 PROCEED_TO_MENU_CLASS.proceedToMenu()
 
-
+        @staticmethod
         def variableDeclaration():
             
                 print('''This is and overview of basic declarations of Python structures.\n
@@ -24,7 +24,8 @@ class BASICS_MENU():
                 dog = ("Rico") or number = 1\n''')
         
                 PROCEED_TO_MENU_CLASS.proceedToMenu()
-    
+
+        @staticmethod
         def functionBasics():
     
     
@@ -56,7 +57,7 @@ class BASICS_MENU():
         
             PROCEED_TO_MENU_CLASS.proceedToMenu()
     
-            
+        @staticmethod   
         def dataTypes():
             print ('''
             DATA TYPES\n
@@ -151,7 +152,8 @@ class BASICS_MENU():
             print (snake_stuff)
     
             PROCEED_TO_MENU_CLASS.proceedToMenu()
-            
+
+        @staticmethod    
         def runBasicsMenu():
                 while True:
                     basics_menu =('''
@@ -179,6 +181,7 @@ class BASICS_MENU():
                         dataTypes()
                     else:
                         ATOPIC_Y_EXIT.exiting()
+                        #returns to navigation.py
                         return
         
 
