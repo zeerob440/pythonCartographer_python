@@ -18,7 +18,7 @@ class WHILE_LOOP_MENU():
         5. Graceful exit: A way to exit the loop without breaking the program.\n
         The first example will be a an indefinite loop that relies of a sentinel value to exit\n
         sentinel_value = 4
-        iteration_counter 0
+        iteration_counter = 0
         while sentinel_value > iteration_counter:
             print("Prints 4 times, because iterations in Python start with 0)
             iteration_counter += iteration counter
@@ -65,7 +65,7 @@ class WHILE_LOOP_MENU():
                 sentinel = True
             else:
                 sentinel = False # serves as a redundant switch
-            print('Loop Exited.')
+                print('Loop Exited.')
 
         PROCEED_TO_MENU_CLASS.proceedToMenu()
 
