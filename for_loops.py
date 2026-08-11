@@ -108,9 +108,9 @@ class FOR_LOOPS_MENU():
             
                     # search for a team in the list with 'in' key word
                     if 'Panthers' in hockey_league:
-                        print('Vamos Gatos!\n')
+                        print('Vamos Gatos!')
                     else:
-                        print('No Gatos here.\n')
+                        print('No Gatos here.')
 
             below you will run this example. 
 
