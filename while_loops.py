@@ -63,7 +63,7 @@ class WHILE_LOOP_MENU():
             if counter == 10: # when counter hits the prescribed value, sentinel evaluates as True.
                 sentinel = True
             
-            print('Loop Exited.')
+        print('Loop Exited.')
 
         PROCEED_TO_MENU_CLASS.proceedToMenu()
 
