@@ -3,6 +3,7 @@ from inputs import INPUTS_MENU
 from selections import SELECTION_MENU
 from input_validation import INPUT_VALIDATION_MENU
 from for_loops import FOR_LOOPS_MENU
+from while_loops import WHILE_LOOP_MENU
 
 
 '''
@@ -27,7 +28,7 @@ def run():
         3: SELECTIONS
         4: INPUT VALIDATION
         5: FOR LOOPS
-        6: INDEFINITE LOOPS
+        6: WHILE LOOPS
         7: FUNCTIONS
         8: POPULATING LISTS
         9: DEPOPULATING LISTS
@@ -55,8 +56,8 @@ def run():
             print("Accessing For Loops...\n")
             FOR_LOOPS_MENU.runForLoopMenu()
         elif select_structure == 6:
-            print('Accessing indefinite loops...\n')
-            indefiniteLoops()
+            print('Accessing while loops...\n')
+            WHILE_LOOP_MENU.runWhileLoopMenu()
         elif select_structure == 7:
             print('Accessing Functions...\n')
             functions()
