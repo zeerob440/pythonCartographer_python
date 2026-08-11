@@ -49,8 +49,8 @@ class WHILE_LOOP_MENU():
             counter += 1
             if counter == 10:
                 sentinel = True:
-            else:
-                print("Loop Exited")\n
+            
+            print("Loop Exited")\n
         Proceed to run the code.''')
     
         PROCEED_CLASS.proceed()
@@ -62,8 +62,8 @@ class WHILE_LOOP_MENU():
             counter += 1 # counter set to increment with each iteration.
             if counter == 10: # when counter hits the prescribed value, sentinel evaluates as True.
                 sentinel = True
-            else:
-                print('Loop Exited.')
+            
+            print('Loop Exited.')
 
         PROCEED_TO_MENU_CLASS.proceedToMenu()
 
