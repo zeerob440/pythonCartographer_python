@@ -65,10 +65,10 @@ class INPUT_VALIDATION_MENU():
         while True:
             try:
                 user_integer = int(input("Enter an integer: "))
-                print(f'You enter entered {user_integer}. Now exiting TE Block.\n')
+                print(f'You enter entered {user_integer}. Now exiting TE structure.\n')
                 break
             except ValueError:
-                print ("Invalid input, please enter an integer.\n")
+                print ("Invalid input. Continuing TE structure. Please enter an integer.\n")
 
         PROCEED_TO_MENU_CLASS.proceedToMenu()
 
@@ -166,6 +166,8 @@ class INPUT_VALIDATION_MENU():
             elif validation_selection == 3:
                 ATOPIC_Y_EXIT.atopic
                 INPUT_VALIDATION_MENU.tryExceptElseFinally()
+            # FIXME add regex section here
+            # FIXME add exception hierarchy here.
             else:
                 ATOPIC_Y_EXIT.exiting()
                 return
