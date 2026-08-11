@@ -2,6 +2,7 @@ from basics import BASICS_MENU
 from inputs import INPUTS_MENU
 from selections import SELECTION_MENU
 from input_validation import INPUT_VALIDATION_MENU
+from for_loops import FOR_LOOPS_MENU
 
 
 '''
@@ -52,7 +53,7 @@ def run():
             INPUT_VALIDATION_MENU.runInputValidationMenu()
         elif select_structure == 5:
             print("Accessing For Loops...\n")
-            forLoops()
+            FOR_LOOPS_MENU.runForLoopMenu()
         elif select_structure == 6:
             print('Accessing indefinite loops...\n')
             indefiniteLoops()
