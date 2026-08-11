@@ -1,5 +1,6 @@
 from basics import BASICS_MENU
 from inputs import INPUTS_MENU
+from selections import SELECTION_MENU
 
 '''
 Version: Delta 6 AUG 2026; pythonCartographer Delta was created to make the program more modular and easier to maintain. 
