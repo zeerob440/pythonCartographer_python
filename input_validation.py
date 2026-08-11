@@ -10,7 +10,18 @@ class INPUT_VALIDATION_MENU():
         print ('''
         Input validation is the process of forcing user input to adhear to specific data types. It is similar to the feeding ramp
         between the magazine of a firearm and the chamber. Input validation forces intent into the correct position, thereby allowing the
-        program to execute as designed.\n''')
+        program to execute as designed.\n
+        
+        Sometimes input can be validated without TEEF structures or data forcing. Useful methods
+        for input validation without these structures include:\n
+
+        isalpha()- checks if input is all chars
+        isdigit()- checks if input is all digits
+        isalnum()- checks if input is is chars or digits without whitespace or spc chars. \n
+
+        These three string methods return a bool if the criteria is met or not met. Which is useful for
+        some input validation.\n 
+        ''')
 
         PROCEED_TO_MENU_CLASS.proceedToMenu()
 
