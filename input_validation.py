@@ -8,16 +8,17 @@ class INPUT_VALIDATION_MENU():
     def iValidationBasics():
 
         print ('''
-        Input validation is the process of forcing user input to adhear to specific data types. It is similar to the feeding ramp
-        between the magazine of a firearm and the chamber. Input validation forces intent into the correct position, thereby allowing the
+        Input validation is the process of forcing user input to adhear to specific data types. 
+        It is similar to the feeding ramp between the magazine of a firearm and the chamber. 
+        Input validation forces intent into the correct position, thereby allowing the
         program to execute as designed.\n
         
         Sometimes input can be validated without TEEF structures or data forcing. Useful methods
         for input validation without these structures include:\n
 
-        isalpha()- checks if input is all chars
-        isdigit()- checks if input is all digits
-        isalnum()- checks if input is is chars or digits without whitespace or spc chars. \n
+        isalpha()- checks if input is all chars.
+        isdigit()- checks if input is all digits.
+        isalnum()- checks if input is is chars or digits without whitespace or spc chars.\n
 
         These three string methods return a bool if the criteria is met or not met. Which is useful for
         some input validation.\n 
@@ -31,18 +32,18 @@ class INPUT_VALIDATION_MENU():
         print('''   
         TRY EXCEPT\n 
         TRY EXCEPT are usually contained in a WHILE lOOP. This structure indefinitely prompts the user to input info until
-        the correct data type is used.
-        EXAMPLE\n
+        the correct data type is used.\n
         ''')
     
         PROCEED_CLASS.proceed()
 
-        print ('''
+        print (''' EXAMPLE\n
         In the below example the user is prompted to enter an integer.
         The TRY/EXCEPT structure is nested within a WHILE LOOP.
         If the user does not enter an integer, the EXCEPT BRANCH continues the loop.
-        In order for the EXCEPT BRANCH to work, THE ERROR THAT WILL OCCUR MUST BE DEFINED, such that instead of crashing at ValueError,
-        it simply continues the loop when ValueError is returned by the EXCEPT BRANCH.\n
+        In order for the EXCEPT BRANCH to work, THE ERROR THAT WILL OCCUR MUST BE DEFINED.
+        Instead of crashing at ValueError, it simply continues the loop when ValueError is returned
+        by the EXCEPT BRANCH.\n
         In other words, the EXCEPT BRANCH directs instead of crashing continuing the loop
         If the user enters an integer the TRY BRANCH executes, and the loop breaks with the BREAK command.\n
                
@@ -54,7 +55,7 @@ class INPUT_VALIDATION_MENU():
                 print(f'You enter entered {user_integer}.')
                 break
             except ValueError:
-                print ("Invalid input, please enter an integer.\n")
+                print ("Invalid input, please enter an integer."\n)
               
         Now proceed to try it\n''')
 
@@ -64,7 +65,7 @@ class INPUT_VALIDATION_MENU():
         while True:
             try:
                 user_integer = int(input("Enter an integer: "))
-                print(f'You enter entered {user_integer}.\n')
+                print(f'You enter entered {user_integer}. Now exiting TE Block.\n')
                 break
             except ValueError:
                 print ("Invalid input, please enter an integer.\n")
@@ -79,7 +80,7 @@ class INPUT_VALIDATION_MENU():
         TEEF structures work such that:\n
 
         Try block attempts to run the code. 
-        IF at any point with in the TRY BLOCK the Code fails to run.
+        IF at any point within the TRY BLOCK the Code fails to run.
         EXCEPT Branch executes.
         IF TRY BRANCH EXECUTES ELSE BRANCH WILL ALSO EXECUTE.
         Finally blocks always execute.\n
@@ -91,16 +92,20 @@ class INPUT_VALIDATION_MENU():
         # Try Except Else Finally Structure
         print ('''
         Try this TRY EXCEPT ELSE FINALLY Structure.\n
-         def teefFunction(x):
-                    try:
-                        x == 'a'
-                    except:
-                        print('x does not equal 'a'\n')
-                    else:
-                        print('else in teef blocks, executes if the try block executes and the except block DOES NOT EXECUTE')
-                        print('x deffo equals 'a'\n')
-                    finally:
-                        print('Finally blocks always execute.\n')''')
+        try:
+            if x != 'a':
+                # raise immediately exit try block.
+                raise ValueError
+        except ValueError:
+                print('except block executing.')
+                print('x does not equal "a"')
+        else:
+            print('else block executing.')
+            print('x deffo equals "a"')
+        finally:
+            print('finally block executing.')
+            print('Finally blocks always execute.')
+        \n''')
 
         print('With 2 attempts, execute each pathway of the TEEF structure.\n')
 
@@ -108,28 +113,27 @@ class INPUT_VALIDATION_MENU():
 
         for attempt in range(2):
 
-            x = input('Enter "a" to execute TEF Blocks, else enter another value to execute EF blocks: \n')
+            x = input('Enter "a" to execute TEF Blocks, else enter another value to execute EF blocks:\n')
 
             def teefFunction(x):
                 try:
                     if x != 'a':
-                        # raises immediately exit try block.
+                        # raise always immediately exits try blocks.
                         raise ValueError
                 except ValueError:
+                    print('except block executing.')
                     print('x does not equal "a"\n')
                 else:
-                    print('else in teef blocks, executes if the try block executes and the except block DOES NOT EXECUTE')
+                    print('else block executing.')
                     print('x deffo equals "a"\n')
                 finally:
+                    print('finally block executing.')
                     print('Finally blocks always execute.\n')
 
             teefFunction(x)
 
-        PROCEED_CLASS.proceed()
-    
         print('''
-        This structure enters a WHILE LOOP until a integer is entered. If an integer is entered the try, else, and finally branches activate.
-        If a non-integer value is entered the loop will execute the EXCEPT branch and reprompt the user\n
+        This concludes the demonstration of a basic TEEF structure.\n
         ''')
     
         PROCEED_TO_MENU_CLASS.proceedToMenu()
