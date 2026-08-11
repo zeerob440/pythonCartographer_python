@@ -1,5 +1,8 @@
 from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
 
+#TODO add regex section
+#TODO add exception hierarchy section
+
 #input validation.py provides methods for demonstrating and learning input validation.
 
 class INPUT_VALIDATION_MENU(): 
@@ -124,7 +127,7 @@ class INPUT_VALIDATION_MENU():
                     print('except block executing.')
                     print('x does not equal "a"\n')
                 else:
-                    print('else block executing.')
+                    print('else block executing because try block executed.')
                     print('x deffo equals "a"\n')
                 finally:
                     print('finally block executing.')
@@ -166,8 +169,8 @@ class INPUT_VALIDATION_MENU():
             elif validation_selection == 3:
                 ATOPIC_Y_EXIT.atopic
                 INPUT_VALIDATION_MENU.tryExceptElseFinally()
-            # FIXME add regex section here
-            # FIXME add exception hierarchy here.
+            # TODO add regex section here
+            # TODO add exception hierarchy here.
             else:
                 ATOPIC_Y_EXIT.exiting()
                 return

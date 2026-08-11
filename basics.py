@@ -11,7 +11,7 @@ class BASICS_MENU():
             input("")\n
             1 one_or_two = (input("For selection 1 input 1 for selection 2 input 2: "))
             Always leave a null space between the last letter and closing parenthesis to allow user input.
-            ''')
+            \n''')
         
         PROCEED_TO_MENU_CLASS.proceedToMenu()
 
@@ -102,7 +102,8 @@ class BASICS_MENU():
             Dictionaries consist of two constructs, KEYS and VALUES
             KEYS are the UNIQUE IDENTIFIER, or a searchable keyword to access the dictionary.
             VALUES are attributes or properties of the key.
-            in other words if it was like an actual dictionary he KEY is the Word, the VALUE is the definition.\n
+            in other words if it was like an actual dictionary the KEY is the Word, 
+            the VALUE is the definition.\n
                    
             DECLARING A DICTIONARY\n
                    
