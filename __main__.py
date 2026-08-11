@@ -44,7 +44,7 @@ def run():
             INPUTS_MENU.runInputsMenu()
         elif select_structure == 3:
             print ("Accessing Selections...\n")
-            selection()
+            SELECTION_MENU.runSelectionsMenu()
         elif select_structure == 4:
             print ("Accessing Input Validation...\n")
             inputValidation()
