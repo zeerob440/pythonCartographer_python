@@ -1,6 +1,8 @@
 from basics import BASICS_MENU
 from inputs import INPUTS_MENU
 from selections import SELECTION_MENU
+from input_validation import INPUT_VALIDATION_MENU
+
 
 '''
 Version: Delta 6 AUG 2026; pythonCartographer Delta was created to make the program more modular and easier to maintain. 
@@ -47,7 +49,7 @@ def run():
             SELECTION_MENU.runSelectionsMenu()
         elif select_structure == 4:
             print ("Accessing Input Validation...\n")
-            inputValidation()
+            INPUT_VALIDATION_MENU.runInputValidationMenu()
         elif select_structure == 5:
             print("Accessing For Loops...\n")
             forLoops()
