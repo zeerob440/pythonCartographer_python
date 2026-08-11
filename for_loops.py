@@ -3,7 +3,8 @@ from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
 # for_loops.py contains methods for learning for loops. 
 
 class FOR_LOOPS_MENU():
-    
+
+    @staticmethod
     def forLoopBasics():
         print('''
         FOR LOOPS\n
@@ -17,7 +18,7 @@ class FOR_LOOPS_MENU():
         for i in range(number goes here)
         ''')
 
-        proceed()
+        PROCEED_CLASS.proceed()
 
         print('''LOOP VARIABLES\n
             loop variables are unusual compared to other var declarations. In the following example:\n
@@ -38,17 +39,18 @@ class FOR_LOOPS_MENU():
             Proceed to run the program.
              ''')
         
-        proceed()
+        PROCEED_CLASS.proceed()
         for i in range(3):
                 print(i)
         print(i)
     
-        proceedToMenu()
-    
+        PROCEED_TO_MENU_CLASS.proceedToMenu()
+
+    @staticmethod
     def rangeControl():
     #Create simple "for i in range of" FOR LOOP
         
-        proceed()
+        PROCEED_CLASS.proceed()
     
         print('''FOR LOOP RANGE CONTROL\n
             In this example you will see...\n
@@ -58,14 +60,20 @@ class FOR_LOOPS_MENU():
             That is because all iterations start with 0 by default in Python. Unless specified otherwise\n
             Proceed to run the code.''')
         
-        proceed()
+        PROCEED_CLASS.proceed()
 
-        print("The following is a hardcoded simple FOR LOOP that prints number of iterations.\n")
-        for i in range (3):
-            print (i)
+        print('''The following is a hardcoded simple FOR LOOP that prints number of iterations.\n
+        
+        for i in range(3):
+            print(i)
+        
+        \n''')
+
+        for i in range(3):
+            print(i)
 
 
-        proceed()
+        PROCEED_CLASS.proceed()
     
         print('''
             RANGE CONTROL EXAMPLE/n
@@ -75,22 +83,83 @@ class FOR_LOOPS_MENU():
             print("The RANGE CONTROL the above example starts at 1, and ALWAYS END AT THE HIGHEST DECLARED NUMBER - 1.\n")
             Proceed to run this example!''')
         
-        proceed()
+        PROCEED_CLASS.proceed()
 
         for i in range (1,4):
             print(i)
         print("The RANGE CONTROL the above example starts at 1, and ALWAYS END AT THE HIGHEST DECLARED NUMBER - 1.\n")
 
-        proceedToMenu()
+        PROCEED_TO_MENU_CLASS.proceedToMenu()
 
-    while True:
+    @staticmethod
+    def eLoopControl():
+
+        print('''Sometimes loop readability is in itself valuable. Especially if work with
+            elements in the iterable is needed later in the program.\n
+            When such usecases present it good to name the loop var and iterate through the list:
+             hockey_league: list = ['Panthers', 'Blackhawks', 'Habs']
+            
+                    for team in hockey_league:
+                        print(team)
+            
+                    # later in program find team in the iterable  
+                    print(hockey_league[2])
+                    print(hockey_league.index('Panthers'))
+            
+                    # search for a team in the list with 'in' key word
+                    if 'Panthers' in hockey_league:
+                        print('Vamos Gatos!\n')
+                    else:
+                        print('No Gatos here.\n')
+
+            below you will run this example. 
+
+            \n''')
+
+        PROCEED_CLASS.proceed()
+
+        hockey_league: list = ['Panthers', 'Blackhawks', 'Habs']
+
+        for team in hockey_league:
+            print(team)
+
+        # later in program find team in the iterable  
+        print(hockey_league[2])
+        print(hockey_league.index('Panthers'))
+
+        # search for a team in the list with 'in' key word
+        if 'Panthers' in hockey_league:
+            print('Vamos Gatos!\n')
+        else:
+            print('No Gatos here.\n')
+
+    @staticmethod
+    def runForLoopMenu():
+
+        while True:
         
-        # declarations for forLoops() menu
-        for_loop_menu =('''
-        MENU - For Loops
-        ........................................................................
-        1: For Loop Basics
-        2: Range Control            
-        OR ANY OTHER NUMBER TO EXIT.
-        .........................................................................
-        \n''')
+            # declarations for forLoops() menu
+            for_loop_menu =('''
+            MENU - For Loops
+            ........................................................................
+            1: For Loop Basics
+            2: Range Control 
+            3: Ephemeral Loop Control Loop          
+            OR ANY OTHER NUMBER TO EXIT.
+            .........................................................................
+            \n''')
+
+            print(for_loop_menu)
+            for_loop_selection = int(input('Select a Topic \n'))
+
+            if for_loop_selection == 1:
+                
+                FOR_LOOPS_MENU.forLoopBasics()
+            elif for_loop_selection == 2:
+                ATOPIC_Y_EXIT.atopic
+                FOR_LOOPS_MENU.rangeControl()
+            elif for_loop_selection == 3:
+                FOR_LOOPS_MENU.eLoopControl()
+            else:
+                ATOPIC_Y_EXIT.exiting()
+                return
