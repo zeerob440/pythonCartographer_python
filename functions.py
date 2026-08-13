@@ -372,7 +372,7 @@ class FUNCTIONS_MENU():
                 FUNCTIONS_MENU.positionalArgs()
             elif functions_selection == 5:
                 ATOPIC_Y_EXIT.atopic()
-                intermediateFunctionOps()
+                FUNCTIONS_MENU.intermediateFunctionOps()
             else:
                 ATOPIC_Y_EXIT.exiting()
                 return    
