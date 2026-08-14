@@ -65,8 +65,8 @@ class FUNCTIONS_MENU():
             return result
 
         while True:
-            a = input('Enter an integer.')
-            b = input('Enter another integer.')
+            a = input('Enter an integer: ')
+            b = input('Enter another integer: ')
             if a.isdigit() and b.isdigit():
                 a = int(a)
                 b = int(b)
@@ -111,7 +111,7 @@ class FUNCTIONS_MENU():
 
         PROCEED_CLASS.proceed()
 
-        print(f'This will return {itAddsDF(f = 10)}, since d = 7 and f has been changed to 10.\n') # prints 17
+        print(f'This function has returned {itAddsDF(f = 10)}, since d = 7 and f has been changed to 10.\n') # prints 17
 
         PROCEED_TO_MENU_CLASS.proceedToMenu()
 
@@ -204,7 +204,7 @@ class FUNCTIONS_MENU():
                 sumGH = g + h
                 return sumGH
         
-        print('The function prints ' + posEx(), end='\n') # prints 5
+        print(f'The function has printed: {posEx()}\n') # prints 5
 
         print('''Now let's override default parameters using positional arguments.\n
         print(posEx(5)) # returns 8\n
@@ -216,9 +216,9 @@ class FUNCTIONS_MENU():
 
         PROCEED_CLASS.proceed()
 
-        print('posEX(f) is: ' + posEx(5), end='\n') # returns 8
+        print(f'posEX(f) is: {posEx(5)}\n') # returns 8
 
-        print('posEx(2, 2) is ' + posEx(2,2), end='\n')
+        print(f'posEx(2, 2) is: {posEx(2,2)}.\n')
 
         
         PROCEED_TO_MENU_CLASS.proceedToMenu()
