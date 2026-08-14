@@ -314,39 +314,26 @@ class FUNCTIONS_MENU():
             result = map(lambda dog: dog.upper(), dogs)
 
             # object extracted as list. 
-            print (list((result)))
+            print (list((result)), end='\n')
 
             PROCEED_CLASS.proceed()
 
             print('''filter() FUNCTION\n
             filter() filters things from an iterable and returns those that meet criteria to a list.
+
             structure filter(function, iterable)
             
-            result must must be extracted with an iterable\n
-            def dogFilter(dog):
-                            return len(dog) == 4
-                        
-                        # unpack function
-                        fun_result = list(filter(dogFilter, dogs))
-                        print(fun_result)
             
                         f_result = list(filter(lambda dog: len(dog) == 4, dogs))
             
                         print(f_result)\n
-            proceed to try this code, it will return 'rico'. ''')
+            proceed to try this code, it will return ['rico'].\n''')
 
             # filter()
             # filter(function, iterable)
             # creates a generator-object that must be extracted with an iterable
 
             PROCEED_CLASS.proceed()
-
-            def dogFilter(dog):
-                return len(dog) == 4
-            
-            # unpack function
-            fun_result = list(filter(dogFilter, dogs))
-            print(fun_result)
 
             f_result = list(filter(lambda dog: len(dog) == 4, dogs))
 
