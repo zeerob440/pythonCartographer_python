@@ -111,6 +111,76 @@ class FUNCTIONS_MENU():
         PROCEED_TO_MENU_CLASS.proceedToMenu()
 
     @staticmethod
+    def packUPack():
+        print('''PACKING AND UNPACKING RETURNS BETWEEN PROGRAMS OR SCOPE.\n
+        Functions are often used such that one program obtains args, then invokes a separate program to with a 
+        function to process the args. To do this args must be packed and unpacked.\n
+        
+         while True:
+                    h_in = input('Enter integer for h: \n')
+                    i_in = input('Enter integer for i: \n')
+                    j_in = input(' Enter integer for j: \n')
+                    if h_in.isdigit() and i_in.isdigit() and j_in.isdigit():
+                        # convert to int.
+                        h = int(h_in)
+                        i = int(i_in)
+                        j = int(j_in)
+                        break
+        
+                def itReturnsThree(h, i, j):
+                    hh = h + h
+                    ii = i * i
+                    jj = j ** j
+        
+                    return hh, ii, jj
+        
+                # unpack structure below
+                # outside of function scope
+                # it unpacks on the left and is invoked while taking arguments on the right.
+                hh, ii, jj = itReturnsThree(h, i, j)
+        
+                print(h, i, j are passed into the function. The function lives the first nesting level, it
+                returns hh, ii , jj to the 0th nesting level. The returns are unpacked, and then printed.)
+                print(f'h + h = {hh}')
+                print(f' i * i = {ii}')
+                print(f'j ** j = {jj}''')
+
+        print("Let's run it.\n")
+
+        PROCEED_CLASS.proceed()
+
+        while True:
+            h_in = input('Enter integer for h: \n')
+            i_in = input('Enter integer for i: \n')
+            j_in = input(' Enter integer for j: \n')
+            if h_in.isdigit() and i_in.isdigit() and j_in.isdigit():
+                # convert to int.
+                h = int(h_in)
+                i = int(i_in)
+                j = int(j_in)
+                break
+
+        def itReturnsThree(h, i, j):
+            hh = h + h
+            ii = i * i
+            jj = j ** j
+
+            return hh, ii, jj
+
+        # unpack structure below
+        # outside of function scope
+        # it unpacks on the left and is invoked while taking arguments on the right.
+        hh, ii, jj = itReturnsThree(h, i, j)
+
+        print('''h, i, j are passed into the function. The function lives the first nesting level, it
+        returns hh, ii , jj to the 0th nesting level. The returns are unpacked, and then printed.\n''')
+        print(f'h + h = {hh}')
+        print(f' i * i = {ii}')
+        print(f'j ** j = {jj}')
+
+        PROCEED_CLASS.proceed()
+
+    @staticmethod
     def positionalArgs():  
 
         print('''POSITIONAL ARGUMENTS\n
@@ -350,7 +420,8 @@ class FUNCTIONS_MENU():
             2: Declaring Parameters
             3: Keyword Parameters
             4: Positional Arguments
-            5: Intermediate Functions Operations           
+            5: Packing & Unpacking Functions
+            6: Intermediate Functions Operations           
             OR ANY OTHER NUMBER TO EXIT.
             .........................................................................
             \n''')
@@ -372,6 +443,8 @@ class FUNCTIONS_MENU():
                 FUNCTIONS_MENU.positionalArgs()
             elif functions_selection == 5:
                 ATOPIC_Y_EXIT.atopic()
+                FUNCTIONS_MENU.packUPack()
+            elif functions_selection == 6:
                 FUNCTIONS_MENU.intermediateFunctionOps()
             else:
                 ATOPIC_Y_EXIT.exiting()

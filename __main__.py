@@ -4,6 +4,7 @@ from selections import SELECTION_MENU
 from input_validation import INPUT_VALIDATION_MENU
 from for_loops import FOR_LOOPS_MENU
 from while_loops import WHILE_LOOP_MENU
+from functions import FUNCTIONS_MENU
 
 
 '''
@@ -60,7 +61,7 @@ def run():
             WHILE_LOOP_MENU.runWhileLoopMenu()
         elif select_structure == 7:
             print('Accessing Functions...\n')
-            functions()
+            FUNCTIONS_MENU.runFunctionsMenu()
         elif select_structure == 8:
             print('Accessing Populating Lists...\n')
             listsPopulation()
