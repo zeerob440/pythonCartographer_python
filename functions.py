@@ -1,5 +1,5 @@
 from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
-# TODO add lambda, returns, unpacking, unpacking tuples sections to this program
+
 # functions.py provides example of function behaviors.
 class FUNCTIONS_MENU():
 
@@ -206,6 +206,8 @@ class FUNCTIONS_MENU():
         
         print(f'The function has printed: {posEx()}\n') # prints 5
 
+        PROCEED_CLASS.proceed()
+
         print('''Now let's override default parameters using positional arguments.\n
         print(posEx(5)) # returns 8\n
 
@@ -223,7 +225,140 @@ class FUNCTIONS_MENU():
         
         PROCEED_TO_MENU_CLASS.proceedToMenu()
 
-    # This lesson is longer because it reuses the same code throughout the lesson.   
+    @staticmethod
+    def lambdaFun():
+            print('''lambda are small quick functions, they are structured as:
+            name = lambda parameters: return_value
+            
+            We'll examine how a traditional function looks when written as a lambda\n
+            def shout(name):
+                            return name.upper()
+            
+                        print(shout("rico"))
+
+            Can be written as:\n
+             shout = lambda name: name.upper()
+            
+                        print(shout("rico"))
+
+            each function outputs 'RICO'.
+            Now let's try them!
+            ''')
+            PROCEED_CLASS.proceed()
+
+            # lambda functions
+            # structure
+            # name = lambda parameters: return_value
+            print('Trad function output below:\n')
+            # traditional function
+            def shout(name):
+                return name.upper()
+
+            print(shout("rico"))
+
+            print('Proceed to produce above output with lambda.\n')
+
+            PROCEED_CLASS.proceed()
+
+            print('lambda output function below\n')
+            # equal lambda function, args, if any go next to lambda followed by a : it can take 0 - inf args
+            shout = lambda name: name.upper()
+
+            print(shout("rico"))
+
+            PROCEED_CLASS.proceed()
+
+           
+            double = lambda x: x * 2
+
+            print(double(2))
+            print('''lambda functions can take as many parameters as needed. The parameters are separated by ","
+                lambda can have default parameters, or positional parameters\n
+                However, params without defaults MUST be declared BEFORE Default params such that:\n
+                
+                triple_10 = lambda x2, x10=5: (x2 * 3, x10 * 10)
+            
+                print(triple_10(3))# prints 59\n
+                
+                proceed to run this code.\n''')
+
+            PROCEED_CLASS.proceed()
+            
+            triple_10 = lambda x2, x10=5: (x2 * 3, x10 * 10)
+
+            print(f'The default param lambda is: {triple_10(3)}')# prints 59
+
+            PROCEED_CLASS.proceed()
+
+            print('''map() FUNCTION\n
+            
+            lambda functions are especially useful with the map() and filter() function\n
+            structure: map(function, iterable)
+            takes a function and adds the result to an iterable
+            map creates generator object, it must be extracted with an iterable.\n
+            Let's check out this code\n
+            
+            dogs =['mia', 'rico', 'orion']
+            
+                result = map(lambda dog: dog.upper(), dogs)
+                # object extracted as list. 
+                print (list((result)))\n
+
+            proceed to run the code\n''')
+            # map()
+            # map(function, iterable)
+            # takes a function and adds the result to an iterable
+            # map creates generator object, it must be extracted with an iterable. 
+            dogs =['mia', 'rico', 'orion']
+
+            result = map(lambda dog: dog.upper(), dogs)
+
+            # object extracted as list. 
+            print (list((result)))
+
+            PROCEED_CLASS.proceed()
+
+            print('''filter() FUNCTION\n
+            filter() filters things from an iterable and returns those that meet criteria to a list.
+            structure filter(function, iterable)
+            
+            result must must be extracted with an iterable\n
+            def dogFilter(dog):
+                            return len(dog) == 4
+                        
+                        # unpack function
+                        fun_result = list(filter(dogFilter, dogs))
+                        print(fun_result)
+            
+                        f_result = list(filter(lambda dog: len(dog) == 4, dogs))
+            
+                        print(f_result)\n
+            proceed to try this code, it will return 'rico'. ''')
+
+            # filter()
+            # filter(function, iterable)
+            # creates a generator-object that must be extracted with an iterable
+
+            PROCEED_CLASS.proceed()
+
+            def dogFilter(dog):
+                return len(dog) == 4
+            
+            # unpack function
+            fun_result = list(filter(dogFilter, dogs))
+            print(fun_result)
+
+            f_result = list(filter(lambda dog: len(dog) == 4, dogs))
+
+            print(f_result, end='\n')
+
+            print('This concludes this module.\n')
+
+            PROCEED_TO_MENU_CLASS.proceedToMenu()
+
+
+    # This lesson is longer because it reuses the same code throughout the lesson.
+    @staticmethod   
     def intermediateFunctionOps():
 
         print('''OUTPUT RETURNS\n
@@ -428,7 +563,8 @@ class FUNCTIONS_MENU():
             3: Keyword Parameters
             4: Positional Arguments
             5: Packing & Unpacking Functions
-            6: Intermediate Functions Operations           
+            6: Lambda Functions
+            7: Intermediate Functions Operations           
             OR ANY OTHER NUMBER TO EXIT.
             .........................................................................
             \n''')
@@ -452,6 +588,8 @@ class FUNCTIONS_MENU():
                 ATOPIC_Y_EXIT.atopic()
                 FUNCTIONS_MENU.packUPack()
             elif functions_selection == 6:
+                FUNCTIONS_MENU.lambdaFun()
+            elif functions_selection == 7:
                 FUNCTIONS_MENU.intermediateFunctionOps()
             else:
                 ATOPIC_Y_EXIT.exiting()
