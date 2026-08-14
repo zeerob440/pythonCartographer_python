@@ -29,12 +29,13 @@ class FUNCTIONS_MENU():
 
         PROCEED_CLASS.proceed()
 
-        print('''3 RETURNS - The value a function returns after processing arguments such that:
+        print('''3 RETURNS - The value a function returns after processing arguments. return always
+        returns args to the area of the program that invoked the function such that:
 
         def fun(a, b):
             result = a + b
             return result
-        # store function as var, print var
+        # store function as var in return area, print var.
         value = fun(5,10)
         
         print(value))\n''')
@@ -56,6 +57,8 @@ class FUNCTIONS_MENU():
         result = a + b
         return result\n
         Below you will run this code. It will add args you provide and return the sum.\n''')
+
+        PROCEED_CLASS.proceed()
 
         def itAddsThings(a, b):
             result = a + b
@@ -98,13 +101,15 @@ class FUNCTIONS_MENU():
             added = d + f
             return added
         
-        print(f'This will print the sum of the default parameters which is: {itAddsDF()}\n')
+        print(f'function printed the sum of the default parameters which is: {itAddsDF()}\n')
 
         print('''Keyword args can also override default parameters such that:\n
         print(itAddsDF(f = 10))\n
         this allows the 0th parameter to remain the default but explicitly changes the second
         parameter to 10 with a keyword arg.
         let's try it!\n''')
+
+        PROCEED_CLASS.proceed()
 
         print(f'This will return {itAddsDF(f = 10)}, since d = 7 and f has been changed to 10.\n') # prints 17
 
@@ -117,9 +122,9 @@ class FUNCTIONS_MENU():
         function to process the args. To do this args must be packed and unpacked.\n
         
          while True:
-                    h_in = input('Enter integer for h: \n')
-                    i_in = input('Enter integer for i: \n')
-                    j_in = input(' Enter integer for j: \n')
+                    h_in = input('Enter integer for h: ')\n
+                    i_in = input('Enter integer for i: ')\n
+                    j_in = input(' Enter integer for j: ')\n
                     if h_in.isdigit() and i_in.isdigit() and j_in.isdigit():
                         # convert to int.
                         h = int(h_in)
@@ -175,7 +180,7 @@ class FUNCTIONS_MENU():
         print('''h, i, j are passed into the function. The function lives the first nesting level, it
         returns hh, ii , jj to the 0th nesting level. The returns are unpacked, and then printed.\n''')
         print(f'h + h = {hh}')
-        print(f' i * i = {ii}')
+        print(f'i * i = {ii}')
         print(f'j ** j = {jj}')
 
         PROCEED_CLASS.proceed()
@@ -199,7 +204,7 @@ class FUNCTIONS_MENU():
                 sumGH = g + h
                 return sumGH
         
-        print(posEx(), end='\n') # prints 5
+        print('The function prints ' + posEx(), end='\n') # prints 5
 
         print('''Now let's override default parameters using positional arguments.\n
         print(posEx(5)) # returns 8\n
@@ -209,9 +214,11 @@ class FUNCTIONS_MENU():
         This will assign 5 to the 0th parameter and leave the 1st parameter's default value.
         let's try it.\n''')
 
-        print(posEx(5), end='\n') # returns 8
+        PROCEED_CLASS.proceed()
 
-        print(posEx(2,2), end='\n')
+        print('posEX(f) is: ' + posEx(5), end='\n') # returns 8
+
+        print('posEx(2, 2) is ' + posEx(2,2), end='\n')
 
         
         PROCEED_TO_MENU_CLASS.proceedToMenu()
