@@ -1,6 +1,5 @@
 from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
      
-#TODO add method about list comprehension 
 # lists.py covers examples of list operations. 
 class LISTS_MENU():
 
@@ -242,11 +241,81 @@ class LISTS_MENU():
         PROCEED_TO_MENU_CLASS.proceedToMenu()
 
     @staticmethod
-    #TODO populate list comprehensions
+    
     def comprehensions():
-        pass
 
+        print('''LIST COMPREHENSIONS\n
+    More like list incomprehensions, am I rite? List comprehension are a way to produce a list using elements from another list with conditional logic baked in
+    . They are essentially filters for one list to produce another list.
+    They can be useful, but the syntax is like how Yoda's speaks and can very quickly become virtually unreadable.\n
 
+    Remember, "write it you must, so others can maintain it.'
+    
+    While comprehensions can be 'elegant' I feel readability and maintainability exceed the usefulness of 'cute code'.\n ''')
+
+        PROCEED_CLASS.proceed()
+
+        print('''Structure of a Comprehension\n
+    A list comprehension generates a new list from another iterable. They always use for loops so,\n
+
+    IT IS IMPORTANT TO BEGIN READING FORM THE 'for' STATEMENT IN THE MIDDLE OF THE EXPRESSION!
+
+    generated list = [varYouWant for elementInExistingIterable in existingIterable]
+
+    or 
+
+    new_list = [expression for item in iterable]
+
+    or
+
+    [what_to_store for item in iterable if condition]\n 
+
+    As you can see this kind of misheagoss can get convoluted very quickly if you are not careful.\n''')
+
+        PROCEED_CLASS.proceed()
+
+        print('''let's look at our example code below:
+    # existing list
+    nums = [10, 10, 10]
+    # new list built with list comprehension
+    zeroes =[num - 10 for num in nums]
+    print (zeroes)# returns a list with three 0s
+    print()\n    
+    
+    The code is literally read as:\n
+    "for number in nums, num - 10"
+    proceed to run it\n''')
+
+        # existing list
+        nums = [10, 10, 10]
+        # new list built with list comprehension
+        zeroes =[num - 10 for num in nums]
+        print (f'{zeroes}\n')
+
+        PROCEED_CLASS.proceed()
+
+        print('''An equal, but more readable code for this would be:\n
+        
+        smartzeros = []
+        for num in nums:
+            minus10 = (num -10)
+            smartzeros.append(minus10)
+        print(smartzeros)\n
+        
+        proceed to try it\n''')
+
+        PROCEED_CLASS.proceed()
+
+        smartzeros: list = []
+        for num in nums:
+            minus10 = (num -10)
+            smartzeros.append(minus10)
+        print(f'{smartzeros} equal output as the zeros list comprehension list.\n')
+
+        PROCEED_CLASS.proceed()
+
+#FIXME: add the cats example here.
+        print('''NEXT EXAMPLE''')
     @staticmethod
     def runListsMenu():
 
