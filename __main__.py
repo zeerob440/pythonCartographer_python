@@ -7,6 +7,7 @@ from while_loops import WHILE_LOOP_MENU
 from functions import FUNCTIONS_MENU
 from lists import LISTS_MENU
 
+#TODO complete depopulate_lists.py
 
 '''
 Version: Delta 6 AUG 2026; pythonCartographer Delta was created to make the program more modular and easier to maintain. 
