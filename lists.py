@@ -69,8 +69,8 @@ class LISTS_MENU():
     def populateListInsert():
 
         print('''POPULATING LIST WITH insert()\n
-          Another way to populate a list is with the insert()method.
-          insert() is used to populate an item at a specific index, the method need an index argument and a item to insert, such  that:\n
+          Another way to populate a list is with the insert() method.
+          insert() expects two args, insert('index_to_insert_at, 'element_you_need_to_insert) such  that:\n
           cat_list = ['tabby', 'siamese', 'persian']\n
           cat_list.insert(1, 'main coon')\n
           print(cat_list)\n
@@ -90,7 +90,7 @@ class LISTS_MENU():
     def populateListWhileLoop():
         print('''
         POPULATING LIST WITH WHILE LOOP\n
-        It is also possible to populate a list with an while loop. Below is an example of how this is achieved\n
+        It is also possible to populate a list with an while loop. Below is an example of how this is achieved.\n
         another_list = [] #declare empty list
         append_list = True
         while append_list:
@@ -109,9 +109,9 @@ class LISTS_MENU():
         another_list = [] #declare empty list
         append_list = True
         while append_list:
-            list_apendenator = input('Enter an item to list: ')
+            list_apendenator = input('Enter an item to list: \n')
             another_list.append(list_apendenator)
-            sentinel_prompt = input('Would you like to add another item? Enter "y" or "n": ')
+            sentinel_prompt = input('Would you like to add another item? Enter "y" or "n": \n')
             if sentinel_prompt == ('y'):      
                 append_list = True
             else: append_list = False
@@ -124,19 +124,20 @@ class LISTS_MENU():
     def populateListSplit():
         print('''
         POPULATING LIST WITH .split()\n
+        WARNING: THIS INPUT METHOD SHOULD NOT BE USED AS IT IS POOR PROGRAMMING FORM AND CONFUSES USERS.\n
+
         Lists can be created using the .split() method. However, it is important to warn the user
         that this method of input is being used. The .split() method uses space to separate several items in a list
-        the list is then created when the user presses enter
+        the list is then created when the user presses enter.
+        
         Below is an example of how this method is used for user input.\n
           
-        enter_items = input('enter and item separated by space ')# input variable
+        enter_items = input('enter an item separated by space ')# input variable
         items = enter_items.split() create a variable to contain the items once split into a list the var becomes the list.
         print(items) # items is now a list\n.
         Now you try:\n''')
-    
-        PROCEED_CLASS.proceed()
 
-        enter_items = input('Enter an item separated by space. ')
+        enter_items = input('Enter an item separated by space: ')
         items = enter_items.split()
         print(items)
 
@@ -169,6 +170,63 @@ class LISTS_MENU():
         print(combined_list)
 
         PROCEED_TO_MENU_CLASS.proceedToMenu()
+        #TODO add info about .join() inside this module
+
+    @staticmethod
+    def populateWExtend():
+
+        print('''.extend()\n 
+        .extend is a useful method for adding elements to a list. 
+        The use case is simple: suppose you need to add two elements to a list from another list, but if you add those elements as .append() THE
+        ENTIRE LIST becomes a single element in your original list.\n
+        
+        .extend() can take a list with multiple elements as an arg, then iteratively load each element into the list as its own element.\n
+        
+        Observe this example:\n
+
+        bears: list = ['polar', 'grizzly', 'wachbar']
+            colors: list = ['red', 'blue']
+        
+            bears.extend(colors) # takes each element from colors and adds it as an independent element in bears.
+            print(bears)\n
+        
+        Proceed to run this example.\n''')
+
+        PROCEED_CLASS.proceed()
+
+        bears: list = ['polar', 'grizzly', 'wachbar']
+        colors: list = ['red', 'blue']
+
+        bears.extend(colors)
+        print(f'{bears} \n')# prints bears and colors as separate elements.
+
+        PROCEED_CLASS.proceed()
+
+        print('''Whereas .append() will add a single element to the last indice in a list. Such that:\n
+        
+        birds: list = ['toucan', 'loro', 'flamingo', 'pelican']
+                space_stations: list = ['Death Star', 'Citadel', 'Sevastopol', 'Sky Lab']
+        
+                birds.append(space_stations) # prints elements in birds, but appends entire list of space_stations in last element of birds.
+        
+                print(birds)\n
+        proceed to run this code!
+        ''')
+        PROCEED_CLASS.proceed()
+
+        birds: list = ['toucan', 'loro', 'flamingo', 'pelican']
+        space_stations: list = ['Death Star', 'Citadel', 'Sevastopol', 'Sky Lab']
+
+        birds.append(space_stations) # prints elements in birds, but appends entire list of space_stations in last element of birds.
+
+        print(f'{birds} \n') 
+
+        PROCEED_TO_MENU_CLASS.proceedToMenu()
+
+    @staticmethod
+    def comprehensions():
+        pass
+
 
     @staticmethod
     def runListsMenu():
@@ -179,12 +237,14 @@ class LISTS_MENU():
             populate_list_menu =('''
             MENU - 
             ........................................................................
-            1: List Population .append
+            1: List Population .append()
             2: List Population for loop
             3: List Population insert()
             4: List Population While Loop
             5: List Population split()
-            6: List Population Concatenation           
+            6: Joining lists Concatenation and .join()
+            7. List Population using .extend() vs .append()
+            8. List Comprehension Structures           
             OR ANY OTHER NUMBER TO EXIT.
             .........................................................................
             \n''')
@@ -210,6 +270,12 @@ class LISTS_MENU():
             elif populate_list_selection == 6:
                 ATOPIC_Y_EXIT.atopic()
                 LISTS_MENU.populateListConcat()
+            elif populate_list_selection == 7:
+                ATOPIC_Y_EXIT.atopic()
+                LISTS_MENU.populateWExtend()
+            elif populate_list_selection == 8:
+                ATOPIC_Y_EXIT.atopic()
+                LISTS_MENU.comprehensions()
             else:
                 ATOPIC_Y_EXIT.exiting()
                 return        
