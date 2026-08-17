@@ -176,21 +176,21 @@ class LISTS_MENU():
     def populateWExtend():
 
         print('''.extend()\n 
-        .extend is a useful method for adding elements to a list. 
-        The use case is simple: suppose you need to add two elements to a list from another list, but if you add those elements as .append() THE
-        ENTIRE LIST becomes a single element in your original list.\n
+    .extend is a useful method for adding elements to a list. 
+    The use case is simple: suppose you need to add two elements to a list from another list, but if you add those elements as .append() THE
+    ENTIRE LIST becomes a single element in your original list.\n
         
-        .extend() can take a list with multiple elements as an arg, then iteratively load each element into the list as its own element.\n
+    .extend() can take a list with multiple elements as an arg, then iteratively load each element into the list as its own element.\n
         
-        Observe this example:\n
+    Observe this example:\n
 
-        bears: list = ['polar', 'grizzly', 'wachbar']
-            colors: list = ['red', 'blue']
+    bears: list = ['polar', 'grizzly', 'wachbar']
+    colors: list = ['red', 'blue']
         
-            bears.extend(colors) # takes each element from colors and adds it as an independent element in bears.
-            print(bears)\n
+        bears.extend(colors) # takes each element from colors and adds it as an independent element in bears.
+        print(bears)\n
         
-        Proceed to run this example.\n''')
+    Proceed to run this example.\n''')
 
         PROCEED_CLASS.proceed()
 
@@ -205,11 +205,11 @@ class LISTS_MENU():
         print('''Whereas .append() will add a single element to the last indice in a list. Such that:\n
         
         birds: list = ['toucan', 'loro', 'flamingo', 'pelican']
-                space_stations: list = ['Death Star', 'Citadel', 'Sevastopol', 'Sky Lab']
+        space_stations: list = ['Death Star', 'Citadel', 'Sevastopol', 'Sky Lab']
         
-                birds.append(space_stations) # prints elements in birds, but appends entire list of space_stations in last element of birds.
+        birds.append(space_stations) # prints elements in birds, but appends entire list of space_stations in last element of birds.
         
-                print(birds)\n
+        print(birds)\n
         proceed to run this code!
         ''')
         PROCEED_CLASS.proceed()
