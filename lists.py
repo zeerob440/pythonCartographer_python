@@ -169,9 +169,27 @@ class LISTS_MENU():
 
         print(combined_list)
 
-        PROCEED_TO_MENU_CLASS.proceedToMenu()
-        #TODO add info about .join() inside this module
+        PROCEED_CLASS.proceed()
 
+        print('''.split()\n
+    .split() can create a list using a string and a separator value such that:\n
+
+    str4 = 'many dogs live in my house|Rico is a Standard Schnauzer|Mia is a Yukon Whaling Shepard.'
+    
+    # produces a three element list starting at each "|".
+    print(str4.split('|'))\n
+    
+    Proceed to run this code.\n''')
+
+        PROCEED_CLASS.proceed()
+
+        str4 = 'many dogs live in my house|Rico is a Standard Schnauzer|Mia is a Yukon Whaling Shepard.'
+
+        # produces a three element list starting at each "|".
+        print(str4.split('|')) 
+
+        PROCEED_TO_MENU_CLASS.proceedToMenu()
+        
     @staticmethod
     def populateWExtend():
 
@@ -187,8 +205,8 @@ class LISTS_MENU():
     bears: list = ['polar', 'grizzly', 'wachbar']
     colors: list = ['red', 'blue']
         
-        bears.extend(colors) # takes each element from colors and adds it as an independent element in bears.
-        print(bears)\n
+    bears.extend(colors) # takes each element from colors and adds it as an independent element in bears.
+    print(bears)\n
         
     Proceed to run this example.\n''')
 
@@ -242,7 +260,7 @@ class LISTS_MENU():
             3: List Population insert()
             4: List Population While Loop
             5: List Population split()
-            6: Joining lists Concatenation and .join()
+            6: Joining lists Concatenation and .split()
             7. List Population using .extend() vs .append()
             8. List Comprehension Structures           
             OR ANY OTHER NUMBER TO EXIT.
