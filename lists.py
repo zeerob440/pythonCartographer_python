@@ -1,6 +1,6 @@
 from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
      
-
+#TODO add method about list comprehension and .extend()
 # lists.py covers examples of list operations. 
 class LISTS_MENU():
 
@@ -31,7 +31,7 @@ class LISTS_MENU():
     
         PROCEED_CLASS.proceed()
 
-        dog_list = ['Rico']
+        dog_list = ['Rico', 'Mia']
         new_dog = input("Enter a new dog: ")
         dog_list.append(new_dog)
         print(dog_list)
@@ -54,7 +54,7 @@ class LISTS_MENU():
         Proceed to try it. The code will allow you to input 3 items.\n
         ''')
     
-        property.proceed()
+        PROCEED_CLASS.proceed()
 
         # Below is an example of populating a list with the .append() method.
         user_things = [] # declare empty list.
