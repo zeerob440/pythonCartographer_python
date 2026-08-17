@@ -199,7 +199,7 @@ class LISTS_MENU():
                 ATOPIC_Y_EXIT.atopic()
                 LISTS_MENU.populateListForLoop()
             elif populate_list_selection == 3:
-                print(atopic)
+                ATOPIC_Y_EXIT.atopic()
                 LISTS_MENU.populateListInsert()
             elif populate_list_selection == 4:
                 ATOPIC_Y_EXIT.atopic()
