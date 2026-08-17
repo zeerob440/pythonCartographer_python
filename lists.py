@@ -314,8 +314,72 @@ class LISTS_MENU():
 
         PROCEED_CLASS.proceed()
 
-#FIXME: add the cats example here.
-        print('''NEXT EXAMPLE''')
+        print('''NEXT EXAMPLE
+        
+    cats = ['moose', 'kook', 'Cline']
+    appended_cats = ['old ' + cat for cat in cats]
+
+    print(appended_cats)\n
+
+    This is read literally as: 'for cat cats add 'old ' + cat.\n
+
+    so it takes cat from cats, then adds 'old ' + cat into the new list apprehend_cats.\n
+
+    Let's try it now.\n''')
+
+        PROCEED_CLASS.proceed()
+
+        cats = ['moose', 'kook', 'Cline']
+        appended_cats = ['old ' + cat for cat in cats]
+
+        print(f'{appended_cats} The comprehension in action')
+
+        PROCEED_CLASS.proceed()
+
+        print('''COMPREHENSION WITH CONDITIONAL STATEMENTS\n
+    This is were the use case for a comprehension may become more clear, they can assert conditional logic on the new list you intend to create.
+    
+    CONDITIONAL STATEMENTS MUST COME AFTER THE 'for in' STATEMENT.\n
+    numbers = [2, 4, 6, 8 , 10]
+
+    # conditionals come after the COMPLETE FOR IN STATEMENT
+    six_eight_ten_doubled = [num * 2 for num in numbers if num > 5]
+
+    print(six_eight_ten_doubled)\n
+    
+    This comprehension detects that if an element is greater that 5 , it take that element and multiplies it by 2.\n
+    
+    Proceed to try.\n''')
+
+        PROCEED_CLASS.proceed()
+
+        numbers = [2, 4, 6, 8 , 10]
+
+        # conditionals come after the COMPLETE FOR IN STATEMENT
+        six_eight_ten_doubled = [num * 2 for num in numbers if num > 5]
+
+        print(f'And the comp returns this list:{six_eight_ten_doubled}\n')
+
+        PROCEED_CLASS.proceed()
+
+        print('''The next example adds an else statement\n
+
+    it is literally read as 'for num in numbers, if number is less than 5, number - 2, else number times 2.'\n
+    IF THERE IS AN IF/ELSE STRUCTURE, IF GOES AFTER THE VALUE YOU WANT ON THE LEFT, ELSE GOES IMMEDIATELY RIGHT OF THAT, AND 'FOR IN' GOES LAST.'
+        
+    else_list = [num - 2 if num < 5 else num * 2 for num in numbers]
+
+    print(else_list)\n
+
+    proceed to try it. will print [0, 2, 12, 16, 20]\n''')
+
+        PROCEED_CLASS.proceed()
+        else_list = [num - 2 if num < 5 else num * 2 for num in numbers]
+
+        print(else_list)
+
+        PROCEED_TO_MENU_CLASS.proceedToMenu()
+
     @staticmethod
     def runListsMenu():
 
