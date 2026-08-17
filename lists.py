@@ -1,6 +1,6 @@
 from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
      
-#TODO add method about list comprehension and .extend()
+#TODO add method about list comprehension 
 # lists.py covers examples of list operations. 
 class LISTS_MENU():
 
@@ -242,6 +242,7 @@ class LISTS_MENU():
         PROCEED_TO_MENU_CLASS.proceedToMenu()
 
     @staticmethod
+    #TODO populate list comprehensions
     def comprehensions():
         pass
 
