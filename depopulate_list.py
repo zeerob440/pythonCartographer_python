@@ -7,7 +7,7 @@ class DEPOPULATE_LIST_MENU():
 
         print('''DEPOPULATING LISTS\n
           Modifying lists is a typical workflow in Python, items need to be added, and items need to be removed.
-          We will explore how to depopulate lists with the pop() and remove() methods, and typical structures whereby these methods are
+          We will explore how to depopulate lists with the pop(), del, and remove() methods, and typical structures whereby these methods are
           used.\n''')
         
         PROCEED_CLASS.proceed()
@@ -28,7 +28,7 @@ class DEPOPULATE_LIST_MENU():
         del the_list[3] deletes last 'cat' value
         print(the_list)\n
 
-        list will print as ['dog', 'cat', 'whale']
+        list will finally print as ['dog', 'cat', 'whale']
           
         Proceed to run the code.\n''')
     
@@ -91,6 +91,8 @@ class DEPOPULATE_LIST_MENU():
             print(*alist)\n
             
             Proceed to run the code!\n''')
+
+        PROCEED_CLASS.proceed()
         
         alist: list = ['brad', 'leo', 'sandy', 'timothy', 'sam']
 
