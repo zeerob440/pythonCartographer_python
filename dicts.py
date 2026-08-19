@@ -211,7 +211,7 @@ class DICTS_MENU():
         print((san_cristobal_medstaff[1].values()), '\n')
         
         for staff in san_cristobal_medstaff:
-            print(staff.values() + '\n')
+            print(staff.values(), '\n')
 
         PROCEED_CLASS.proceed()
 
