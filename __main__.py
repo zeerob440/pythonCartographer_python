@@ -1,3 +1,4 @@
+from navigation import MENU_INPUT_HANDLER_CLASS
 from basics import BASICS_MENU
 from inputs import INPUTS_MENU
 from selections import SELECTION_MENU
@@ -48,7 +49,7 @@ def run():
 
         print(menu)
 
-        select_structure = int(input("Input structure you would like to review: "))
+        select_structure = MENU_INPUT_HANDLER_CLASS.inputVald('Enter an integer to select a structure: \n')
         if select_structure == 1:
             print ("Accessing Basics...\n")
             BASICS_MENU.runBasicsMenu()

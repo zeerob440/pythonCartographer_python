@@ -29,3 +29,17 @@ class ATOPIC_Y_EXIT():
         print(ex)
         # returns to previous program
         return
+    # TODO increased input handling function
+    # improved input handling class
+class MENU_INPUT_HANDLER_CLASS:
+
+    @staticmethod
+    def inputVald(prompt):
+        while True:
+            selection = input(prompt)
+            if selection.isdigit():
+                selection = int(selection)
+                return selection
+            else:
+                print('Enter an integer!\n')
+
