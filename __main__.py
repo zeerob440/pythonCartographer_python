@@ -10,12 +10,12 @@ from lists import LISTS_MENU
 from depopulate_list import DEPOPULATE_LIST_MENU
 from dicts import DICTS_MENU
 
+#TODO pythonCartographer reformat doc strings.
 #TODO add regex section to input_validation
 #TODO input_validation.py add exception hierarchy section
 #TODO add file_operations.py and content
 #TODO add slicing.py and content
 #TODO add oop.py and content
-#TODO add better input handling in menus
 #TODO add read_write.py and contents 
 
 '''
