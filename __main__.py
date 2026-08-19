@@ -7,8 +7,13 @@ from while_loops import WHILE_LOOP_MENU
 from functions import FUNCTIONS_MENU
 from lists import LISTS_MENU
 from depopulate_list import DEPOPULATE_LIST_MENU
+from dicts import DICTS_MENU
 
-#TODO complete depopulate_lists.py
+#TODO add regex section to input_validation
+#TODO add file_operations.py and content
+#TODO add slicing.py and content
+#TODO add oop.py and content
+#TODO add better input handling in menus
 
 '''
 Version: Delta 6 AUG 2026; pythonCartographer Delta was created to make the program more modular and easier to maintain. 
@@ -73,7 +78,7 @@ def run():
             DEPOPULATE_LIST_MENU.runDepopulateListMenu()
         elif select_structure == 10:
             print('Accessing Dictionaries\n')
-            dictionaries()
+            DICTS_MENU.runDictMenu()
         else:
             print('Exiting pythonCartographer!')
             break
