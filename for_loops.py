@@ -49,8 +49,6 @@ class FOR_LOOPS_MENU():
     @staticmethod
     def rangeControl():
     #Create simple "for i in range of" FOR LOOP
-        
-        PROCEED_CLASS.proceed()
     
         print('''FOR LOOP RANGE CONTROL\n
             In this example you will see...\n
