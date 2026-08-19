@@ -6,6 +6,7 @@ from for_loops import FOR_LOOPS_MENU
 from while_loops import WHILE_LOOP_MENU
 from functions import FUNCTIONS_MENU
 from lists import LISTS_MENU
+from depopulate_list import DEPOPULATE_LIST_MENU
 
 #TODO complete depopulate_lists.py
 
@@ -69,7 +70,7 @@ def run():
             LISTS_MENU.runListsMenu()
         elif select_structure == 9:
             print('Accessing Depopulating Lists\n')
-            depopulatingLists()
+            DEPOPULATE_LIST_MENU.runDepopulateListMenu()
         elif select_structure == 10:
             print('Accessing Dictionaries\n')
             dictionaries()
