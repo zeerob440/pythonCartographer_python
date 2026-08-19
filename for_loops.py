@@ -1,4 +1,4 @@
-from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
+from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS, MENU_INPUT_HANDLER_CLASS
 
 # for_loops.py contains methods for learning for loops. 
 
@@ -150,7 +150,7 @@ class FOR_LOOPS_MENU():
             \n''')
 
             print(for_loop_menu)
-            for_loop_selection = int(input('Select a Topic \n'))
+            for_loop_selection = MENU_INPUT_HANDLER_CLASS.inputVald('Enter an integer to select a structure: \n')
 
             if for_loop_selection == 1:
                 

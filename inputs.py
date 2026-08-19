@@ -1,4 +1,4 @@
-from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
+from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS, MENU_INPUT_HANDLER_CLASS
 
 # inputs() contains daughter functions inputBasics(), inputTranslation().
 class INPUTS_MENU():
@@ -76,7 +76,7 @@ class INPUTS_MENU():
             \n''')
         
             print(inputs_menu)
-            input_selection = int(input('Select a Topic \n'))
+            input_selection = MENU_INPUT_HANDLER_CLASS.inputVald('Enter an integer to select a structure: \n')
 
             if input_selection == 1:
                 ATOPIC_Y_EXIT.atopic()

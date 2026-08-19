@@ -1,4 +1,4 @@
-from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
+from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS, MENU_INPUT_HANDLER_CLASS
 
 class DEPOPULATE_LIST_MENU():
 
@@ -118,7 +118,7 @@ class DEPOPULATE_LIST_MENU():
             \n''')
         
             print(depopulate_menu)
-            depopulate_selection = int(input('Select a Topic \n'))
+            depopulate_selection = MENU_INPUT_HANDLER_CLASS.inputVald('Enter an integer to select a structure: \n')
 
             if depopulate_selection == 1:
                 ATOPIC_Y_EXIT.atopic()

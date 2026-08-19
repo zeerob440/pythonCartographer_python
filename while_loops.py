@@ -1,4 +1,4 @@
-from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
+from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS, MENU_INPUT_HANDLER_CLASS
 
 # TODO add While/Else structure
 # TODO add example of decrementing to 0 with integer for falsey sentinel value
@@ -83,7 +83,7 @@ class WHILE_LOOP_MENU():
             \n''')
         
             print(indefinite_loop_menu)
-            indefinite_loop_selection = int(input('Select a Topic \n'))
+            indefinite_loop_selection = MENU_INPUT_HANDLER_CLASS.inputVald('Enter an integer to select a structure: \n')
 
             if indefinite_loop_selection == 1:
                 ATOPIC_Y_EXIT.atopic()

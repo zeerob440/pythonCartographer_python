@@ -1,4 +1,4 @@
-from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
+from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS, MENU_INPUT_HANDLER_CLASS
 # dicts.py covers dictionary operations. 
 class DICTS_MENU():
 
@@ -277,7 +277,7 @@ class DICTS_MENU():
             .........................................................................\n)'''
 
             print(dict_menu)
-            dict_selection = int(input("Select a topic:\n "))
+            dict_selection = MENU_INPUT_HANDLER_CLASS.inputVald('Enter an integer to select a structure: \n')
             if dict_selection == 1:
                 ATOPIC_Y_EXIT.atopic()
                 DICTS_MENU.dict_basics()

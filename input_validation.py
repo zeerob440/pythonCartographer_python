@@ -1,4 +1,4 @@
-from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
+from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS, MENU_INPUT_HANDLER_CLASS
 
 #TODO add regex section
 #TODO add exception hierarchy section
@@ -158,7 +158,7 @@ class INPUT_VALIDATION_MENU():
             \n''')
         
             print(validation_menu)
-            validation_selection = int(input('Select a Topic \n'))
+            validation_selection = MENU_INPUT_HANDLER_CLASS.inputVald('Enter an integer to select a structure: \n')
 
             if validation_selection == 1:
                 ATOPIC_Y_EXIT.atopic

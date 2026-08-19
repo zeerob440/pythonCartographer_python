@@ -1,4 +1,4 @@
-from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
+from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS, MENU_INPUT_HANDLER_CLASS
 
 '''
 selections.py provides training methods for using selections in Python.
@@ -177,7 +177,7 @@ class SELECTION_MENU():
             \n''')
         
             print(selections_menu)
-            selection_selection = int(input('Select a Topic \n'))
+            selection_selection = MENU_INPUT_HANDLER_CLASS.inputVald('Enter an integer to select a structure: \n')
 
             if selection_selection == 1:
                 ATOPIC_Y_EXIT.atopic

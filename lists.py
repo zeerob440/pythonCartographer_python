@@ -1,4 +1,4 @@
-from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
+from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS, MENU_INPUT_HANDLER_CLASS
      
 # lists.py covers examples of list operations. 
 class LISTS_MENU():
@@ -407,7 +407,7 @@ class LISTS_MENU():
             \n''')
         
             print(populate_list_menu)
-            populate_list_selection = int(input('Select a Topic \n'))
+            populate_list_selection = MENU_INPUT_HANDLER_CLASS.inputVald('Enter an integer to select a structure: \n')
 
             if populate_list_selection == 1:
                 ATOPIC_Y_EXIT.atopic()

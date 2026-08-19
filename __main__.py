@@ -11,11 +11,13 @@ from depopulate_list import DEPOPULATE_LIST_MENU
 from dicts import DICTS_MENU
 
 #TODO add regex section to input_validation
+#TODO input_validation.py add exception hierarchy section
 #TODO add file_operations.py and content
 #TODO add slicing.py and content
 #TODO add oop.py and content
 #TODO add better input handling in menus
 #TODO add read_write.py and contents 
+
 '''
 Version: Delta 6 AUG 2026; pythonCartographer Delta was created to make the program more modular and easier to maintain. 
 This program uses OOP concepts to navigate learning modules. 

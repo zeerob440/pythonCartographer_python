@@ -1,4 +1,4 @@
-from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
+from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS, MENU_INPUT_HANDLER_CLASS
 
 # functions.py provides example of function behaviors.
 class FUNCTIONS_MENU():
@@ -557,7 +557,7 @@ class FUNCTIONS_MENU():
             \n''')
         
             print(functions_menu)
-            functions_selection = int(input('Select a Topic \n'))
+            functions_selection = MENU_INPUT_HANDLER_CLASS.inputVald('Enter an integer to select a structure: \n')
 
             if functions_selection == 1:
                 ATOPIC_Y_EXIT.atopic()

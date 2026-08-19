@@ -1,4 +1,4 @@
-from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS
+from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS, MENU_INPUT_HANDLER_CLASS
      
 class BASICS_MENU():
     @staticmethod
@@ -168,7 +168,7 @@ class BASICS_MENU():
                 \n''')
                 print(basics_menu)        
 
-                basic_selection = int(input('Select a Topic\n'))
+                basic_selection = MENU_INPUT_HANDLER_CLASS.inputVald('Enter an integer to select a structure: \n')
     
                 if basic_selection == 1:
                     ATOPIC_Y_EXIT.atopic()
