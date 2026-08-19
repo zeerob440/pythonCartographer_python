@@ -14,7 +14,7 @@ from dicts import DICTS_MENU
 #TODO add slicing.py and content
 #TODO add oop.py and content
 #TODO add better input handling in menus
-
+#TODO add read_write.py and contents 
 '''
 Version: Delta 6 AUG 2026; pythonCartographer Delta was created to make the program more modular and easier to maintain. 
 This program uses OOP concepts to navigate learning modules. 
