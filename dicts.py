@@ -223,6 +223,8 @@ class DICTS_MENU():
 
         procced to run code:\n''')
 
+        PROCEED_CLASS.proceed()
+
         print((san_cristobal_medstaff[2].items()), '\n')
 
         PROCEED_CLASS.proceed()
@@ -259,7 +261,7 @@ class DICTS_MENU():
         
 
         for staff in san_cristobal_medstaff:
-            print((staff.keys()) +'\n')
+            print((staff.keys()), '\n')
 
         PROCEED_TO_MENU_CLASS.proceedToMenu()
 
