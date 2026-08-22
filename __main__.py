@@ -10,7 +10,7 @@ from lists import LISTS_MENU
 from depopulate_list import DEPOPULATE_LIST_MENU
 from dicts import DICTS_MENU
 
-#TODO pythonCartographer reformat doc strings.
+
 #TODO add regex section to input_validation
 #TODO input_validation.py add exception hierarchy section
 #TODO add file_operations.py and content

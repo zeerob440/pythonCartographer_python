@@ -29,8 +29,11 @@ class ATOPIC_Y_EXIT():
         print(ex)
         # returns to previous program
         return
-    # TODO increased input handling function
+
+    
     # improved input handling class
+    '''This function obtains user input, converts it to an integer if it isdigit() and returns that integer value,
+    otherwise it will prompt the user to input an integer. This class is part of the pythonCartographer Delta refactor that improved input handling.'''
 class MENU_INPUT_HANDLER_CLASS:
 
     @staticmethod
