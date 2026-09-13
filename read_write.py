@@ -7,7 +7,7 @@ class READ_WRITE_MENU():
     @staticmethod
     def read_write_basics():
          print('Read write basics go here.')
-
+         print('FIXME: fill content here. ')
          PROCEED_TO_MENU_CLASS.proceedToMenu()
 
     @staticmethod

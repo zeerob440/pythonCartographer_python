@@ -17,7 +17,7 @@ from read_write import READ_WRITE_MENU
 #TODO add file_operations.py and content
 #TODO add slicing.py and content
 #TODO add oop.py and content
-#TODO add read_write.py and contents 
+
 
 '''
 Version: Delta 6 AUG 2026; pythonCartographer DeltaI was created to add more lessons to python cartographer. 
