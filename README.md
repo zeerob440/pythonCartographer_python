@@ -1,5 +1,7 @@
 # pythonCartographer
 
+Version: pythonCartographer Delta I
+
 pythonCartographer is a continuously developed Python learning application. That allows users to add Python notes as they learn more about Python architecture and syntax. Software structure and syntax can be tricky to understand by reading textbooks alone. pythonCartographer takes sometimes aloof textbook information and allows the user to develop their own working model of the language with simple examples and plain language, thus supporting individual cognition.
 
 ## Use case & Objectives

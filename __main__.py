@@ -17,10 +17,11 @@ from read_write import READ_WRITE_MENU
 #TODO add file_operations.py and content
 #TODO add slicing.py and content
 #TODO add oop.py and content
+#TODO populate read_write.py with read write lessons
 
 
 '''
-Version: Delta 6 AUG 2026; pythonCartographer DeltaI was created to add more lessons to python cartographer. 
+Version: Delta I 13 SEP 2026; pythonCartographer Delta I was created to add more lessons to pythonCartographer. 
    
 Proudly engineered by Zachary Roberts 11 August, 2025 
 "We should now have access to the main facility. Let's find the map room."-Cortana
