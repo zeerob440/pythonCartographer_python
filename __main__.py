@@ -45,6 +45,7 @@ def run():
         8: POPULATING LISTS
         9: DEPOPULATING LISTS
         10: DICTIONARIES
+        11: READ WRITE OPERATIONS
         OR ANY OTHER NUMBER TO EXIT.
         ------------------------------------------------------------------------
             ''')
