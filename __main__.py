@@ -77,11 +77,14 @@ def run():
             print('Accessing Populating Lists...\n')
             LISTS_MENU.runListsMenu()
         elif select_structure == 9:
-            print('Accessing Depopulating Lists\n')
+            print('Accessing Depopulating Lists...\n')
             DEPOPULATE_LIST_MENU.runDepopulateListMenu()
         elif select_structure == 10:
-            print('Accessing Dictionaries\n')
+            print('Accessing Dictionaries...\n')
             DICTS_MENU.runDictMenu()
+        elif select_structure == 11:
+            print('Accessing Read Write Ops...')
+            READ_WRITE_MENU.run_read_write_menu()
         else:
             print('Exiting pythonCartographer!')
             break
