@@ -9,6 +9,7 @@ from functions import FUNCTIONS_MENU
 from lists import LISTS_MENU
 from depopulate_list import DEPOPULATE_LIST_MENU
 from dicts import DICTS_MENU
+from read_write import READ_WRITE_MENU
 
 
 #TODO add regex section to input_validation
@@ -19,8 +20,7 @@ from dicts import DICTS_MENU
 #TODO add read_write.py and contents 
 
 '''
-Version: Delta 6 AUG 2026; pythonCartographer Delta was created to make the program more modular and easier to maintain. 
-This program uses OOP concepts to navigate learning modules. 
+Version: Delta 6 AUG 2026; pythonCartographer DeltaI was created to add more lessons to python cartographer. 
    
 Proudly engineered by Zachary Roberts 11 August, 2025 
 "We should now have access to the main facility. Let's find the map room."-Cortana
