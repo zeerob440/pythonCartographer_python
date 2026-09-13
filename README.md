@@ -1,10 +1,10 @@
 # pythonCartographer
 
-pythonCartographer is a continuously developed Python learning application. That allows users to add Python notes as they learn more about Python architecture and syntax. Software structure and syntax can be tricky to understand by reading textbooks alone. pythonCartographer takes sometimes aloof textbook information and allows the user to develop their own working model of the language with simple examples and plain language, thus supporting individual cognition. 
+pythonCartographer is a continuously developed Python learning application. That allows users to add Python notes as they learn more about Python architecture and syntax. Software structure and syntax can be tricky to understand by reading textbooks alone. pythonCartographer takes sometimes aloof textbook information and allows the user to develop their own working model of the language with simple examples and plain language, thus supporting individual cognition.
 
 ## Use case & Objectives
 
-pythonCartographer is intended to be run in a terminal while an engineer develops other software programs. It is intended to act as a reference as the engineer writes system architecture, it is an interactive notebook essentially. 
+pythonCartographer is intended to be run in a terminal while an engineer develops other software programs. It is intended to act as a reference as the engineer writes system architecture, it is an interactive notebook essentially.
 
 ## Features
 

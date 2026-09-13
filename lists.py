@@ -333,7 +333,7 @@ class LISTS_MENU():
         cats = ['moose', 'kook', 'Cline']
         appended_cats = ['old ' + cat for cat in cats]
 
-        print(f'{appended_cats} The comprehension in action')
+        print(f'{appended_cats} The comprehension in action.')
 
         PROCEED_CLASS.proceed()
 
