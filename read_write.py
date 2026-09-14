@@ -172,6 +172,39 @@ class READ_WRITE_MENU():
                     sought_excerpt = seek_file.read()
                     print(sought_excerpt)
 
+            PROCEED_CLASS.proceed()
+
+            print('''As you can see 'FOR SENIOR MANAGEMENT EYES ONLY' has been removed from the output
+            because we started reading the file for seek(33).\n''')
+
+            PROCEED_CLASS.proceed()
+
+            print('''tell()
+            
+            tell() super useful, it tells the engineer where the cursor is inside the file, this is especially useful
+             'w+', 'r+' operations.
+
+             # foolishly open file using open() NEVER DO THIS
+                tell_ex = open('hospital_quarantine.txt', 'r')
+                # move cursor to char space 156
+                tell_ex.seek(156)
+                #read 9 chars beyond 156, returns "Universal"
+                tell_ex.read(9)
+                # prints 164, tells engineer where cursor is
+                print(tell_ex.tell()) 
+
+             Let's try it.\n''')
+            
+            # foolishly open file using open() NEVER DO THIS
+            tell_ex = open('hospital_quarantine.txt', 'r')
+            # move cursor to char space 156
+            tell_ex.seek(156)
+            #read 9 chars beyond 156, returns "Universal"
+            tell_ex.read(9)
+            # prints 164, tells engineer where cursor is
+            print(tell_ex.tell())
+            
+            
             PROCEED_TO_MENU_CLASS.proceedToMenu()
             
             
