@@ -1,8 +1,9 @@
-FOR SENIOR MANAGEMEMNT EYES ONLY
+FOR SENIOR MANAGEMENT EYES ONLY
 
 San Cristobal Medical Facility Quarantine: active
-Entrace to Primary Care deck now limited to Marshals and Senior Staff.
+Entrance to Primary Care deck now limited to Marshals and Senior Staff.
 
 Universal facility pass code: 1702
 
 System will scan for potential quarantine breaches every fifteen (15) minutes.
+EOF
