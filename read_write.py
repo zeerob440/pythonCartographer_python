@@ -6,8 +6,10 @@ class READ_WRITE_MENU():
 
     @staticmethod
     def read_write_basics():
-         print('Read write basics go here.')
-         print('FIXME: fill content here. ')
+         with open('hospital_quarantine', 'r') as read_file:
+              read = read_file.read()
+              print(read)
+              
          PROCEED_TO_MENU_CLASS.proceedToMenu()
 
     @staticmethod
