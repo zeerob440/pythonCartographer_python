@@ -8,8 +8,9 @@ class READ_WRITE_MENU():
     # basic skill overview for opening and reading/writing files
     def read_write_basics():
 
-         print('''Read Write Basics\n
-         Reading and writing files is and important skill set in Python.\n
+         print('''Read Write Basics
+
+         Reading and writing files is and important skill set in Python.
 
          Reading files workflow is:
          1. open file example| with open('stringfilename.txt', 'Stringmode'):
@@ -20,10 +21,10 @@ class READ_WRITE_MENU():
 
          PROCEED_CLASS.proceed()
 
-         print('''READ WRITE OPEN MODES\n
+         print('''READ WRITE OPEN MODES
 
          When opening a file you need to choose what mode to open it in. These modes are always strings.
-         They include:\n
+         They include:
          open("file.txt", "r")    # Read existing file, cursor starts at beginning
 
          open("file.txt", "w")    # Erase file and write, because cursor starts at beginning
@@ -34,9 +35,7 @@ class READ_WRITE_MENU():
 
          open("image.png", "rb")  # Read binary, cursor starts at beginning
 
-         open("file.txt", "x")    # Create file only if it doesn't already exist\n
-
-         ''')
+         open("file.txt", "x")    # Create file only if it doesn't already exist\n''')
 
          PROCEED_TO_MENU_CLASS.proceedToMenu()
 
@@ -44,7 +43,7 @@ class READ_WRITE_MENU():
     # basic overview of read() and readlines()
     def read_readlines():
 
-         print('''read() and readlines()\n
+         print('''read() and readlines()
 
          Now that we have explained how to open files we will explore how to read them using hospital_quarantine.txt\n
 
@@ -69,9 +68,8 @@ class READ_WRITE_MENU():
                          # assign a var to the file alias and .read()
                          read = read_file.read()
                          # data must be printed to display it.
-                         print(read)\n
-         proceed to run the code and read hospital_quarantine.txt!
-         ''')
+                         print(read)
+         proceed to run the code and read hospital_quarantine.txt!\n''')
 
          PROCEED_CLASS.proceed()
           
@@ -81,22 +79,44 @@ class READ_WRITE_MENU():
 
          PROCEED_CLASS.proceed()
 
-         print('''read can also take an integer arg. such as read(31). This means the program will read the 
-         file from the cursors current location to the number of char spaces as input as the arg, in this case, 31.
+         print('''read() can also take an integer arg. such as read(32). This means the program will read the 
+         file from the cursor's current location to the number of char spaces as input as the arg, in this case, 31.
          
          let's try it. with this code.
          
          with open('hospital_quarantine.txt', 'r') as read_file:
-                      read = read_file.read(31)
+                      read = read_file.read(32)
                       print(read)
-         It will read the first 31 chars from cursor 0, and return 'FOR SENIOR MANAGEMENT EYES ONLY'
-         Proceed to run it.\n ''')
+         It will read the first 32 chars from cursor 0, and return 'FOR SENIOR MANAGEMENT EYES ONLY'
+         Proceed to run it.\n''')
 
          PROCEED_CLASS.proceed()
 
          with open('hospital_quarantine.txt', 'r') as read_file:
-                       read = read_file.read(31)
+                       read = read_file.read(32)
                        print(read)
+
+         PROCEED_CLASS.proceed()
+
+         print('''readlines() 
+         
+         readlines() is a function that reads the file into a list. It can also take an int agr to only read to a 
+         certain place. so readlines(32) will only read 31 chars from the cursor.
+
+         Here is the code we are working with:
+
+         with open('hospital_quarantine.txt', 'r') as read_file_list:
+                                read_list: list = read_file.readlines()
+                                print(read_list)
+         
+         Let's try it on our hospital_quarantine.txt.''')
+
+         PROCEED_CLASS.proceed()
+
+         with open('hospital_quarantine.txt', 'r') as read_file_list:
+                                         read_list: list = read_file_list.readlines()
+                                         print(read_list)
+         
 
          PROCEED_TO_MENU_CLASS.proceedToMenu()
          
