@@ -109,16 +109,72 @@ class READ_WRITE_MENU():
                                 read_list: list = read_file.readlines()
                                 print(read_list)
          
-         Let's try it on our hospital_quarantine.txt.''')
+         Let's try it on our hospital_quarantine.txt.\n''')
 
          PROCEED_CLASS.proceed()
-
+         
          with open('hospital_quarantine.txt', 'r') as read_file_list:
                                          read_list: list = read_file_list.readlines()
                                          print(read_list)
-         
+
+         print('As we can see, this has converted the file into a list by line, including \\n at line breaks\n')
 
          PROCEED_TO_MENU_CLASS.proceedToMenu()
+
+    @staticmethod
+    # teaches what seek() and tell() does.
+    def seek_y_tell():
+
+            print('''seek() AND tell()
+            
+            Now that reading files has been explained, you need to know how to steer the cursor to
+            get into the more advanced read/write operations.
+            
+            seek()
+            
+             seek() - Moves the file cursor.
+             Syntax: file.seek(offset, whence=0)
+
+             offset = how many bytes/characters to move
+             whence = where to start measuring from
+             0 = beginning of file (default)
+             1 = current cursor position
+             2 = end of file (EOF)
+
+             file.seek(0) also file.seek()      # Move to beginning
+             file.seek(5)       # Move to byte/character 5 from beginning
+             file.seek(0, 2)    # Move to end of file
+             file.seek(-5, 2)   # Move 5 bytes before end (commonly in binary mode)\n''')
+
+            PROCEED_CLASS.proceed()
+
+            print('''Let's try it on our hospital_quarantine.txt file with this code.
+            
+             # safely open file
+                        with open('hospital_quarantine.txt', 'r') as seek_file:
+                                # move cursor
+                                seek_file.seek(33)
+                                # read the file from cursor space 33 to EOF
+                                sought_excerpt = seek_file.read()
+                                print(sought_excerpt)
+
+            since we are reading the file from the 33 cursor position, FOR SENIOR MANAGEMENT EYES ONLY will
+            be omitted.
+
+            let's try it.\n''')
+
+            PROCEED_CLASS.proceed()
+            # safely open file
+            with open('hospital_quarantine.txt', 'r') as seek_file:
+                    # move cursor to desired char space
+                    seek_file.seek(33)
+                    # read the file from cursor space 33 to EOF
+                    sought_excerpt = seek_file.read()
+                    print(sought_excerpt)
+
+            PROCEED_TO_MENU_CLASS.proceedToMenu()
+            
+            
          
 
     @staticmethod
@@ -128,10 +184,11 @@ class READ_WRITE_MENU():
             
                 # declarations for inputValidation() menu
                 validation_menu =('''
-                MENU - READ WRITE
+                MENU - READ WRITE OPS
                 ........................................................................
                 1: Input Read Write basics
-                2: Read functions read(), readlines()          
+                2: Read functions read(), readlines()
+                3: seek() and tell()          
                 OR ANY OTHER NUMBER TO EXIT.
                 .........................................................................
                 \n''')
@@ -145,6 +202,10 @@ class READ_WRITE_MENU():
                 elif validation_selection == 2:
                      ATOPIC_Y_EXIT.atopic()
                      READ_WRITE_MENU.read_readlines()
+                elif validation_selection == 3:
+                        ATOPIC_Y_EXIT.atopic()
+                        READ_WRITE_MENU.seek_y_tell()
+                     #TODO: add iterating over lines subject matter. 
                 else:
                     ATOPIC_Y_EXIT.exiting()
                     return
