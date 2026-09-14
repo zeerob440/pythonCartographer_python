@@ -200,7 +200,7 @@ class READ_WRITE_MENU():
             # move cursor to char space 156
             tell_ex.seek(161)
             #read 9 chars beyond 156, returns "Universal"
-            tell_ex.read(9)
+            print(tell_ex.read(9))
             # prints 172, tells engineer where cursor is
             print(tell_ex.tell())
             
