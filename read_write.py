@@ -61,7 +61,7 @@ class READ_WRITE_MENU():
 
          PROCEED_CLASS.proceed()
 
-         print('''read()\n
+         print('''read()
          
          reads the entire files starting from cursor to EOF. we will uses this code to read the file.\n
          # using with open() open file in desired mode, give file an alias   
@@ -78,6 +78,25 @@ class READ_WRITE_MENU():
          with open('hospital_quarantine.txt', 'r') as read_file:
               read = read_file.read()
               print(read)
+
+         PROCEED_CLASS.proceed()
+
+         print('''read can also take an integer arg. such as read(31). This means the program will read the 
+         file from the cursors current location to the number of char spaces as input as the arg, in this case, 31.
+         
+         let's try it. with this code.
+         
+         with open('hospital_quarantine.txt', 'r') as read_file:
+                      read = read_file.read(31)
+                      print(read)
+         It will read the first 31 chars from cursor 0, and return 'FOR SENIOR MANAGEMENT EYES ONLY'
+         Proceed to run it.\n ''')
+
+         PROCEED_CLASS.proceed()
+
+         with open('hospital_quarantine.txt', 'r') as read_file:
+                       read = read_file.read(31)
+                       print(read)
 
          PROCEED_TO_MENU_CLASS.proceedToMenu()
          
