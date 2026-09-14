@@ -186,22 +186,22 @@ class READ_WRITE_MENU():
 
              # foolishly open file using open() NEVER DO THIS
                 tell_ex = open('hospital_quarantine.txt', 'r')
-                # move cursor to char space 156
-                tell_ex.seek(156)
+                # move cursor to char space 161
+                tell_ex.seek(161)
                 #read 9 chars beyond 156, returns "Universal"
                 tell_ex.read(9)
-                # prints 164, tells engineer where cursor is
+                # prints 170, tells engineer where cursor is
                 print(tell_ex.tell()) 
 
              Let's try it.\n''')
             
             # foolishly open file using open() NEVER DO THIS
             tell_ex = open('hospital_quarantine.txt', 'r')
-            # move cursor to char space 156
+            # move cursor to char space 161
             tell_ex.seek(161)
-            #read 9 chars beyond 156, returns "Universal"
+            #read 9 chars beyond 161, returns "Universal"
             print(tell_ex.read(9))
-            # prints 172, tells engineer where cursor is
+            # prints 170, tells engineer where cursor is
             print(tell_ex.tell())
             
             
