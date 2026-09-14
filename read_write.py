@@ -6,7 +6,7 @@ class READ_WRITE_MENU():
 
     @staticmethod
     def read_write_basics():
-         with open('hospital_quarantine', 'r') as read_file:
+         with open('hospital_quarantine.txt', 'r') as read_file:
               read = read_file.read()
               print(read)
               
