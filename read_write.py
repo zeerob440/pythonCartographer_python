@@ -213,13 +213,24 @@ class READ_WRITE_MENU():
      def file_iterate():
             print('''ITERATING OVER A FILE
             
-            Files are iterables. There for it is possible to iterate over them with loops.''')
+            Files are iterables. There for it is possible to iterate over them with loops. such that:
+            
+            with open('hospital_quarantine.txt', 'r') as iterate_file:
+                                for line in iterate_file:
+                                     print(line)
+
+            just remember that it will print all lines including \\n linebreaks.
+
+            Let't run it. 
+          
+            ''')
 
             PROCEED_CLASS.proceed()
 
             with open('hospital_quarantine.txt', 'r') as iterate_file:
                     for line in iterate_file:
-                         print(line.read())
+                         print(line)
+                         
             PROCEED_CLASS.proceed()
             
             
