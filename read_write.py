@@ -194,6 +194,8 @@ class READ_WRITE_MENU():
                 print(tell_ex.tell()) 
 
              Let's try it.\n''')
+
+            PROCEED_CLASS.proceed()
             
             # foolishly open file using open() NEVER DO THIS
             tell_ex = open('hospital_quarantine.txt', 'r')
@@ -209,8 +211,16 @@ class READ_WRITE_MENU():
 
      @staticmethod
      def file_iterate():
-            pass 
+            print('''ITERATING OVER A FILE
             
+            Files are iterables. There for it is possible to iterate over them with loops.''')
+
+            PROCEED_CLASS.proceed()
+
+            with open('hospital_quarantine.txt', 'r') as iterate_file:
+                    for line in iterate_file:
+                         print(line.read())
+            PROCEED_CLASS.proceed()
             
             
          
@@ -223,7 +233,8 @@ class READ_WRITE_MENU():
                 # declarations for inputValidation() menu
                 validation_menu =('''
                 MENU - READ WRITE OPS
-                ........................................................................
+                .
+                .......................................................................
                 1: Input Read Write basics
                 2: Read functions read(), readlines()
                 3: seek() and tell() 
