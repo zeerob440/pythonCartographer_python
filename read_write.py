@@ -62,13 +62,15 @@ class READ_WRITE_MENU():
 
          print('''read()
          
-         reads the entire files starting from cursor to EOF. we will uses this code to read the file.\n
+         Reads the entire files starting from cursor to EOF. We will use this code to read the file.
+         
          # using with open() open file in desired mode, give file an alias   
          with open('hospital_quarantine.txt', 'r') as read_file:
                          # assign a var to the file alias and .read()
                          read = read_file.read()
                          # data must be printed to display it.
                          print(read)
+
          proceed to run the code and read hospital_quarantine.txt!\n''')
 
          PROCEED_CLASS.proceed()
@@ -82,7 +84,7 @@ class READ_WRITE_MENU():
          print('''read() can also take an integer arg. such as read(32). This means the program will read the 
          file from the cursor's current location to the number of char spaces as input as the arg, in this case, 31.
          
-         let's try it. with this code.
+         Let's try it. with this code.
          
          with open('hospital_quarantine.txt', 'r') as read_file:
                       read = read_file.read(32)
@@ -158,7 +160,7 @@ class READ_WRITE_MENU():
                                 sought_excerpt = seek_file.read()
                                 print(sought_excerpt)
 
-            since we are reading the file from the 33 cursor position, FOR SENIOR MANAGEMENT EYES ONLY will
+            Since we are reading the file from the 33 cursor position, FOR SENIOR MANAGEMENT EYES ONLY will
             be omitted.
 
             let's try it.\n''')
@@ -213,13 +215,13 @@ class READ_WRITE_MENU():
      def file_iterate():
             print('''ITERATING OVER A FILE
             
-            Files are iterables. There for it is possible to iterate over them with loops. such that:
+            Files are iterables. Therefore, it is possible to iterate over them with loops. such that:
             
             with open('hospital_quarantine.txt', 'r') as iterate_file:
                                 for line in iterate_file:
                                      print(line)
 
-            just remember that it will print all lines including \\n linebreaks.
+            Just remember that it will print all lines including linebreaks.
 
             Let't run it. 
           
@@ -230,7 +232,7 @@ class READ_WRITE_MENU():
             with open('hospital_quarantine.txt', 'r') as iterate_file:
                     for line in iterate_file:
                          print(line)
-                         
+
             PROCEED_CLASS.proceed()
             
             
