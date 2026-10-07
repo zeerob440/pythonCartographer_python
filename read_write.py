@@ -63,7 +63,7 @@ class READ_WRITE_MENU():
          print('''read()
          
          Reads the entire files starting from cursor to EOF. We will use this code to read the file.
-         
+
          # using with open() open file in desired mode, give file an alias   
          with open('hospital_quarantine.txt', 'r') as read_file:
                          # assign a var to the file alias and .read()
@@ -236,8 +236,6 @@ class READ_WRITE_MENU():
             PROCEED_CLASS.proceed()
             
             
-         
-
      @staticmethod
      def run_read_write_menu():
 
@@ -271,7 +269,7 @@ class READ_WRITE_MENU():
                 elif validation_selection == 4:
                         ATOPIC_Y_EXIT.atopic
                         READ_WRITE_MENU.file_iterate()
-                     #TODO: add iterating over lines subject matter. 
+                     #TODO: add writing operations
                 else:
                     ATOPIC_Y_EXIT.exiting()
                     return
