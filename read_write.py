@@ -4,9 +4,9 @@ from navigation import ATOPIC_Y_EXIT, PROCEED_CLASS, PROCEED_TO_MENU_CLASS, MENU
 
 class READ_WRITE_MENU():
 
-    @staticmethod
+     @staticmethod
     # basic skill overview for opening and reading/writing files
-    def read_write_basics():
+     def read_write_basics():
 
          print('''Read Write Basics
 
@@ -39,9 +39,9 @@ class READ_WRITE_MENU():
 
          PROCEED_TO_MENU_CLASS.proceedToMenu()
 
-    @staticmethod
+     @staticmethod
     # basic overview of read() and readlines()
-    def read_readlines():
+     def read_readlines():
 
          print('''read() and readlines()
 
@@ -121,9 +121,9 @@ class READ_WRITE_MENU():
 
          PROCEED_TO_MENU_CLASS.proceedToMenu()
 
-    @staticmethod
+     @staticmethod
     # teaches what seek() and tell() does.
-    def seek_y_tell():
+     def seek_y_tell():
 
             print('''seek() AND tell()
             
@@ -199,19 +199,24 @@ class READ_WRITE_MENU():
             tell_ex = open('hospital_quarantine.txt', 'r')
             # move cursor to char space 161
             tell_ex.seek(161)
-            #read 9 chars beyond 161, returns "Universal"
+            #read 9 chars beyond 161, prints "Universal"
             print(tell_ex.read(9))
             # prints 170, tells engineer where cursor is
             print(tell_ex.tell())
             
             
             PROCEED_TO_MENU_CLASS.proceedToMenu()
+
+     @staticmethod
+     def file_iterate():
+            pass 
+            
             
             
          
 
-    @staticmethod
-    def run_read_write_menu():
+     @staticmethod
+     def run_read_write_menu():
 
         while True:
             
@@ -221,7 +226,8 @@ class READ_WRITE_MENU():
                 ........................................................................
                 1: Input Read Write basics
                 2: Read functions read(), readlines()
-                3: seek() and tell()          
+                3: seek() and tell() 
+                4: Iterating over files         
                 OR ANY OTHER NUMBER TO EXIT.
                 .........................................................................
                 \n''')
@@ -238,6 +244,9 @@ class READ_WRITE_MENU():
                 elif validation_selection == 3:
                         ATOPIC_Y_EXIT.atopic()
                         READ_WRITE_MENU.seek_y_tell()
+                elif validation_selection == 4:
+                        ATOPIC_Y_EXIT.atopic
+                        READ_WRITE_MENU.file_iterate()
                      #TODO: add iterating over lines subject matter. 
                 else:
                     ATOPIC_Y_EXIT.exiting()
