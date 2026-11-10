@@ -18,6 +18,7 @@ from read_write import READ_WRITE_MENU
 #TODO add slicing.py and content
 #TODO add oop.py and content
 #TODO populate read_write.py with read write lessons
+#TODO dicts.py needs DEPOPULATING DICTIONARIES Section
 
 
 
