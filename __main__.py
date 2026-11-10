@@ -20,6 +20,7 @@ from read_write import READ_WRITE_MENU
 #TODO populate read_write.py with read write lessons
 
 
+
 '''
 Version: Delta I 13 SEP 2026; pythonCartographer Delta I was created to add more lessons to pythonCartographer. 
    
@@ -53,6 +54,7 @@ def run():
 
         print(menu)
 
+        # if/elif/else structure used to call menu functions to navigate program
         select_structure = MENU_INPUT_HANDLER_CLASS.inputVald('Enter an integer to select a structure: \n')
         if select_structure == 1:
             print ("Accessing Basics...\n")

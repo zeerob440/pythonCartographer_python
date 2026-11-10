@@ -100,6 +100,7 @@ class DICTS_MENU():
 
         dict_name = {'keyname0': 0, 'keyname1': 1}
         dict_name['keyname4'] = 4
+        # prints keys in dictionary
         print(dict_name.items())
 
         print('''This method of appending dictionaries is hard coded on the back end.
@@ -131,6 +132,49 @@ class DICTS_MENU():
 
         print('''Remember keys are immutable, so to append a key the entire key/value pair must be deleted and redeclared.
             This is the end of this module, proceed to exit to Dictionaries menu.\n''')
+
+        PROCEED_CLASS.proceed()
+
+        print('POPULATING A DICT WITH .update({})\n')
+
+        print('''.update({}) will update key, new key value pairs at the end of a dictionary OR update existing values in situ if the key is used
+          and the value is changed.
+          
+          We will use the armory dictionary as an example of our work.
+
+            # a dictionary regarding historical DoD weapons procurement
+            armory: dict = {'weapon': 'M-14', 'Adopted Year': 1957}
+          
+            # prints armory as written in the above line
+            print(armory,'\n')
+          
+            # updates key 'weapon' value to 'XM16E1' and key 'Adopted Year' to 1965
+            armory.update({'weapon': 'XM16E1', 'Adopted Year': 1965})
+                  
+            # prints updated armory values in situ
+            print(armory)
+                   
+          
+            Proceed to print the initial dictionary
+          ''')
+
+        PROCEED_CLASS.proceed()
+
+        # a dictionary regarding historical DoD weapons procurement
+        armory: dict = {'weapon': 'M-14', 'Adopted Year': 1957}
+
+        # prints armory as written in the above line
+        print(armory,'\n')
+
+        print('Proceed to update the dictionary with XM16E1 facts.\n')
+
+        PROCEED_CLASS.proceed()
+
+        # updates key 'weapon' value to 'XM16E1' and key 'Adopted Year' to 1965
+        armory.update({'weapon': 'XM16E1', 'Adopted Year': 1965})
+
+        # prints updated armory values in situ
+        print(armory, '\n')
         
         PROCEED_TO_MENU_CLASS.proceedToMenu()
 
@@ -159,7 +203,7 @@ class DICTS_MENU():
         PROCEED_CLASS.proceed()
 
         # dicts containing med staff info
-        sc_1: dict = {'name': 'Dr. Lingard', 'on_duty': False, 'Location': "off campus" }
+        sc_1: dict = {'name': 'Dr. Lingard', 'on_duty': False, 'Location': "off-campus" }
         sc_2: dict = {'name': 'Dr. Morley', 'on_duty': True, 'Location': 'A-29'}
         sc_3: dict = {'name': 'Dr. Kuhlman', 'on_duty': True, 'Location': 'Reception'}
 
