@@ -130,8 +130,7 @@ class DICTS_MENU():
         dict_name['keyname4'] = new_value
         print(dict_name.get('keyname4'))
 
-        print('''Remember keys are immutable, so to append a key the entire key/value pair must be deleted and redeclared.
-            This is the end of this module, proceed to exit to Dictionaries menu.\n''')
+        print('Remember keys are immutable, so to append a key the entire key/value pair must be deleted and redeclared.\n')
 
         PROCEED_CLASS.proceed()
 
@@ -174,7 +173,32 @@ class DICTS_MENU():
         armory.update({'weapon': 'XM16E1', 'Adopted Year': 1965})
 
         # prints updated armory values in situ
-        print(armory, '\n')
+        print(armory)
+
+        PROCEED_CLASS.proceed()
+        
+        print('''APPENDING NEW KEY VALUE PAIRS TO AN EXISTING DICT WITH .update({})
+        
+        Adding new key/value pairs is easy. simply add the new pairs to an existing dictionary. These pairs are added to the end of the dict.
+        
+        Let's add new key value pairs to the updated armory dictionary:
+
+        armory.update({'weapon': 'XM16E1', 'Adopted Year': 1965})
+
+         # adds key/value pairs to armory dict
+        armory.update({'US Army Adoption': 1967, 'Adopted as': 'M16A1'})
+        
+        # prints armory with new key value pairs
+        print(armory)
+        
+        proceed to update the dictionary with the added Key/Value pairs!\n''')
+
+        # adds key/value pairs to armory dict
+        armory.update({'US Army Adoption': 1967, 'Adopted as': 'M16A1'})
+
+        PROCEED_CLASS.proceed()
+        # prints armory with new key value pairs
+        print(armory)
         
         PROCEED_TO_MENU_CLASS.proceedToMenu()
 
